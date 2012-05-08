@@ -81,4 +81,28 @@ end
 
 Wow. Three lines of code (although it could be written in one). If you understand lambdas, it's obvious what's going on here at a glance. You initalize `foo` with a value, and it returns a lambda that will accumulate any values passed to it.
 
-Accumulators are important constructs, and Ruby makes their generation completely obvious.
+Ruby makes the solution completely obvious.
+
+_Note: all examples above from [Paul Graham's website](http://www.paulgraham.com/accgen.html)_
+
+The other language that has me in awe of its marriage of power and simplicity is [Clojure](http://clojure.org). Clojure is a Lisp dialect targeting the JVM, and I encourage anyone out there to explore it. I'm just getting my feet wet with Clojure, so I haven't attempted an example like above just yet (the emphasis on mutable state being the exception rather than the rule makes it a little less straightforward).
+
+But here's my answer to [Problem 26](https://4clojure.com/problem/26) on [4clojure](https://4clojure.com), which involves creating a Fibonacci sequence generator using only lambdas.
+
+``` clojure Fibonacci Generator
+
+(fn [n] 
+  (take n 
+    (map first 
+      (iterate 
+        (fn [[a b]] 
+          (vector b (+ a b))) [1 1])))))
+
+```
+
+Okay, maybe not as pretty as Ruby, but Clojure has its own amazing properties I can't even begin to go into... but I will be posting more on Clojure in the future.
+
+
+
+
+
