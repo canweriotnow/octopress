@@ -108,7 +108,7 @@ But here's my answer to [Problem 26](https://4clojure.com/problem/26) on [4cloju
 
 Okay, maybe not as "pretty" as Ruby, but Clojure has its own amazing properties I can't even begin to go into... but I will be posting more on Clojure in the future.
 
-Anyhow, I just mentioned that implementing an accumulator generator in Clojure is "less straightforward" than in a language like Python or Ruby (or, for that matter, Lisps like Scheme or Common Lisp). Why is this? As I mentioned previously, Clojure, while technically an "impure" functional language (as in, side-effects are allowed), tries to keep side-effects to the side as a special case; so, for instance, most data structures in Clojure are immutable.
+Anyhow, I just mentioned that implementing an accumulator generator in Clojure is "less straightforward" than in a language like Python or Ruby (or, for that matter, Lisps like Scheme or Common Lisp). Why is this? As I mentioned previously, Clojure, while technically an "impure" functional language (as in, side-effects are allowed), tries to treat side-effects as a special case; so, for instance, most data structures in Clojure are immutable.
 
 "Wait," you might exclaim, "that seems harder to work with! Aren't immutable data structures introducing complexity!?!?"
 
