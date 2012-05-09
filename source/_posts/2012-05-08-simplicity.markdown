@@ -91,24 +91,18 @@ _Note: all examples above from [Paul Graham's website](http://www.paulgraham.com
 
 ### Clojure
 
-The other language that has me in awe of its marriage of power and simplicity is [Clojure](http://clojure.org). Clojure is a Lisp dialect targeting the JVM, and I encourage anyone out there to explore it. I'm just getting my feet wet with Clojure, so I haven't attempted an example like above just yet (the emphasis on mutable state being the exception rather than the rule makes it a little less straightforward).
+The other language that has me in awe of its marriage of power and simplicity is [Clojure](http://clojure.org). Clojure is a Lisp dialect targeting the JVM, and I encourage anyone out there to explore it. Here's the above construct in Clojure:
 
-But here's my answer to [Problem 26](https://4clojure.com/problem/26) on [4clojure](https://4clojure.com), which involves creating a Fibonacci sequence generator using only lambdas.
 
-``` clojure Fibonacci Generator
+``` clojure Accumulator Generator
 
-(fn [n] 
-  (take n 
-    (map first 
-      (iterate 
-        (fn [[a b]] 
-          (vector b (+ a b))) [1 1])))))
+(defn accum [n]
+  (let [acc (atom n)]
+    (fn [m] (swap! acc + m))))
 
 ```
 
-Okay, maybe not as "pretty" as Ruby, but Clojure has its own amazing properties I can't even begin to go into... but I will be posting more on Clojure in the future.
-
-Anyhow, I just mentioned that implementing an accumulator generator in Clojure is "less straightforward" than in a language like Python or Ruby (or, for that matter, Lisps like Scheme or Common Lisp). Why is this? As I mentioned previously, Clojure, while technically an "impure" functional language (as in, side-effects are allowed), tries to treat side-effects as a special case; so, for instance, most data structures in Clojure are immutable.
+Anyhow, it's a little less immediately obvious than in a language like Python or Ruby (or, for that matter, Lisps like Scheme or Common Lisp). Why is this? As I mentioned previously, Clojure, while technically an "impure" functional language (as in, side-effects are allowed), tries to treat side-effects as a special case; so, for instance, most data structures in Clojure are immutable. The `atom` construct in Clojure creates a reference type that can access shared, independent, mutable state. The `swap!` function allows the value of the atom to be updated.
 
 "Wait," you might exclaim, "that seems harder to work with! Aren't immutable data structures introducing complexity!?!?"
 
