@@ -6,19 +6,21 @@ comments: true
 categories: 
 ---
 
+### Machine Beauty
+
 In his essay [Machine Beauty](http://www.goodreads.com/book/show/107615.Machine_Beauty), David Gelernter defines "machine beauty" as an inspired mating of simplicity and power. In software, I think this is also what we mean when we talk about "elegance." 
 
 {% img http://photo.goodreads.com/books/1171573120l/107615.jpg 250 %}
 
 The Dijkstra quote that serves as a tagline for this blog is actually truncated; the full quote reads: 
 
-{% blockquote Edsgar Dijkstra %}
-"Elegance is not a dispensable luxury but a quality that decides between success and failure."
-{% endblockquote %}
+> Elegance is not a dispensable luxury but a quality that decides between success and failure.
 
 This is not (necessarily) an economic truth; few people would describe any product from Microsoft as elegant, but they have been economically successful. However, the painful experience of using Microsoft software, the unreliability of both systems and applications, the general clunkiness of Windows applications, indicates that the software here is indeed a failure.
 
 Software is a failure when it becomes an obstacle to productivity rather than an aid to it; when you must serve the compiler (or interpreter) rather than the compiler serving you (think Java boilerplate). From an end-user standpoint, the failure comes when the interface imposes unnatural workflows and ceremony that interrupts the natural flow of completing a task.
+
+### Simplicity Matters
 
 One of the most interesting (inspiring?) talks at [RailsConf](http://railsconf2012.com/) this year was Rich Hickey's keynote entitled "Simplicity Matters". Here's the video, you should watch it:
 
@@ -26,9 +28,11 @@ One of the most interesting (inspiring?) talks at [RailsConf](http://railsconf20
 
 One of the most important points he makes, early on in the talk, is that we often tend to conflate "simple" with "easy," and this is far from accurate. It's all too easy to complect the design of languages, systems, and applications, rather than maintain simplicity and elegance. He's kind of (allusively) hard on Rails, but not without reason. One of the ongoing efforts in the refactoring and continued development of Rails is to simplify the codebase as well as the APIs. 
 
+### Practical Elegance
+
 There are two modern programming languages that I think exemplify the marriage of power and simplicity that constitutes elegance. The first, which I use every day, is Ruby. 
 
-For instance consider the following accumulator generator in C++:
+For instance, consider the following accumulator generator in C++:
 
 ``` c++ Accumulator Generator http://www.paulgraham.com/accgen.html
 
@@ -51,7 +55,7 @@ struct Acc {
 
 ```
 
-Super clear, right? Readable? Avoids mutable state? 
+Super clear, right? Readable? Oh, yeah.
 
 Hardly. But maybe it's not fair to pick on C++, simplicity was (sadly) never a design goal.
 Python is a more modern programming language, it's designed to be easy for new programmers to learn.
@@ -67,7 +71,7 @@ class foo:
 
 ```
 
-Simpler than C++, sure. But you still have all these explicit calls to self, and a class definition that should be unnecessary in a functional construct like an accumulator generator.
+Simpler than C++, sure. But you still have all these explicit calls to self, and a class definition that should be unnecessary in a functional construct like an accumulator generator. It's an improvement, but still ugly as hell.
 
 Now let's look at Ruby:
 
@@ -85,6 +89,8 @@ Ruby makes the solution completely obvious.
 
 _Note: all examples above from [Paul Graham's website](http://www.paulgraham.com/accgen.html)_
 
+### Clojure
+
 The other language that has me in awe of its marriage of power and simplicity is [Clojure](http://clojure.org). Clojure is a Lisp dialect targeting the JVM, and I encourage anyone out there to explore it. I'm just getting my feet wet with Clojure, so I haven't attempted an example like above just yet (the emphasis on mutable state being the exception rather than the rule makes it a little less straightforward).
 
 But here's my answer to [Problem 26](https://4clojure.com/problem/26) on [4clojure](https://4clojure.com), which involves creating a Fibonacci sequence generator using only lambdas.
@@ -100,7 +106,19 @@ But here's my answer to [Problem 26](https://4clojure.com/problem/26) on [4cloju
 
 ```
 
-Okay, maybe not as pretty as Ruby, but Clojure has its own amazing properties I can't even begin to go into... but I will be posting more on Clojure in the future.
+Okay, maybe not as "pretty" as Ruby, but Clojure has its own amazing properties I can't even begin to go into... but I will be posting more on Clojure in the future.
+
+Anyhow, I just mentioned that implementing an accumulator generator in Clojure is "less straightforward" than in a language like Python or Ruby (or, for that matter, Lisps like Scheme or Common Lisp). Why is this? As I mentioned previously, Clojure, while technically an "impure" functional language (as in, side-effects are allowed), tries to keep side-effects to the side as a special case; so, for instance, most data structures in Clojure are immutable.
+
+"Wait," you might exclaim, "that seems harder to work with! Aren't immutable data structures introducing complexity!?!?"
+
+Clearly, if you share this opinion, you've never tried to deal with concurrency. Clojure's preference for immutable data structures isn't _easier_ than the usual acceptance of side-effects; but it is _simpler._ Making me think before I do an operation for side-effects in effect makes me think hard about many cases where I have an opportunity to complect my code. 
+
+I've heard the argument that Python's bondage-and-discipline approach to programmer freedom is comparable, but I call shenanigans. It's too much to go into here, but I think another day I'll go into everything that's wrong with "The Zen of Python."
+
+Anyhow... I thought these preliminary thoughts on what simplicity really means would be a good start for a blog entitled *Practical Elegance.*
+
+
 
 
 
