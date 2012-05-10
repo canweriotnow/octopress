@@ -22,7 +22,7 @@ This is not (necessarily) an economic truth; few people would describe any produ
 
 Software is a failure when it becomes an obstacle to productivity rather than an aid to it; when you must serve the compiler (or interpreter) rather than the compiler serving you (think Java boilerplate). From an end-user standpoint, the failure comes when the interface imposes unnatural workflows and ceremony that interrupts the natural flow of completing a task.
 
-Software is successful when you hardly notice it's there; when it becomes a natural extension of the self, an ugmentation to human ability. In terms of systems, think of the Macintosh when it was introduced; nothing before had been so intuitive, and enabling. In terms of programming languages, Ruby leaps immediately to mind. It is so expressive that it no longer feels like "coding"; you are just expressing your thoughts in a syntax that feels almost immediately as natural as a spoken language.
+Software is successful when you hardly notice it's there; when it becomes a natural extension of the self, an augmentation to human ability. In terms of systems, think of the Macintosh when it was introduced; nothing before had been so intuitive, and enabling. In terms of programming languages, Ruby leaps immediately to mind. It is so expressive that it no longer feels like "coding"; you are just expressing your thoughts in a syntax that feels almost immediately as natural as a spoken language.
 
 ### Simplicity Matters
 
