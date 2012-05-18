@@ -54,4 +54,6 @@ The argument from Python's BDFL was that `map()` and `reduce()` were confusing a
 
 Ruby has `#map` and `#reduce`, as well as `#collect` and `#inject`, which are aliases for the previous two methods (respectively). This doesn't stop you from iterating over lists instead, using generators, or anything else you'd like to do. It just seems like a combination of "I don't like the functional style, so nobody else can have it either," along with "this might confuse a newb, and we'll lose another convert!", or something.
 
+### 2. Beautiful is better than ugly.
+
 
