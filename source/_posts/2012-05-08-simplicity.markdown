@@ -24,6 +24,8 @@ Software is a failure when it becomes an obstacle to productivity rather than an
 
 Software is successful when you hardly notice it's there; when it becomes a natural extension of the self, an augmentation to human ability. In terms of systems, think of the Macintosh when it was introduced; nothing before had been so intuitive, and enabling. In terms of programming languages, Ruby leaps immediately to mind. It is so expressive that it no longer feels like "coding"; you are just expressing your thoughts in a syntax that feels almost immediately as natural as a spoken language.
 
+<!-- more -->
+
 ### Simplicity Matters
 
 One of the most interesting (inspiring?) talks at [RailsConf](http://railsconf2012.com/) this year was Rich Hickey's keynote entitled "Simplicity Matters". Here's the video, you should watch it:
