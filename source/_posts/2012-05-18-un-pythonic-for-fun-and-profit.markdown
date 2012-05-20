@@ -64,7 +64,11 @@ Sadly, I think it is quite clear that this is _not_ what the Python community me
 
 I can think of no better example than `lambda` in Python. Not only are Python lambdas a neutered shadow of lambdas in Ruby or Lisp, their mere existence irritated Python's BDFL to the point that he wanted to excise them from the language altogether. (For more on lambas (and other syntax) in Ruby and Python, read [this](http://peepcode.com/blog/2010/what-pythonistas-think-of-ruby) and then go watch [this](http://vimeo.com/9471538).)
 
-Now, I won't go into lambdas and why they matter here, I'm sure you know how to Google. The point is, that the Pythonic tendency when confronted with a distasteful construct, is to ban it from the language before implementation, remove it from the language, breaking backward-compatibility, or to make its userspace implementation impossible.
+Now, I won't go into lambdas and why they matter here, I'm sure you know how to Google. The point is that the Pythonic tendency, when confronted with a "distasteful" construct, seems fall into three categories (with possible overlap):
+
+- Ban it from the language before implementation
+- Remove it from the language, breaking backward-compatibility
+- Make its userspace implementation impossible.
 
 Pythonistas are typically horrified by the fact that in Ruby, you can monkey-patch `Object` and extend the language in novel ways. I'm not sure how most Python aficionados feel about Lisp ([Peter Norvig](http://norvig.com/python-lisp.html) notwithstanding), but I can't imagine them being too friendly toward macros.
 
@@ -74,7 +78,7 @@ The reason I called Python's concept of simplicity "shallow" is that it conflate
 
 Having multiple ways of doing something does not complect a programming language. Arbitrarily jumping between multiple possible implementations within the implementation of a single program _does_ complect that codebase, but that's why self-discipline is an important programmer trait. 
 
-Self-discipline is important. I don't need a programming language to impose this from without, and I _especially_ Guido making these decisions for me. I don't use [bondage-and-discipline languages](http://c2.com/cgi/wiki?BondageAndDisciplineLanguage), and neither should you.
+Self-discipline is important. I don't need a programming language to impose this from without, and I _especially_ don't want Guido making these decisions for me. I don't use [bondage-and-discipline languages](http://c2.com/cgi/wiki?BondageAndDisciplineLanguage), and neither should you.
 
 Seriously, guise.
 
