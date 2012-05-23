@@ -3,7 +3,7 @@ layout: post
 title: "Simplicity"
 date: 2012-05-08 10:15
 comments: true
-categories: 
+categories: simplicity, coding, beauty
 ---
 
 ### Machine Beauty

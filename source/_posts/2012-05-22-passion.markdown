@@ -1,0 +1,178 @@
+---
+layout: post
+title: "Passion, The Ultimate Virtue"
+date: 2012-05-22 20:04
+comments: true
+categories: coding, career
+---
+
+I'm finally reading [Chad Fowler](http://www.chadfowler.com)'s excellent book, [The Passionate Programmer](http://pragprog.com/book/cfcar2/the-passionate-programmer), and in it he recounts an experience that was chillingly familiar.
+
+A music major, Chad fell into working at his university's IT department as if by accident. Initially, he was worried that his lack of professional experience or training would prove an embarrassment; after all, here he was working alongside people with advanced degrees in computer science. 
+
+
+> Within a few days of work, the truth started to sink in. These people don't know what the hell they're doing! In fact, some people were watching me work and taking notes! People with master's degrees in computer science!
+
+
+{% img float-left /images/passionate-programmer.png %}
+
+I can definitely relate. I work at a university as well, and it's actually my first formal software development position. I've been coding as part of my job (and my full-time hobby) for years... as far back as high school, in fact. I learned BASIC on a Texas Instruments 99/4A when I was 4 or 5. But prior to this, my paid software development work had either been freelance stuff or encountering a problem in a non-technical job that I could solve faster by hacking something together.
+
+I work on a small team on which I'm the only full-time developer (I'll come back to this later). Recently, IT had a major re-org which put my team under a new director and in the same organizational unit as a large team of developers.
+
+<!-- more -->
+
+At first, I was super-excited... to actually have other developers I could at least bounce ideas off of? What a windfall! Then I found out our new director used to be a programmer herself! Fantastic!
+
+Our director actually is pretty fantastic, but my naïve illusions about these other developers were soon dispelled.
+
+## Meet the developers
+
+Shortly after the re-org, I started working a day a week at the campus where most of IT is centered rather than the main university campus where I usually work. At first it was okay; everyone I met seemed nice enough, and they had better coffee than the break room back at my usual location. 
+
+I think it was maybe the second time I went up there, I was eating lunch with some of of the devs from our new sister team, some of whom I was meeting for the first time. The conversation went something like this:
+
+Let's call my interlocutor Al, since I honestly can't recall the guy's name.
+
+------
+__Me:__ Hi, I'm Jason. 
+
+__Al:__ Hi Jason, I'm Al. So what do you do?
+
+__Me:__ Oh, I work on the J-Card team. I mostly work on custom web apps to interface with our legacy systems, but I'm starting to do some Android stuff as well.
+
+__Al:__ That's neat. I work on $boring_project. So what do you do for fun?
+
+__Me:__ I read a lot, and hack on open source projects as much as I can. I'm actually also working on teaching myself Lisp right now.
+
+__Al:__ Uh-huh. And what do you do with your other hand?
+
+--------
+
+Okay, for a moment I was almost speechless. Then I thought: _Okay, maybe I pegged this guy wrong as a developer. Business analyst, maybe?_
+
+Nope. This was a developer who (apparently?) hated programming. He basically said as much. Maybe not hated, but took no joy in it.
+
+This was actually pretty typical of many other developers I met up there. Not all, of course. There were a few gems amongst the stones.
+
+Suffice to say, I lost interest in being in that environment pretty quickly. So when I moved later that year, I wasn't too upset that the difficulty of commuting to that campus made it impractical to work from there on a regular basis.
+
+I'm not sure I realized it at the time, but I think the attitude toward coding I saw in those developers is _absolutely_ reflected in their product. 
+
+It's a mission-critical enterprise system which, to be fair, does its job effectively. But certainly _not_ elegantly.
+
+Like many projects here (and I'm sure it's not atypical of higher ed in general), that team works on a legacy, vendor-supplied product that has been customized, extended, and tweaked beyond recognition. 
+
+My job isn't that different.
+
+Except they have a team of 25 or so working on a project with a clunky, it's-obviously-ASP.NET web interface that users love to hate (actually, I think there's a lot of ASP classic, VB6, and other stuff going on behind the scenes, but I don't really want to know).
+
+Actually, not just users... one of the first pieces of my predecessor's code I looked at had a number of comments about this system, because my team has to pull data from it. I'll call that system HORUS (not its real name) for the purposes of illustration.
+
+``` perl horus-interface.pl
+
+    my @data = horus_data();
+    
+    # I'm going to stab HORUS in the face.
+    
+    my $converter = Text::Iconv->new("LATIN1","UTF8");
+    $converter->set_attr("transliterate");
+    
+    foreach my $record (@data) {
+      # HORUS lies about UTF-16. It's actually UTF-8 sprinkled with high-bit ASCII chars. Ffs.
+      $converter->convert($record);
+    
+    }
+```
+
+That's probably not even valid Perl, but the comments are basically verbatim (other than the name, of course).
+
+I'm one guy, armed only with Ruby, Rails, and sheer bloody-mindedness. Well, not alone anymore; we recently added 40% of an FTE to our team. So we have 1.4 people on development now; that's a 40% increase in staff in one year! Unthinkable!
+
+But, I digress.
+
+## It's just a job
+
+I think it's easy to build a crap product when it's just a job. If I was given the choice between being associated with a crap product and finding a new job, I'd be out the door; but apparently that's just me.
+
+Dealing with legacy systems is hard, and often thankless. But it's no excuse. I think if you _love_ code, and have a passion both for writing code, and for code that not only compiles and runs, but that is elegant, even beautiful, it's makes all the difference in the world.
+
+Not that I don't have some skeletons in the closet. Or, at least, some crawling, eldritch horrors in the codebase. The first application I wrote, for administrative users, is something I've been begging to rewrite, because I can't stand maintaining it. Someday that'll happen. Then I'll have decent test coverage and all the other things I wish I'd done right the first time.
+
+But the fact that (by my standards) a sloppy, poorly tested monstrosity is in production, and _I'm_ responsible for it... I literally lose sleep over this. 
+
+I don't think Al even thinks about how stable, orthogonal, or DRY his code is when he commits it, much less once it's been running in production for a year and only breaks down or corrupts data on edge cases.
+
+It's not just that, though. 
+
+I will never trust a developer who only codes from 9 to 5. _Especially_ one who works on an enterprise-y system. Enterprise-y systems are rarely fun. So if you don't get your programming jollies at work (or, if jollies are an occasional perk rather than a frequent occurrence), you've got to get them hacking on an open source project, or some prototype for this crazy start-up you might do one day, right?
+
+Unless you _don't get_ jollies. At least, not from coding.
+
+I don't understand how this can even be possible, but the evidence is overwhelming that there are people out there, working professionally as software developers, who don't care for it all that much.
+
+
+
+I have a feeling that developer apathy is the root cause of a _lot_ of bad software.
+
+
+
+If you are truly passionate about building beautiful, reliable systems that solve real problems for real people, you don't work 9 to 5. You go home and hack on open source projects. Maybe just for fun, maybe to learn something new, maybe to scratch an itch. Perhaps it's a library you want to use at work, but it just needs one more feature to be a good fit. 
+
+You read blogs and mailing lists to stay on top of the latest developments in the languages and frameworks you use, so you can use them more effectively.
+
+You learn new languages, and play with new frameworks, because it's fun, and it makes you better at what you do.
+
+You learn a Lisp, or maybe Haskell, just because you heard it will be both challenging and rewarding.
+
+You follow people like [@chadfowler](https://twitter.com/#!/chadfowler), [@steveklabnik](https://twitter.com/#!/steveklabnik), and [@fogus](https://twitter.com/#!/fogus) on Twitter because you'll learn from them, be entertained, and interact with really, really smart people, even if in 140-character bursts.
+
+You join a local user group, go to hackfests, seek out people who won't zone out when you wax poetic about how _fucking cool_ Clojure is. Or whatever you're on about this week.
+
+You get a lambda (inside parentheses!) tattooed on your forearm.
+
+Okay, maybe that last one is just me.
+
+You always try to be the worst guy in every band you're in.
+
+## Being the worst
+
+This is probably the one thing that really chafes about my current job. Working on a team with 1.4 developers is hard enough; when you're the de facto lead developer, and fairly isolated in terms of problem domain, physical location, and platform, it's hard to find someone better to spot your WTFs, suggest refactorings, etc.
+
+Working on open source projects helps, and there's always IRC, and [Stack Overflow](http://stackoverflow.com). The newer Stack Exchange site, [Code Review](http://codereview.stackexchange.com), as well as [Programmers](http://programmers.stackexchange.com) are also fantastic resources.
+
+Whether you're on a team with many senior developers, or a lone wolf, however, having mentors or resources available isn't enough. You have to care about your craft enough to take advantage of whatever is available, because improving your craft _matters._
+
+## Virtues
+
+I used to do a lot of Perl coding. I taught myself Perl in high school, and it was probably one of the best things I ever did.
+
+{% img float-right http://imgs.xkcd.com/comics/11th_grade.png %}
+
+I used Perl a lot, and though I never did fully grasp the full depth of references in Perl ( although that may actually [be an indicator of sanity](https://sites.google.com/site/steveyegge2/ancient-languages-perl)), I loved certain things about the philosophy. Or, at least, the philosophy behind the philosophy. The idea that the chief virtues of a programmer were [laziness, impatience, and hubris](http://c2.com/cgi/wiki?LazinessImpatienceHubris) struck a chord with me. If you read [Programming Perl](http://www.oreilly.com/catalog/pperl3/), a clear distinction is made between _true_ laziness, impatience, and hubris, and a false, _shallow_ laziness, impatience, and hubris. I think the true versions of these virtues stem from an even deeper virtue: passion. 
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Bz2-49q6DOI" frameborder="0" allowfullscreen></iframe>
+
+Passion is such a hackneyed concept nowadays that it has become almost meaningless. Which is maybe part of the reason I procrastinated for so long before picking up _The Passionate Programmer_ (sorry, Chad!). But I think in a very real sense, what the best developers have in common is a true _passion_ for writing code and building systems. 
+
+
+> **Passion** (from the Ancient Greek verb πάσχω (paskho) meaning to suffer) is a term applied to a very strong feeling about a person or thing. Passion is an intense emotion compelling feeling, enthusiasm, or desire for something.
+
+\- [Wikipedia]("http://en.wikipedia.org/wiki/Passion_(emotion)")
+
+
+I think those of us who truly care do _suffer_ for our software. We drive ourselves mad hunting down [heisenbugs](http://www.catb.org/jargon/html/H/heisenbug.html) and corner cases, stay up nights obsessively scratching this or that itch, lie awake mentally refactoring a junk-drawer class that has been bothering us for weeks, and even stay in jobs where we're underpaid and overworked (for a while, at least) just because we're given reasonable autonomy and the chance to hack on something really _cool._
+
+## Conclusion
+
+We have enough mediocre developers. If we ever don't have a local surplus, there are plenty waiting in the wings. That's what off-shoring is for. 
+
+If you're thinking of learning to code because it seems like a solid career choice, rather than out of an inner compulsion, [please don't](http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html).
+
+I love meeting programmers. I have far too many friends whose eyes glaze over when I talk about the cool tricks Clojure employs to get around the JVM's lack of tail-call optimization.
+
+But when I meet someone who is actively creating software, who doesn't even express the slightest curiosity about virtual machines or tail recursion... it depresses the hell out of me.
+
+Anyhow... go read Chad's book. And *love the hell out of* coding, or GTFO. There are plenty of jobs out there for you to hate; please stop diluting the overall quality of the world's software through sheer apathy.
+
+__Update:__ As per usual, Paul Graham [has this topic covered](http://paulgraham.com/love.html). I just discovered his "How To Do What You Love" essay, however, so it's new to me. But you should read that, too.
