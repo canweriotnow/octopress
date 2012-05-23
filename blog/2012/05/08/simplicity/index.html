@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Simplicity - Practical Elegance</title>
+  <meta name="author" content="Jason Lewis">
+
+  
+  <meta name="description" content="Machine Beauty In his essay Machine Beauty, David Gelernter defines &#8220;machine beauty&#8221; as an inspired mating of simplicity and power. In &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://canweriotnow.github.com/blog/2012/05/08/simplicity">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="Practical Elegance" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22978638-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Practical Elegance</a></h1>
+  
+    <h2>"Elegance is not a dispensable luxury." - Edsgar Dijkstra</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:canweriotnow.github.com" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Simplicity</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-08T10:15:00-04:00" pubdate data-updated="true">2012-05-08</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3>Machine Beauty</h3>
+
+<p>In his essay <a href="http://www.goodreads.com/book/show/107615.Machine_Beauty">Machine Beauty</a>, David Gelernter defines &#8220;machine beauty&#8221; as an inspired mating of simplicity and power. In software, I think this is also what we mean when we talk about &#8220;elegance.&#8221;</p>
+
+<p><img src="http://photo.goodreads.com/books/1171573120l/107615.jpg" width="250"></p>
+
+<p>The Dijkstra quote that serves as a tagline for this blog is actually truncated; the full quote reads:</p>
+
+<blockquote><p>Elegance is not a dispensable luxury but a quality that decides between success and failure.</p></blockquote>
+
+<p>This is not (necessarily) an economic truth; few people would describe any product from Microsoft as elegant, but they have been economically successful. However, the painful experience of using Microsoft software, the unreliability of both systems and applications, the general clunkiness of Windows applications, indicates that the software here is indeed a failure.</p>
+
+<p>Software is a failure when it becomes an obstacle to productivity rather than an aid to it; when you must serve the compiler (or interpreter) rather than the compiler serving you (think Java boilerplate). From an end-user standpoint, the failure comes when the interface imposes unnatural workflows and ceremony that interrupts the natural flow of completing a task.</p>
+
+<h3>Simplicity Matters</h3>
+
+<p>One of the most interesting (inspiring?) talks at <a href="http://railsconf2012.com/">RailsConf</a> this year was Rich Hickey&#8217;s keynote entitled &#8220;Simplicity Matters&#8221;. Here&#8217;s the video, you should watch it:</p>
+
+<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/rI8tNMsozo0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>One of the most important points he makes, early on in the talk, is that we often tend to conflate &#8220;simple&#8221; with &#8220;easy,&#8221; and this is far from accurate. It&#8217;s all too easy to complect the design of languages, systems, and applications, rather than maintain simplicity and elegance. He&#8217;s kind of (allusively) hard on Rails, but not without reason. One of the ongoing efforts in the refactoring and continued development of Rails is to simplify the codebase as well as the APIs.</p>
+
+<h3>Practical Elegance</h3>
+
+<p>There are two modern programming languages that I think exemplify the marriage of power and simplicity that constitutes elegance. The first, which I use every day, is Ruby.</p>
+
+<p>For instance, consider the following accumulator generator in C++:</p>
+
+<figure class='code'><figcaption><span>Accumulator Generator </span><a href='http://www.paulgraham.com/accgen.html'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span><span class='line'><span class="k">struct</span> <span class="n">Acc</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">Acc</span><span class="p">(</span><span class="n">T</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">:</span> <span class="n">n</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">U</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="n">Acc</span><span class="p">(</span><span class="k">const</span> <span class="n">Acc</span><span class="o">&lt;</span><span class="n">U</span><span class="o">&gt;&amp;</span> <span class="n">u</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">:</span> <span class="n">n</span><span class="p">(</span><span class="n">u</span><span class="p">.</span><span class="n">n</span><span class="p">)</span> <span class="p">{}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">U</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="n">T</span> <span class="k">operator</span><span class="p">()(</span><span class="n">U</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span> <span class="o">+=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">T</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Super clear, right? Readable? Oh, yeah.</p>
+
+<p>Hardly. But maybe it&#8217;s not fair to pick on C++, simplicity was (sadly) never a design goal.
+Python is a more modern programming language, it&#8217;s designed to be easy for new programmers to learn.</p>
+
+<figure class='code'><figcaption><span>Accumulator Generator </span><a href='http://www.paulgraham.com/accgen.html'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">foo</span><span class="p">:</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span><span class='line'>    <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+</span><span class='line'>    <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">+=</span> <span class="n">i</span>
+</span><span class='line'>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Simpler than C++, sure. But you still have all these explicit calls to self, and a class definition that should be unnecessary in a functional construct like an accumulator generator. It&#8217;s an improvement, but still ugly as hell.</p>
+
+<p>Now let&#8217;s look at Ruby:</p>
+
+<figure class='code'><figcaption><span>Accumulator Generator </span><a href='http://www.paulgraham.com/accgen.html'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">foo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">lambda</span> <span class="p">{</span><span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="n">n</span> <span class="o">+=</span> <span class="n">i</span> <span class="p">}</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Wow. Three lines of code (although it could be written in one). If you understand lambdas, it&#8217;s obvious what&#8217;s going on here at a glance. You initalize <code>foo</code> with a value, and it returns a lambda that will accumulate any values passed to it.</p>
+
+<p>Ruby makes the solution completely obvious.</p>
+
+<p><em>Note: all examples above from <a href="http://www.paulgraham.com/accgen.html">Paul Graham&#8217;s website</a></em></p>
+
+<h3>Clojure</h3>
+
+<p>The other language that has me in awe of its marriage of power and simplicity is <a href="http://clojure.org">Clojure</a>. Clojure is a Lisp dialect targeting the JVM, and I encourage anyone out there to explore it. I&#8217;m just getting my feet wet with Clojure, so I haven&#8217;t attempted an example like above just yet (the emphasis on mutable state being the exception rather than the rule makes it a little less straightforward).</p>
+
+<p>But here&#8217;s my answer to <a href="https://4clojure.com/problem/26">Problem 26</a> on <a href="https://4clojure.com">4clojure</a>, which involves creating a Fibonacci sequence generator using only lambdas.</p>
+
+<figure class='code'><figcaption><span>Fibonacci Generator</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">n</span><span class="p">]</span>
+</span><span class='line'>  <span class="p">(</span><span class="nb">take </span><span class="nv">n</span>
+</span><span class='line'>    <span class="p">(</span><span class="nb">map </span><span class="nv">first</span>
+</span><span class='line'>      <span class="p">(</span><span class="nb">iterate </span>
+</span><span class='line'>        <span class="p">(</span><span class="k">fn </span><span class="p">[[</span><span class="nv">a</span> <span class="nv">b</span><span class="p">]]</span>
+</span><span class='line'>          <span class="p">(</span><span class="nb">vector </span><span class="nv">b</span> <span class="p">(</span><span class="nb">+ </span><span class="nv">a</span> <span class="nv">b</span><span class="p">)))</span> <span class="p">[</span><span class="mi">1</span> <span class="mi">1</span><span class="p">])))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Okay, maybe not as &#8220;pretty&#8221; as Ruby, but Clojure has its own amazing properties I can&#8217;t even begin to go into&#8230; but I will be posting more on Clojure in the future.</p>
+
+<p>Anyhow, I just mentioned that implementing an accumulator generator in Clojure is &#8220;less straightforward&#8221; than in a language like Python or Ruby (or, for that matter, Lisps like Scheme or Common Lisp). Why is this? As I mentioned previously, Clojure, while technically an &#8220;impure&#8221; functional language (as in, side-effects are allowed), tries to keep side-effects to the side as a special case; so, for instance, most data structures in Clojure are immutable.</p>
+
+<p>&#8220;Wait,&#8221; you might exclaim, &#8220;that seems harder to work with! Aren&#8217;t immutable data structures introducing complexity!?!?&#8221;</p>
+
+<p>Clearly, if you share this opinion, you&#8217;ve never tried to deal with concurrency. Clojure&#8217;s preference for immutable data structures isn&#8217;t <em>easier</em> than the usual acceptance of side-effects; but it is <em>simpler.</em> Making me think before I do an operation for side-effects in effect makes me think hard about many cases where I have an opportunity to complect my code.</p>
+
+<p>I&#8217;ve heard the argument that Python&#8217;s bondage-and-discipline approach to programmer freedom is comparable, but I call shenanigans. It&#8217;s too much to go into here, but I think another day I&#8217;ll go into everything that&#8217;s wrong with &#8220;The Zen of Python.&#8221;</p>
+
+<p>Anyhow&#8230; I thought these preliminary thoughts on what simplicity really means would be a good start for a blog entitled <em>Practical Elegance.</em></p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jason Lewis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-08T10:15:00-04:00" pubdate data-updated="true">2012-05-08</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://canweriotnow.github.com/blog/2012/05/08/simplicity/" data-via="canweriotnow" data-counturl="http://canweriotnow.github.com/blog/2012/05/08/simplicity/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/05/08/starting-over/" title="Previous Post: Starting Over">&laquo; Starting Over</a>
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/05/08/simplicity/">Simplicity</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/05/08/starting-over/">Starting Over</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/canweriotnow">@canweriotnow</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'canweriotnow',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("canweriotnow", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/canweriotnow" class="twitter-follow-button" data-show-count="false">Follow @canweriotnow</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/canweriotnow?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/canweriotnow">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/110736810583208350607?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jason Lewis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'canweriotnow';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://canweriotnow.github.com/blog/2012/05/08/simplicity/';
+        var disqus_url = 'http://canweriotnow.github.com/blog/2012/05/08/simplicity/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
