@@ -32,16 +32,16 @@ Shortly after the re-org, I started working a day a week at the campus where mos
 
 I think it was maybe the second time I went up there, I was eating lunch with some of of the devs from our new sister team, some of whom I was meeting for the first time. The conversation went something like this:
 
-Let's call my interlocutor Al, since I honestly can't recall the guy's name.
+Let's call my interlocutor Al.
 
 ------
 __Me:__ Hi, I'm Jason. 
 
 __Al:__ Hi Jason, I'm Al. So what do you do?
 
-__Me:__ Oh, I work on the J-Card team. I mostly work on custom web apps to interface with our legacy systems, but I'm starting to do some Android stuff as well.
+__Me:__ Oh, I'm on the ID Services team. I mostly work on custom web apps to interface with our legacy systems, but I'm starting to do some Android stuff as well.
 
-__Al:__ That's neat. I work on $boring_project. So what do you do for fun?
+__Al:__ That's neat. I work on $some_project. So what do you do for fun?
 
 __Me:__ I read a lot, and hack on open source projects as much as I can. I'm actually also working on teaching myself Lisp right now.
 
@@ -85,7 +85,7 @@ Actually, not just users... one of the first pieces of my predecessor's code I l
     }
 ```
 
-That's probably not even valid Perl, but the comments are basically verbatim (other than the name, of course).
+The Perl is probably all wrong, but the comments are basically verbatim (other than the name, of course).
 
 I'm one guy, armed only with Ruby, Rails, and sheer bloody-mindedness. Well, not alone anymore; we recently added 40% of an FTE to our team. So we have 1.4 people on development now; that's a 40% increase in staff in one year! Unthinkable!
 
