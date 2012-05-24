@@ -2,12 +2,12 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://canweriotnow.github.com
+url: http://blog.decomplecting.org
 title: Practical Elegance
 subtitle: '"Elegance is not a dispensable luxury." - Edsgar Dijkstra'
 author: Jason Lewis
 simple_search: http://google.com/search
-description:
+description: 
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in

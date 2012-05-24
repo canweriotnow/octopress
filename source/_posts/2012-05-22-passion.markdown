@@ -160,7 +160,6 @@ Passion is such a hackneyed concept nowadays that it has become almost meaningle
 
 \- [Wikipedia]("http://en.wikipedia.org/wiki/Passion_(emotion)")
 
-
 I think those of us who truly care do _suffer_ for our software. We drive ourselves mad hunting down [heisenbugs](http://www.catb.org/jargon/html/H/heisenbug.html) and corner cases, stay up nights obsessively scratching this or that itch, lie awake mentally refactoring a junk-drawer class that has been bothering us for weeks, and even stay in jobs where we're underpaid and overworked (for a while, at least) just because we're given reasonable autonomy and the chance to hack on something really _cool._
 
 ## Conclusion
