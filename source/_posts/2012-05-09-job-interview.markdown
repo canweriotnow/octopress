@@ -6,7 +6,7 @@ comments: true
 categories: ruby, gems, funny
 ---
 
-So, I just wanted to plug a cute little project that [Micah Gates](https://twitter.com/#!/micahjgates) and I hacked together at [BohConf](http://railsconf.austinonrails.org/bohconf), the awesome un-conference and hackfest that runs parallel to [RailsConf](http://railsconf2012.com) each year.
+So, I wanted to plug a little project that [Micah Gates](https://twitter.com/#!/micahjgates) and I hacked together at [BohConf](http://railsconf.austinonrails.org/bohconf), the awesome un-conference and hackfest that runs parallel to [RailsConf](http://railsconf2012.com) each year.
 
 It's called [job_interview](https://github.com/ruby-jokes/job_interview), and it's a Ruby gem to automate some of the tedium of programmer job interviews.
 

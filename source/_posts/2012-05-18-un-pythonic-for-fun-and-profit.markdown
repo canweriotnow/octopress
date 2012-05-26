@@ -88,4 +88,4 @@ I don't care what your philosophy is, passing `self` as an explicit parameter is
 
 ### Finally...
 
-Well, there was more I was planning to cover, but this post is long enough as it is. I'll probably do a follow-up at some point in the future. If you think I'm completely wrong, or just wrong on any of the points here, tell me why (nicely, please) in the comments.
+Well, there was more I was planning to cover, but this post is long enough as it is. I'll probably do a follow-up at some point in the future. If you think I'm completely wrong, or just wrong on any of the points here, tell me why (preferably civilly) in the comments.
