@@ -3,7 +3,7 @@ layout: post
 title: "Un-Pythonic for Fun and Profit"
 date: 2012-05-18 15:01
 comments: true
-categories: [python, languages, coding]
+categories: python, languages, coding
 ---
 
 This post isn't meant to play into some hacker holy war, nor is it intended to denigrate the usefulness of Python for various tasks. Steve Yegge has done [a much better job than I can](https://sites.google.com/site/steveyegge2/tour-de-babel) of explicating some of the issues other programmers have with Python, both the language and the community around it; I still agree with his remarks there.

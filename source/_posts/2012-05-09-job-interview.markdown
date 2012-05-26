@@ -3,7 +3,7 @@ layout: post
 title: "job_interview"
 date: 2012-05-09 13:14
 comments: true
-categories: [ruby, gems, funny]
+categories: ruby, gems, funny
 ---
 
 So, I just wanted to plug a cute little project that [Micah Gates](https://twitter.com/#!/micahjgates) and I hacked together at [BohConf](http://railsconf.austinonrails.org/bohconf), the awesome un-conference and hackfest that runs parallel to [RailsConf](http://railsconf2012.com) each year.

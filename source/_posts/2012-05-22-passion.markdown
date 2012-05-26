@@ -3,7 +3,7 @@ layout: post
 title: "Passion, The Ultimate Virtue"
 date: 2012-05-22 20:04
 comments: true
-categories: [coding, career, passion]
+categories: coding, career
 ---
 
 I'm finally reading [Chad Fowler](http://www.chadfowler.com)'s excellent book, [The Passionate Programmer](http://pragprog.com/book/cfcar2/the-passionate-programmer), and in it he recounts an experience that was chillingly familiar.
@@ -112,9 +112,9 @@ Unless you _don't get_ jollies. At least, not from coding.
 I don't understand how this can even be possible, but the evidence is overwhelming that there are people out there, working professionally as software developers, who don't care for it all that much.
 
 
-{% pullquote %}
-{" I have a feeling that developer apathy is the root cause of a lot of the worst software out there. "}
-{% endpullquote %}
+
+I have a feeling that developer apathy is the root cause of a _lot_ of bad software.
+
 
 
 If you are truly passionate about building beautiful, reliable systems that solve real problems for real people, you don't work 9 to 5. You go home and hack on open source projects. Maybe just for fun, maybe to learn something new, maybe to scratch an itch. Perhaps it's a library you want to use at work, but it just needs one more feature to be a good fit. 
@@ -155,10 +155,10 @@ I used Perl a lot, and though I never did fully grasp the full depth of referenc
 
 Passion is such a hackneyed concept nowadays that it has become almost meaningless. Which is maybe part of the reason I procrastinated for so long before picking up _The Passionate Programmer_ (sorry, Chad!). But I think in a very real sense, what the best developers have in common is a true _passion_ for writing code and building systems. 
 
-{% blockquote Wikipedia, http://en.wikipedia.org/wiki/Passion_(emotion) %}
-**Passion** (from the Ancient Greek verb πάσχω (paskho) meaning to suffer) is a term applied to a very strong feeling about a person or thing. Passion is an intense emotion compelling feeling, enthusiasm, or desire for something.
-{% endblockquote %}
 
+> **Passion** (from the Ancient Greek verb πάσχω (paskho) meaning to suffer) is a term applied to a very strong feeling about a person or thing. Passion is an intense emotion compelling feeling, enthusiasm, or desire for something.
+
+\- [Wikipedia]("http://en.wikipedia.org/wiki/Passion_(emotion)")
 
 I think those of us who truly care do _suffer_ for our software. We drive ourselves mad hunting down [heisenbugs](http://www.catb.org/jargon/html/H/heisenbug.html) and corner cases, stay up nights obsessively scratching this or that itch, lie awake mentally refactoring a junk-drawer class that has been bothering us for weeks, and even stay in jobs where we're underpaid and overworked (for a while, at least) just because we're given reasonable autonomy and the chance to hack on something really _cool._
 
