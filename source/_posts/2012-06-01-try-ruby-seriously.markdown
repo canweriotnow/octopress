@@ -34,7 +34,7 @@ Pretty much everyone starts with procedural code. That's okay, it's a start. But
 
 #### Se habla Ruby
 
-When it's a friend asking for advice, I'm fully expecting to be answering questions when they can't find an answer on [StackOverflow](http://stackoverflow.com). If they're learning Ruby, there's the advantage that I will probably be able to help with > 99% of their problems without Googling. Granted, this is true of a number of languages, but I probably wouldn't suggest that someone compeltley new to programming start out with C, Scheme, Javascript, Clojure, or Perl just because I happen to know my way around them.
+When it's a friend asking for advice, I'm fully expecting to be answering questions when they can't find an answer on [StackOverflow](http://stackoverflow.com). If they're learning Ruby, there's the advantage that I will probably be able to help with > 99% of their problems without Googling. Granted, this is true of a number of languages, but I probably wouldn't suggest that someone completley new to programming start out with C, Java, Scheme, Javascript, Clojure, or Perl just because I happen to know my way around them.
 
 Finally, I like introducing people to Ruby because it's a language optimized for programmer happiness.
 
