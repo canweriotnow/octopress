@@ -3,7 +3,7 @@ layout: post
 title: "Internet Culture 101"
 date: 2012-07-03 15:39
 comments: true
-categories: 
+categories: [internet, cultural studies, trolling, twitter]
 ---
 
 Last night, I encountered some [trollbait](http://www.urbandictionary.com/define.php?term=TROLL%20BAIT) on [Twitter](https://twitter.com), and I bit. I generally try really, really hard not to troll on Twitter, but sometimes the draw of the bait overcomes the will. 
