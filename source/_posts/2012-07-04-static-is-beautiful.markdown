@@ -14,6 +14,8 @@ This blog, for instance, is generated from [Markdown](http://daringfireball.net/
 
 This post was prompted by one of the auto-tweets by [@rubygems](https://twitter.com/rubygems), about yet another static site generation tool called [gumdrop](https://rubygems.org/gems/gumdrop). I've been playing with a few different static site generation tools, so first I'd like to survey a few examples, and then I'll talk about why I think they matter.
 
+<!-- more -->
+
 ### Jekyll
 
 [Jekyll](https://github.com/mojombo/jekyll) is kinda the all-father of the current crop of static site generators. Created by [Tom Preston-Werner](http://tom.preston-werner.com/) of [GitHub](https://github.com), it powers many, many [GitHub Pages](http://pages.github.com/) sites, and is pretty much pure awesomesauce. It's very bare bones, but that's what allows for such enormous flexibility. It's also what allows Jekyll to serve as the backbone of something like Octopress.
