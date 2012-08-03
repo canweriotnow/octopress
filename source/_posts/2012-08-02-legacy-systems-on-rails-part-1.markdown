@@ -18,6 +18,8 @@ Anyhow, the first time around, I wrote an ActiveRecord model for each table, did
 
 When the project scope started to grow beyond a single web app, and I started designing a REST API for the system, I had the opportunity to scratch some of the itches that had been bugging me about the original implementation from the very beginning.
 
+<!--more-->
+
 ### When Good Patterns Go Bad
 
 The first thing I needed to do was to solve an issue with the EAV tables. EAV (Entity-Attribute-Value) is an okay model for sparse data. Somehow, the designers of this system decided to use it for custom fields where **every** entity has **every** attribute. When a custom field is added, a row is inserted in the definition table for the attribute. Then a row is inserted in the value table for **every single customer.** It's slow, to say the least. In the original (naive) implementation, this meant every time a new attribute definition was added, I added an association to the Customer class. And there are a *lot* of attributes.

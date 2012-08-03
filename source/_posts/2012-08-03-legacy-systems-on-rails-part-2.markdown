@@ -16,6 +16,8 @@ Then you remember the [Julian day](http://en.wikipedia.org/wiki/Julian_day) syst
 
 If you have ever considered something like this, step away from the computer. I'm revoking your programmer license. Leaving aside the general inaccuracy of floats (you wouldn't use a float to represent money, why the hell would it be a good idea for time?), there are _existing datatypes_ for this! Moving on...
 
+<!--more-->
+
 ### Monkey-patching to the rescue!
 
 Since datetimes are represented as floating-point values internally, we'll need to have a way of converting between those and normal datetime types. So I'll start by introducing a few monkey-patches in an intializer, so they get loaded before anything else.
