@@ -39,15 +39,16 @@ class ::Float
   end
   
   def to_time
-    t = self.vendor_to_dt
-    Time.zone.local(t.year, t.month, t.day, t.hour, t.minute, t.second)
+    t = self.vendor_to_dt.in_time_zone
   end
 end
 
 
 class ::DateTime
   def to_vendor
-    time = self.ajd.to_f - SG2
+    # This next one looks stupid but it's necessary
+    time = DateTime.parse(self.strftime('%Y-%m-%dT%H:%M:%S'))
+    time.ajd.to_f - SG2
   end
 end
 
@@ -63,7 +64,26 @@ class ::Date
   end
 end
 
-
 {% endcodeblock %}
 
 
+So now Float, Date, DateTime and Time can all convert happily (well, mayby not happily) back and forth and we can deal with something reasonable in our classes, like so:
+
+{% codeblock Customer lang:ruby %}
+class Customer
+  
+  def opendatetime
+    read_attribute(:opendatetime).to_time
+  end
+
+  def opendatetime=(time)
+    write_attribute(:opendatetime, time.to_vendor)
+  end
+
+end
+
+{% endcodeblock %}
+
+I specifically didn't use `to_f` as the method on Time, Date, etc. because I wanted to be clear this wasn't just a Float, it was a vendor-specific implementation.
+
+Anyhow, that's it for this one. As usual, comments, etc.
