@@ -6,7 +6,7 @@ comments: true
 categories: [web, generators, ruby, blogging]
 ---
 
-[My last post](/blog/2012/07/03/internet-culture-101/) was a bit off-topic, so I want to return to the core subject matter of this blog, elegance and simplicity in technology.
+I want to return to the core sfocus of this blog, elegance and simplicity in technology, but in kind of a meta way.
 
 One trend that seems to be popping up again and again is the move away from over-featured and unmanageable content management systems (I'm looking at you, [Wordpress](http://wordpress.org/)), and toward static site generators. 
 
@@ -51,13 +51,13 @@ It's pretty simple, actually. It all comes down to Wordpress.
 <blockquote class="twitter-tweet tw-align-center"><p>And there's only one thing worse in my eyes than PHP, and that's Wordpress PHP <a href="http://t.co/C40EfvOD" title="http://buff.ly/LkQIWH">buff.ly/LkQIWH</a></p>&mdash; Michael Robinson (@pagesofinterest) <a href="https://twitter.com/pagesofinterest/status/220254607849426946" data-datetime="2012-07-03T20:36:05+00:00">July 3, 2012</a></blockquote>
 <script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-We all *know* PHP is [a terrible excuse for a programming language](http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/), and also that the blogging platform wars, until recently, came down to only WordPress vs.  [Blogger](http://www.blogger.com). Of course, [Tumblr](http://tumblr.com) and [Postero.us](http://postero.us) have breathed new life into the blogging platform wars. But unless you wanted only the most basic features a hosted platform (everything but WordPress, honestly) provided, you'd need to settle on WordPress, because as an open-source platform, it had this ~~great~~ almost usable ecosystems of custom plugins. And somehow, the blogging community convinced ourselves we *needed* this plugin marketplace.
+We all *know* PHP is [a terrible excuse for a programming language](http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/), and also that the blogging platform wars, until recently, came down to only WordPress vs. [Blogger](http://www.blogger.com). Of course, [Tumblr](http://tumblr.com) and [Postero.us](http://postero.us) have breathed new life into a limited set of choices. But unless you wanted only the most basic features a hosted platform (everything but WordPress, honestly) provided, you'd need to settle on WordPress, because as an open-source platform, it had this ~~great~~ almost usable ecosystems of custom plugins. And somehow, the blogging community convinced ourselves we *needed* this plugin marketplace.
 
-Now, don't get me wrong. As economies go, the WordPress plugin market has proved a lucrative environment for many freelance PHP developers I know. Mind you, because they were writing WordPress PHP 8-10 hours a day, their mental states ranged between suicidal and psychotic, but we all have our limits.
+Now, don't get me wrong. As economies go, the WordPress plugin market has proved a lucrative environment for many freelance PHP developers I know. Mind you, because they were writing WordPress PHP 8-10 hours a day, their mental states ranged between suicidal and psychotic... we all have our limits.
 
 The need for a sane solution to this problem is, I think, what led to the development of blogging engines like [typo](http://fdv.github.com/typo/).
 
-And, I think, the attempt to build a new, saner, databased-backed, comprehensive, blog-aware CMS system learned that a databased-backed, comprehensive, blog-aware CMS system is a whole bunch of [YAGNI](databased-backed, comprehensive, blog-aware CMS system) features rolled up in a big, painful bundle. 
+And, I think, the attempt to build a new, saner, databased-backed, comprehensive, blog-aware CMS system learned that a databased-backed, comprehensive, blog-aware CMS system is a whole bunch of [YAGNI](http://en.wikipedia.org/wiki/You_ain't_gonna_need_it) features rolled up in a big, painful bundle. 
 
 Why not just generate your blog posts when you write them? Why not just use Javascript for whatever dynamic widgets you need? It's all HTML in the end, right?
 
