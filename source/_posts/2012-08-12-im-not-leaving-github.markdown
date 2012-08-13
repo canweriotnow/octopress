@@ -47,5 +47,7 @@ And then we wanted everything to be that slick and clicky. Sclicky.
 
 Or, someone decided we should want that. And the default response to a feature request in the open source world went from "Where's your patch?" to "Where's your pull request?"
 
+Note: go back to the app.net article about why github > sourceforge, ad support, etc.
 
+@jeg2 @steveklabnik lead with wrong article <-  this
 
