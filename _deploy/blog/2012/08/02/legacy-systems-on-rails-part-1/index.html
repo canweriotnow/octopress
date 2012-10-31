@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Legacy Systems on Rails (Part 1) - Practical Elegance</title>
+  <meta name="author" content="Jason Lewis">
+
+  
+  <meta name="description" content="Much of my job consists of providing customized or novel interfaces for a complex legacy system which, although still maintained by the vendor (who &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/PracticalElegance" rel="alternate" title="Practical Elegance" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Dosis|Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" >
+
+if (window.top !== window.self) {
+
+document.write = "";
+
+window.top.location = window.self.location; setTimeout(function(){
+
+document.body.innerHTML='';
+
+},1);
+
+window.self.onload=function(evt){
+
+document.body.innerHTML='';
+
+};
+
+}
+
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22978638-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Practical Elegance</a></h1>
+  
+    <h2>"Elegance is not a dispensable luxury." - Edsgar Dijkstra</h2>
+  
+</hgroup>
+
+
+  <a href="https://github.com/canweriotnow">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+  </a>
+
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/PracticalElegance" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:decomplecting.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Legacy Systems on Rails (Part 1)</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-02T14:48:00-04:00" pubdate data-updated="true">2012-08-02</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Much of my job consists of providing customized or novel interfaces for a complex legacy system which, although still maintained by the vendor (who shall remain nameless), does not currently (nor do I ever expect it to) meet many of our institutional needs.</p>
+
+<p>Since I spend a lot of time on this, I figured it would be a good topic for a series of posts, hence the &#8220;Part 1&#8221; in the title. Hopefully I&#8217;ll actually follow through on it.</p>
+
+<p>The first thing I did was to replace a few aging Perl CGI scripts with a Rails app, which was interesting. The notion that Rails is far easier to use for greenfield projects than for legacy systems is probably accurate, but it&#8217;s not universally true.</p>
+
+<p>This back-end is an Oracle database with over 450 tables and a hodgepodge of different strategies for how relationships should be modeled. I&#8217;m pretty sure it was my second or third day on the job that I was asked to implement a feature (in the old Perl codebase) that should have been straightforward given the relationships between two particular entities, but ended up requiring six inner joins and two left outer joins, IIRC. Just to give you an idea of what I&#8217;m dealing with.</p>
+
+<p>Anyhow, the first time around, I wrote an ActiveRecord model for each table, did my <code>has_many</code>&#8217;s and <code>belongs_to</code>&#8217;s, et cetera. Some were easier than others. There were a <em>lot</em> of conditions hashes in some of those associations.</p>
+
+<p>When the project scope started to grow beyond a single web app, and I started designing a REST API for the system, I had the opportunity to scratch some of the itches that had been bugging me about the original implementation from the very beginning.</p>
+
+<!--more-->
+
+
+<h3>When Good Patterns Go Bad</h3>
+
+<p>The first thing I needed to do was to solve an issue with the EAV tables. EAV (Entity-Attribute-Value) is an okay model for sparse data. Somehow, the designers of this system decided to use it for custom fields where <strong>every</strong> entity has <strong>every</strong> attribute. When a custom field is added, a row is inserted in the definition table for the attribute. Then a row is inserted in the value table for <strong>every single customer.</strong> It&#8217;s slow, to say the least. In the original (naive) implementation, this meant every time a new attribute definition was added, I added an association to the Customer class. And there are a <em>lot</em> of attributes.</p>
+
+<p>I wan&#8217;t about to make that mistake again.</p>
+
+<h3>Metaprogramming to the rescue</h3>
+
+<p>First I started with the definition table:</p>
+
+<figure class='code'><figcaption><span>FieldDef  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">FieldDef</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="n">set_table_name</span> <span class="s1">&#39;custom_field_def&#39;</span>
+</span><span class='line'>  <span class="n">set_primary_key</span> <span class="ss">:custom_field_def_id</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">has_many</span> <span class="ss">:field_values</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">symbol</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">parameterize</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_sym</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Pretty straightforward. The only extra thing is that <code>symbol</code> method, which returns a snake cased version of the &#8216;title&#8217; attribute, suitable for using as a method name.</p>
+
+<p>Next comes the field value table:</p>
+
+<figure class='code'><figcaption><span>FieldValue  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">FieldValue</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="n">set_table_name</span> <span class="s1">&#39;custom_field_value&#39;</span>
+</span><span class='line'>  <span class="n">set_primary_keys</span> <span class="ss">:cust_id</span><span class="p">,</span> <span class="ss">:custom_field_def_id</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:customer</span><span class="p">,</span> <span class="ss">:foreign_kay</span> <span class="o">=&gt;</span> <span class="ss">:cust_id</span>
+</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:field_def</span><span class="p">,</span> <span class="ss">:foreign_key</span> <span class="o">=&gt;</span> <span class="ss">:custom_field_def_id</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nothing out of the ordinary here (although I&#8217;d like to thank Dr. Nic and Charlie Savage for their work on <a href="https://github.com/drnic/composite_primary_keys">composite_primary_keys</a>, it&#8217;s a lifesaver).</p>
+
+<p>Of course, the goal here is eliminating the 40-odd lines of has_many and accepts_nested_attributes_for in the Customer class. This is where Ruby really shines:</p>
+
+<figure class='code'><figcaption><span>Customer  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Customer</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="n">set_table_name</span> <span class="s1">&#39;customer&#39;</span>
+</span><span class='line'>  <span class="n">set_primary_key</span> <span class="ss">:cust_id</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># Here&#39;s where we dynamically generate associations at runtime</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="no">FieldDef</span><span class="o">.</span><span class="n">find_each</span> <span class="k">do</span> <span class="o">|</span><span class="n">field</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">has_one</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="ss">:class_name</span> <span class="o">=&gt;</span> <span class="s1">&#39;FieldValue&#39;</span><span class="p">,</span>
+</span><span class='line'>                          <span class="ss">:foreign_key</span> <span class="o">=&gt;</span> <span class="ss">:cust_id</span><span class="p">,</span>
+</span><span class='line'>                          <span class="ss">:conditions</span> <span class="o">=&gt;</span> <span class="nb">proc</span> <span class="p">{</span><span class="s2">&quot;customer_def_field_def_id = </span><span class="si">#{</span><span class="n">field</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">accepts_nested_attributes_for</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span>
+</span><span class='line'>    <span class="n">delegate</span> <span class="ss">:field_value</span><span class="p">,</span>  <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="ss">:prefix</span> <span class="o">=&gt;</span> <span class="kp">true</span>
+</span><span class='line'>    <span class="n">delegate</span> <span class="ss">:field_value</span><span class="o">=</span><span class="p">,</span> <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="ss">:prefix</span> <span class="o">=&gt;</span> <span class="kp">true</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># snip</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This iterates over the rows of <code>custom_field_def</code>, generates an association for each entry, adds the <code>accepts_nested_attributes_for</code> declaration, and even delegates the getter and setters for the column we&#8217;re really interested in (<code>"CUSTOM_FIELD_VALUE"."FIELD_VALUE"</code>).</p>
+
+<p>I don&#8217;t claim it&#8217;s <em>the</em> most elegant solution, but it&#8217;s a lot better than in the previous iteration. It&#8217;s important to remember that although Rails&#8217; opinionated nature makes it a little more awkward to deal with a legacy sytem than with a brand new project, Ruby gives you all the tools you could want to overcome whatever hurdles you might encounter.</p>
+
+<p> If you have any questions or suggestions for improvement, please let me know in the comments!</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jason Lewis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-02T14:48:00-04:00" pubdate data-updated="true">2012-08-02</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/databases/'>databases</a>, <a class='category' href='/blog/categories/legacy-systems/'>legacy systems</a>, <a class='category' href='/blog/categories/rails/'>rails</a>, <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1/" data-via="canweriotnow" data-counturl="http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/07/18/higher-education-needs-a-revolution/" title="Previous Post: Higher Education Needs a Revolution">&laquo; Higher Education Needs a Revolution</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/08/03/legacy-systems-on-rails-part-2/" title="Next Post: Legacy Systems on Rails (Part 2)">Legacy Systems on Rails (Part 2) &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <a href="http://internetdefenseleague.org">
+    <img src="http://internetdefenseleague.org/images/badges/final/super_badge.png" alt="Member of The Internet Defense League" />
+  </a>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/10/31/feedback-loops/">Feedback Loops</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and you</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/03/generational-impedance-mismatch/">Generational Impedance Mismatch</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/03/legacy-systems-on-rails-part-2/">Legacy Systems on Rails (Part 2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/02/legacy-systems-on-rails-part-1/">Legacy Systems on Rails (Part 1)</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/canweriotnow">@canweriotnow</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'canweriotnow',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("canweriotnow", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/canweriotnow" class="twitter-follow-button" data-show-count="false">Follow @canweriotnow</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/canweriotnow?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/canweriotnow">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+<section>
+  <h1>Coderwall Badges</h1>
+  <p>
+    <script type="text/javascript">
+      function display_coderwall(args) {
+        var badges = args["data"]["badges"];
+        var wall = '';
+        for ( var i = 0; i < badges.length; i++ ) {
+          var alt_txt = badges[i]["name"];
+          var title_txt = badges[i]["name"] + ' - ' + badges[i]["description"];
+          wall += '<a href="http://coderwall.com/canweriotnow/"><img src="'
+            + badges[i]["badge"]
+            + '" width="48" height="48" alt="' + alt_txt
+            + '" title="' + title_txt
+            + '"/></a>';
+        }
+        document.write(wall);
+      }
+    </script>
+    <script src="http://coderwall.com/canweriotnow.json?callback=display_coderwall"></script>
+  </p>
+  
+  <p><a href="http://coderwall.com/canweriotnow"><img src="http://api.coderwall.com/canweriotnow/endorsecount.png" /></a></p>
+  
+</section>
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/110736810583208350607?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jason Lewis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
+- Hosted by <a href="http://pages.github.com">Github Pages</a>
+</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'canweriotnow';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1/';
+        var disqus_url = 'http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

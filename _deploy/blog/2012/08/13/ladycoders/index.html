@@ -1,0 +1,478 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>LadyCoders, Twitroversy, and you - Practical Elegance</title>
+  <meta name="author" content="Jason Lewis">
+
+  
+  <meta name="description" content="So, I had intended my next post to address some of the (valid) criticism of Github that&#8217;s been making the rounds lately, but a much more &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://decomplecting.org/blog/2012/08/13/ladycoders">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/PracticalElegance" rel="alternate" title="Practical Elegance" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Dosis|Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" >
+
+if (window.top !== window.self) {
+
+document.write = "";
+
+window.top.location = window.self.location; setTimeout(function(){
+
+document.body.innerHTML='';
+
+},1);
+
+window.self.onload=function(evt){
+
+document.body.innerHTML='';
+
+};
+
+}
+
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22978638-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Practical Elegance</a></h1>
+  
+    <h2>"Elegance is not a dispensable luxury." - Edsgar Dijkstra</h2>
+  
+</hgroup>
+
+
+  <a href="https://github.com/canweriotnow">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+  </a>
+
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/PracticalElegance" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:decomplecting.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">LadyCoders, Twitroversy, and You</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-13T21:41:00-04:00" pubdate data-updated="true">2012-08-13</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>So, I had intended my next post to address some of the (valid) criticism of Github that&#8217;s been making the rounds lately, but a much more disturbing Twitroversy has emerged today.</p>
+
+<p>A group of women called <a href="http://ladycoders.com">LadyCoders</a> started a <a href="http://www.kickstarter.com/projects/166494057/ladycoders-get-hired-seattle-2012">Kickstarter campaign</a> to fund a conference/seminar geared toward helping women to get programming and other tech jobs. Great idea, right? There are <a href="http://girldevelopit.com/">many</a> <a href="http://www.blackgirlscode.com/">projects</a> devoted to giving women the skills they need to write software, but as far as addressing the fundamental issue that the industry itself is pretty much a boys&#8217; club (not assigning blame, just acknowledging reality), much less has been done in that area.</p>
+
+<p>So the good folks at LadyCoders wanted to help get women <em>hired,</em> not just trained. Pretty cool.</p>
+
+<p>Well, a lot of people thought so. As I write this, they&#8217;re &lt; US$6k away from their US$23k funding goal. But&#8230; well, there was some dissent:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>Sick and wrong: &#8220;it’s our job (for now) to be easily integrated into an all-male team, **nonthreatening,** and hyper-skilled&#8221;- <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a></p>&mdash; Shanley Kane (@shanley) <a href="https://twitter.com/shanley/status/235163013227880449" data-datetime="2012-08-13T23:56:46+00:00">August 13, 2012</a></blockquote>
+
+
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I completely get where @shanley is coming from&#8230; but the amount of Twitroversy here seemed&#8230; disproportionate.</p>
+
+<!--more-->
+
+
+<p>Sorry for picking on @shanley so much, but&#8230; then there was this:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>Legit response from <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a>: &#8220;I know what works, whether or not it&#8217;s PC.&#8221; Please do not fund this shit on kickstarter.</p>&mdash; Shanley Kane (@shanley) <a href="https://twitter.com/shanley/status/235166808880074753" data-datetime="2012-08-14T00:11:51+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>You can go search for @ladycoders mentions on Twitter if you want to see more&#8230; but here&#8217;s the issue I take: fundamentally, the issue LadyCoders is trying to address is that the software industry is a male-dominated space which has been difficult for even the most highly-skilled women to penetrate.</p>
+
+<p>I can&#8217;t speculate as to the eventual success or failure of LadyCoders as far as increasing the number of women working in software development or IT in general. But I do see the pragmatic value of a quasi-entryist, realpolitik solution to this problem.</p>
+
+<p>Criticizing an organization trying to serve a real, valid feminist goal (material gains for women in a historically male-dominated sector), by all means necessary, just seems counter-productive. &#8220;Seem non-threatening&#8221; might be advice that highlights now fucked-up society is, but it isn&#8217;t fucked-up advice if your goal is material gains for an oppressed group. Once you&#8217;ve achieved your goals, shift the goalposts of &#8220;(non-)threatening&#8221; in the desired direction.</p>
+
+<p>Queer/trans folks have been doing this for years, right? Really, everyone has&#8230; You don&#8217;t go into your job interview in the clothes you wear to the club. If your subculture doesn&#8217;t match, you don&#8217;t interview in your bondage pants and Aus-Rotten t-shirt (old punk, here)&#8230; if who or what you are is out of the mainstream, you mute it depending on the culture of where you want a job.</p>
+
+<p>For many folks, &#8220;passing&#8221; is an option. I think what LadyCoders is trying to highlight or confront (I hope they correct me if I&#8217;m wrong) is that gender isn&#8217;t really the issue, it&#8217;s perception, stereotypes, and cultural bias; by ameliorating/sidestepping the (currently wrong and terrible) negative perception women sometimes have in techie circles, you have more opportunity to break down the perception.</p>
+
+<p>You cover tattoos, take out piercings&#8230; none of this is <strong>right,</strong> but it&#8217;s just how it is, and you need to get inside before you can try to change anything.</p>
+
+<h3>Partial Measures</h3>
+
+<p>While I appreciate the validity of realpolitik solutions, I also acknowledge that it&#8217;s <em>fucking frustrating.</em></p>
+
+<blockquote class="twitter-tweet"><p>Women, people of color, and other marginalized groups have been forced to work within the system forever. It&#8217;s time to burn the system down.</p>&mdash; Ashe Dryden (@ashedryden) <a href="https://twitter.com/ashedryden/status/235167798211534848" data-datetime="2012-08-14T00:15:46+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>There are few tweets I agree with more.</p>
+
+<p>But it&#8217;s this whole realpolitik thing.</p>
+
+<p>The same sentiment that comes down so hard on LadyCoders (and seems to be responsible for <a href="http://ladycoders.tumblr.com/day/2012/08/13">some DDOS attacks</a>), echoes the sentiment that some &#8220;anarchists&#8221; (scare quotes belie my own prejudice) have against labor unions and other &#8220;recuperative&#8221; examples of self-organization by the proletariat and other oppressed groups.</p>
+
+<p>Personally, I think it&#8217;s time for a new social order. But until that order is ready to self-organize and build a new society from the ashes of the old, we need every possible means of achieving material gains for every group that has been deprived by our current society. And if that means women helping women to get their foot in the door at a <em>(for now)</em> male-dominated workplace, that&#8217;s better than women <em>not</em> getting the opportunity to make incremental material gains.</p>
+
+<p>I get the frustration, I do. I don&#8217;t fault anyone (including those I embedded tweets from) for being frustrated. But attacking those who share your goals because they lack your ideological purity&#8230; that&#8217;s a recipe for burning out without accomplishing anything. Stop it.</p>
+
+<p>So I hope you will help LadyCoders reach their KickStarter goal; if it&#8217;s a flop, well, something else will come along. If it&#8217;s a success, hopefully more cynical, realpolitik, entryist projects will get more women into male-dominated fields and achieve positive change within those fields, and material gains for women.</p>
+
+<h4>Personal Note</h4>
+
+<p>This is my hacker blog, so I don&#8217;t usually post anything related to my personal politics here. Other than my free software zealotry, I really think the set intersection of my professional and personal/political life is a narrow band indeed.</p>
+
+<p>But this sort of goes to the heart of a number of overlapping conversations I&#8217;ve been having of late, and I think the same sort of demand for a certain ideological purity is at the heart of many of these&#8230; so once it started to attack something I see as having a potential net positive effect on the software industry, and on the economic situation of women in general&#8230; I had to comment.</p>
+
+<p>I don&#8217;t fundamentally disagree with most of the criticism leveled toward LadyCoders on Twitter, either&#8230; I just think the caremad arguments are counterproductive, like most infighting.</p>
+
+<p>Also&#8230; I don&#8217;t necessarily think everything in their seminar is necessarily the best idea&#8230; but just because I <a href="https://rubygems.org/gems/job_interview">wrote a gem to help with job interviews</a> doesn&#8217;t mean I really know what women encounter in the hiring process. So I&#8217;m willing to assume the ladies at LadyCoders know what they&#8217;re doing better than I do.</p>
+
+<p>Back to apolitical coding tips next post, I promise. Unless you&#8217;re into that whole Steve Yegge liberal/conservative software engineering idea. In which case&#8230; you&#8217;re on your own.</p>
+
+<h4>UPDATE</h4>
+
+<p>After I first posted this, the awesome @chriseppstein suggested all might not be legit:</p>
+
+<blockquote class="twitter-tweet"><p>Pretty sure you guys are getting trolled pretty hard by <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a>.</p>&mdash; Chris Eppstein (@chriseppstein) <a href="https://twitter.com/chriseppstein/status/235210422477799424" data-datetime="2012-08-14T03:05:09+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I don&#8217;t think LadyCoders is a troll, but if it is, pretty damn epic, and I&#8217;ll admit to be taken in. Either way, though, I think the analysis above holds true&#8230; feel free to disagree in the comments, however, as always.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jason Lewis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-13T21:41:00-04:00" pubdate data-updated="true">2012-08-13</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/coding/'>coding</a>, <a class='category' href='/blog/categories/feminism/'>feminism</a>, <a class='category' href='/blog/categories/idealism/'>idealism</a>, <a class='category' href='/blog/categories/realpolitik/'>realpolitik</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://decomplecting.org/blog/2012/08/13/ladycoders/" data-via="canweriotnow" data-counturl="http://decomplecting.org/blog/2012/08/13/ladycoders/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/08/03/generational-impedance-mismatch/" title="Previous Post: Generational Impedance Mismatch">&laquo; Generational Impedance Mismatch</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/10/31/feedback-loops/" title="Next Post: Feedback Loops">Feedback Loops &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <a href="http://internetdefenseleague.org">
+    <img src="http://internetdefenseleague.org/images/badges/final/super_badge.png" alt="Member of The Internet Defense League" />
+  </a>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/10/31/feedback-loops/">Feedback Loops</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and you</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/03/generational-impedance-mismatch/">Generational Impedance Mismatch</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/03/legacy-systems-on-rails-part-2/">Legacy Systems on Rails (Part 2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/02/legacy-systems-on-rails-part-1/">Legacy Systems on Rails (Part 1)</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/canweriotnow">@canweriotnow</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'canweriotnow',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("canweriotnow", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/canweriotnow" class="twitter-follow-button" data-show-count="false">Follow @canweriotnow</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/canweriotnow?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/canweriotnow">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+<section>
+  <h1>Coderwall Badges</h1>
+  <p>
+    <script type="text/javascript">
+      function display_coderwall(args) {
+        var badges = args["data"]["badges"];
+        var wall = '';
+        for ( var i = 0; i < badges.length; i++ ) {
+          var alt_txt = badges[i]["name"];
+          var title_txt = badges[i]["name"] + ' - ' + badges[i]["description"];
+          wall += '<a href="http://coderwall.com/canweriotnow/"><img src="'
+            + badges[i]["badge"]
+            + '" width="48" height="48" alt="' + alt_txt
+            + '" title="' + title_txt
+            + '"/></a>';
+        }
+        document.write(wall);
+      }
+    </script>
+    <script src="http://coderwall.com/canweriotnow.json?callback=display_coderwall"></script>
+  </p>
+  
+  <p><a href="http://coderwall.com/canweriotnow"><img src="http://api.coderwall.com/canweriotnow/endorsecount.png" /></a></p>
+  
+</section>
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/110736810583208350607?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jason Lewis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
+- Hosted by <a href="http://pages.github.com">Github Pages</a>
+</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'canweriotnow';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://decomplecting.org/blog/2012/08/13/ladycoders/';
+        var disqus_url = 'http://decomplecting.org/blog/2012/08/13/ladycoders/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

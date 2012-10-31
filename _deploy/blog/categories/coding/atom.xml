@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: coding | Practical Elegance]]></title>
+  <link href="http://decomplecting.org/blog/categories/coding/atom.xml" rel="self"/>
+  <link href="http://decomplecting.org/"/>
+  <updated>2012-10-31T15:38:37-04:00</updated>
+  <id>http://decomplecting.org/</id>
+  <author>
+    <name><![CDATA[Jason Lewis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Feedback Loops]]></title>
+    <link href="http://decomplecting.org/blog/2012/10/31/feedback-loops/"/>
+    <updated>2012-10-31T14:12:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/10/31/feedback-loops</id>
+    <content type="html"><![CDATA[<p>Sadly, I haven't added a blog post in roughly 2.5 months. I've had ideas for posts, but when it came time to set pen to page (or fingers to keyboard, as teh case may be) I just haven't had it in me. I really enjoy writing this blog, too. I wasn't quite sure what was going on, until I read one of the most insightful blog posts I've ever seen: <a href="http://edu.mkrecny.com/thoughts/be-nice-to-programmers">Be Nice To Programmers</a>.</p>
+
+<p>The tl;dr is a dialogue between a programmer and a guy who wishes he had the chops because he thinks coding is the neatest job in the world. The programmer tells him he thinks coding is making him miserable because the the development/debug process is the ultimate negative feedback loop.</p>
+
+<p><blockquote><p>My workflow is something like this.</p></p><p><p>write some code<br/>run the code<br/>get an error message<br/>find the error and back to step 1<br/>Hour by hour, day after day, I do this. Always searching for what's wrong with what I'm creating, rarely thinking about what's good about it. It's a negative reinforcement feedback loop.</p></blockquote></p>
+
+<p><span class='pullquote-right' data-pullquote='The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control.'>
+I definitely get the sentiment. But I think of this as the inner loop in the red-green-refactor cycle, so to speak. Yeah, coding (<em>especially</em> doing proper TDD) is going to make you hate the world (and possibly feel like an idiot) sometimes. But overall... I was in a job interview a few weeks ago, and was asked why I love being a programmer. I didn't even have to think about my response: The main reason to become a programmer is that the position of 'God' is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control. Ultimately, that's the takeaway: programming is <em>awesome.</em> But a job is still a job, and I think that's where some of the negative feedback loop comes in.
+</span></p>
+
+<p>My last post was just before a huge project I'd both originated and put a large amount of my time and effort into over the course of 15-18 months was shelved. It was ready to ship, but corporate politics being what it is (i.e., something I'd schedule a root canal to avoid, <em>especially</em> where I work), I tried to just move on and not lose sleep over it. Still, it rankled.</p>
+
+<!-- more -->
+
+
+<p>I haven't pushed a single new commit to any of my projects on Github. I haven't written a blog post. I have an engineering pad with a bunch of scribbled, inchoate notes for things I want to do, but can't seem to move on anything.</p>
+
+<p>My own theory is that we (hackers) are especially sensitive to feedback loops. I could go <a href="http://decomplecting.org/blog/2012/05/22/passion/">on and on</a>, and even cite <a href="http://www.codinghorror.com/blog/2006/07/separating-programming-sheep-from-non-programming-goats.html">more</a> <a href="http://www.bricklin.com/wontprogram.htm">notable</a> <a href="http://www.codinghorror.com/blog/2010/02/the-nonprogramming-programmer.html">bloggers</a> than myself, on my theory of what could be referred to as "programmer exceptionalism." That's not to say we (programmers who can actually build working (and hopefully, elegant) systems) are in any way <em>better</em> than non-programmers (or the <a href="http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html">Java Schools</a> crowd); it's just that the preponderance of anecdotal evidence (not to mention some <a href="http://www.eis.mdx.ac.uk/research/PhDArea/saeed/paper1.pdf">proper research</a>) suggests that <em>programmers are not normal.</em></p>
+
+<p>"Sensitivity to feedback loops" could also be a symptom of the intuition many of us experience when faced with an implementation that just <em>feels</em> wrong. We can, through due diligence, prove that this is the case eventually; but what is it that drives us to find exploits, or benchmark competing implementations? It's that little voice in the back of your head whispering, "This is wrong. And also, stupid."</p>
+
+<p>My main focus in my day-to-day programming life right now is dealing with interfaces for yet another vendor product that is very wrong, and very, very stupid. So when I come home, I just want to play <a href="http://guildwars2.com">Guild Wars 2</a> and not really think about coding. Which makes me even sadder, because I love hacking on side projects.</p>
+
+<p>And it's not that I haven't had some fun and some successes in the meantime. I wrote a pretty cool framework in Clojure for generating and emailing reports from various datasources. The core of it is going to be open source, as soon as I get around to that. But the grind... the grind, man. The grind.</p>
+
+<p>I don't know what the solution is. We can't all be working on innovative, game-changing products all the time. And sometimes things will get shelved the day you expect them to ship. I do know there needs to be a way to <em>love</em> this shit without going crazy or making oneself miserable.</p>
+
+<p>So, interwebs... suggestions?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[LadyCoders, Twitroversy, and you]]></title>
+    <link href="http://decomplecting.org/blog/2012/08/13/ladycoders/"/>
+    <updated>2012-08-13T21:41:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/08/13/ladycoders</id>
+    <content type="html"><![CDATA[<p>So, I had intended my next post to address some of the (valid) criticism of Github that's been making the rounds lately, but a much more disturbing Twitroversy has emerged today.</p>
+
+<p>A group of women called <a href="http://ladycoders.com">LadyCoders</a> started a <a href="http://www.kickstarter.com/projects/166494057/ladycoders-get-hired-seattle-2012">Kickstarter campaign</a> to fund a conference/seminar geared toward helping women to get programming and other tech jobs. Great idea, right? There are <a href="http://girldevelopit.com/">many</a> <a href="http://www.blackgirlscode.com/">projects</a> devoted to giving women the skills they need to write software, but as far as addressing the fundamental issue that the industry itself is pretty much a boys' club (not assigning blame, just acknowledging reality), much less has been done in that area.</p>
+
+<p>So the good folks at LadyCoders wanted to help get women <em>hired,</em> not just trained. Pretty cool.</p>
+
+<p>Well, a lot of people thought so. As I write this, they're &lt; US$6k away from their US$23k funding goal. But... well, there was some dissent:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>Sick and wrong: "it’s our job (for now) to be easily integrated into an all-male team, **nonthreatening,** and hyper-skilled"- <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a></p>&mdash; Shanley Kane (@shanley) <a href="https://twitter.com/shanley/status/235163013227880449" data-datetime="2012-08-13T23:56:46+00:00">August 13, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I completely get where @shanley is coming from... but the amount of Twitroversy here seemed... disproportionate.</p>
+
+<!--more-->
+
+
+<p>Sorry for picking on @shanley so much, but... then there was this:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>Legit response from <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a>: "I know what works, whether or not it's PC." Please do not fund this shit on kickstarter.</p>&mdash; Shanley Kane (@shanley) <a href="https://twitter.com/shanley/status/235166808880074753" data-datetime="2012-08-14T00:11:51+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>You can go search for @ladycoders mentions on Twitter if you want to see more... but here's the issue I take: fundamentally, the issue LadyCoders is trying to address is that the software industry is a male-dominated space which has been difficult for even the most highly-skilled women to penetrate.</p>
+
+<p>I can't speculate as to the eventual success or failure of LadyCoders as far as increasing the number of women working in software development or IT in general. But I do see the pragmatic value of a quasi-entryist, realpolitik solution to this problem.</p>
+
+<p>Criticizing an organization trying to serve a real, valid feminist goal (material gains for women in a historically male-dominated sector), by all means necessary, just seems counter-productive. "Seem non-threatening" might be advice that highlights now fucked-up society is, but it isn't fucked-up advice if your goal is material gains for an oppressed group. Once you've achieved your goals, shift the goalposts of "(non-)threatening" in the desired direction.</p>
+
+<p>Queer/trans folks have been doing this for years, right? Really, everyone has... You don't go into your job interview in the clothes you wear to the club. If your subculture doesn't match, you don't interview in your bondage pants and Aus-Rotten t-shirt (old punk, here)... if who or what you are is out of the mainstream, you mute it depending on the culture of where you want a job.</p>
+
+<p>For many folks, "passing" is an option. I think what LadyCoders is trying to highlight or confront (I hope they correct me if I'm wrong) is that gender isn't really the issue, it's perception, stereotypes, and cultural bias; by ameliorating/sidestepping the (currently wrong and terrible) negative perception women sometimes have in techie circles, you have more opportunity to break down the perception.</p>
+
+<p>You cover tattoos, take out piercings... none of this is <strong>right,</strong> but it's just how it is, and you need to get inside before you can try to change anything.</p>
+
+<h3>Partial Measures</h3>
+
+<p>While I appreciate the validity of realpolitik solutions, I also acknowledge that it's <em>fucking frustrating.</em></p>
+
+<blockquote class="twitter-tweet"><p>Women, people of color, and other marginalized groups have been forced to work within the system forever. It's time to burn the system down.</p>&mdash; Ashe Dryden (@ashedryden) <a href="https://twitter.com/ashedryden/status/235167798211534848" data-datetime="2012-08-14T00:15:46+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>There are few tweets I agree with more.</p>
+
+<p>But it's this whole realpolitik thing.</p>
+
+<p>The same sentiment that comes down so hard on LadyCoders (and seems to be responsible for <a href="http://ladycoders.tumblr.com/day/2012/08/13">some DDOS attacks</a>), echoes the sentiment that some "anarchists" (scare quotes belie my own prejudice) have against labor unions and other "recuperative" examples of self-organization by the proletariat and other oppressed groups.</p>
+
+<p>Personally, I think it's time for a new social order. But until that order is ready to self-organize and build a new society from the ashes of the old, we need every possible means of achieving material gains for every group that has been deprived by our current society. And if that means women helping women to get their foot in the door at a <em>(for now)</em> male-dominated workplace, that's better than women <em>not</em> getting the opportunity to make incremental material gains.</p>
+
+<p>I get the frustration, I do. I don't fault anyone (including those I embedded tweets from) for being frustrated. But attacking those who share your goals because they lack your ideological purity... that's a recipe for burning out without accomplishing anything. Stop it.</p>
+
+<p>So I hope you will help LadyCoders reach their KickStarter goal; if it's a flop, well, something else will come along. If it's a success, hopefully more cynical, realpolitik, entryist projects will get more women into male-dominated fields and achieve positive change within those fields, and material gains for women.</p>
+
+<h4>Personal Note</h4>
+
+<p>This is my hacker blog, so I don't usually post anything related to my personal politics here. Other than my free software zealotry, I really think the set intersection of my professional and personal/political life is a narrow band indeed.</p>
+
+<p>But this sort of goes to the heart of a number of overlapping conversations I've been having of late, and I think the same sort of demand for a certain ideological purity is at the heart of many of these... so once it started to attack something I see as having a potential net positive effect on the software industry, and on the economic situation of women in general... I had to comment.</p>
+
+<p>I don't fundamentally disagree with most of the criticism leveled toward LadyCoders on Twitter, either... I just think the caremad arguments are counterproductive, like most infighting.</p>
+
+<p>Also... I don't necessarily think everything in their seminar is necessarily the best idea... but just because I <a href="https://rubygems.org/gems/job_interview">wrote a gem to help with job interviews</a> doesn't mean I really know what women encounter in the hiring process. So I'm willing to assume the ladies at LadyCoders know what they're doing better than I do.</p>
+
+<p>Back to apolitical coding tips next post, I promise. Unless you're into that whole Steve Yegge liberal/conservative software engineering idea. In which case... you're on your own.</p>
+
+<h4>UPDATE</h4>
+
+<p>After I first posted this, the awesome @chriseppstein suggested all might not be legit:</p>
+
+<blockquote class="twitter-tweet"><p>Pretty sure you guys are getting trolled pretty hard by <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a>.</p>&mdash; Chris Eppstein (@chriseppstein) <a href="https://twitter.com/chriseppstein/status/235210422477799424" data-datetime="2012-08-14T03:05:09+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I don't think LadyCoders is a troll, but if it is, pretty damn epic, and I'll admit to be taken in. Either way, though, I think the analysis above holds true... feel free to disagree in the comments, however, as always.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generational Impedance Mismatch]]></title>
+    <link href="http://decomplecting.org/blog/2012/08/03/generational-impedance-mismatch/"/>
+    <updated>2012-08-03T15:48:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/08/03/generational-impedance-mismatch</id>
+    <content type="html"><![CDATA[<p>One thing I've come to observe working in higher ed is that you can run into a lot of issues with what I want to term "generational impedance mismatch." It's what happens when your ostensible customers are about 40 years older than your target demographic.</p>
+
+<p>When I started on an internal administrative application about two years ago, I threw in some error pages with lolcats on them because... well, error pages are boring. Those got yanked because the customer thought they were "unprofessional." Okay, sure. It's an administrative app, so maybe this isn't the best thing to throw up after a catastrophic failure:</p>
+
+<p><img class="center" src="/images/post-img/im-in-ur-serverz.jpeg"></p>
+
+<p>But the new crop of apps I'm writing don't target middle-aged administrators; they target students. Specifically, in addition to doing mundane things like reporting your a lost ID card or checking balances, there's a whole social gaming component. So far, I've been pretty successful at keeping things amusing (between the student focus group we assembled and the <a href="http://reddit.com/r/jhu">JHU subreddit</a>, my sense of humor is quickly vindicated), but the text is... kinda stodgy.</p>
+
+<p>I was discussing this with a co-worker, and we hit on what I think is a brilliant way of balancing conflicting stakeholder needs. The customer wants rather formal, business-like text that drily describes various functions of the application. On the other hand, students are going to be bored, and love easter eggs and humor. But we know how to deal with target demographics who speak different languages, don't we? Localization to the rescue!</p>
+
+<!--more-->
+
+
+<p>We can go from a default:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>en.yml  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="l-Scalar-Plain">&lt;p&gt;en</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">hello</span><span class="p-Indicator">:</span> <span class="s">&quot;Hi</span><span class="nv"> </span><span class="s">there!&quot;</span><span class="l-Scalar-Plain">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="l-Scalar-Plain">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>to a specialized locale for old people:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span>en-old.yml  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="l-Scalar-Plain">&lt;p&gt;en-old</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">hello</span><span class="p-Indicator">:</span> <span class="s">&quot;Why,</span><span class="nv"> </span><span class="s">good</span><span class="nv"> </span><span class="s">morrow,</span><span class="nv"> </span><span class="s">sir</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">madam.&quot;</span><span class="l-Scalar-Plain">&lt;/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="l-Scalar-Plain">&lt;p&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Since we track birthdates, it makes it really easy:</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;class ApplicationController &amp;lt; ActionController::Base&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="n">before_filter</span> <span class="ss">:localize_for_the_aged</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  private&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">def</span> <span class="nf">localize_for_the_aged</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;pre&gt;&lt;code&gt;I18n.default_locale = :en</span>
+</span><span class='line'><span class="sr">if current_user.try(:old?)</span>
+</span><span class='line'><span class="sr">  I18n.locale = :&quot;en-old&quot;</span>
+</span><span class='line'><span class="sr">end</span>
+</span><span class='line'><span class="sr">&lt;/</span><span class="n">code</span><span class="o">&gt;&lt;</span><span class="sr">/pre&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  end</span>
+</span><span class='line'><span class="sr">end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span><span class="k">class</span> <span class="nc">User</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;  def old?&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="nb">self</span><span class="o">.</span><span class="n">birthdate</span><span class="o">.</span><span class="n">nil?</span> <span class="o">||</span> <span class="nb">self</span><span class="o">.</span><span class="n">birthdate</span> <span class="o">&amp;</span><span class="n">lt</span><span class="p">;</span> <span class="mi">40</span><span class="o">.</span><span class="n">years</span><span class="o">.</span><span class="n">ago</span>
+</span><span class='line'><span class="o">&lt;</span><span class="sr">/code&gt;&lt;/</span><span class="n">pre</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>  <span class="k">end</span><span class="o">&lt;</span><span class="sr">/p&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="sr">&lt;p&gt;end&lt;/</span><span class="nb">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="nb">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Simple! Now our middle-aged customer will see a formal greeting, while our teenage/twentysomething users won't think they've stumbled into Downton Abbey.</p>
+
+<h3>Don't try this at work</h3>
+
+<p>Seriously, I hope you realize this was satire. Learn to talk to your customers, as painful as that might be, and convince them. Do A/B testing or have a focus group. Win over your users, and your customer will probably see the light of day. If not, you can always <a href="http://clientsfromhell.net">whinge about it here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Try Ruby... Seriously.]]></title>
+    <link href="http://decomplecting.org/blog/2012/06/01/try-ruby-seriously/"/>
+    <updated>2012-06-01T20:05:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/06/01/try-ruby-seriously</id>
+    <content type="html"><![CDATA[<p>Every now and then someone comes to me for advice because they (or someone they know) wants to learn to code and has no idea where to start. Usually, the first thing I do is send them to <a href="http://tryruby.org">tryruby.org</a>, the awesome web-based REPL and tutorial the <a href="http://codeschool.com">Code School</a> folks put together, based on <a href="http://mislav.uniqpath.com/poignant-guide/">_why's (poignant) guide to ruby</a>.</p>
+
+<p>Lately, I've been wondering if that's the best advice. Only because I constantly re-evaluate <em>everything</em> on the chance that it might be sub-optimal. Ruby is pretty easy to learn, but it's also easy to learn terrible, terrible habits. Maybe a more constraining language would be more suitable?</p>
+
+<p>I have to admit, as much as I generally <a href="http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit/">dislike Python</a>, it probably <em>is</em> the easiest language to learn, and it rarely gives you enough rope to hang yourself. So am I just letting my own prejudices guide my recommendations to other people?</p>
+
+<!-- more -->
+
+
+<p>Upon reflection, the language matters a lot less than the person. My egalitarian sensibilities make the idea that any reasonably intelligent person can learn to code, given the desire and determination, quite attractive. But alas, we must be wary of cognitive bias. It's become increasingly clear that <a href="http://www.codinghorror.com/blog/2006/07/separating-programming-sheep-from-non-programming-goats.html">programming isn't for everyone</a>. So as much as I like the idea that <a href="http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html">everyone should know how to code</a>, I have to admit that whatever innate ability it is that makes for a Real Programmer, not everyone has it. <a href="http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html">Not even all of us working as software developers</a>.</p>
+
+<p>I recently came across <a href="http://cs.stackexchange.com/questions/1954/criteria-for-selecting-language-for-first-programming-course">this question</a> asking for "Criteria for selecting language for first programming course" on the <a href="http://cs.stackexchange.com/">CS StackExchange forum</a>. Answering that question (<a href="http://cs.stackexchange.com/questions/1954/criteria-for-selecting-language-for-first-programming-course/1967#1967">here</a>) helped me to clarify some of the reasons I usually recommend Ruby.</p>
+
+<h4>Simplicity</h4>
+
+<p>Ruby is incredibly simple to pick up. Now, like anything, Ruby is hard to do <em>well</em>, but it is fairly straightforward to learn. My first language was BASIC on a <a href="http://en.wikipedia.org/wiki/Texas_Instruments_TI-99/4A">Texas Instruments 99/4A</a>. It was hard, but rewarding. I wrote stupid little games, and it was entertaining. Of course, I was 5 or 6 at the time...</p>
+
+<p>The point here is that you want two things for people who have never coded before: immediate positive reinforcement (it's fairly straightforward to make <em>something</em> that runs successfully), and a syntax that's easy get your mind around. Ruby fulfills those goals quite nicely.</p>
+
+<h4>Richness</h4>
+
+<p>Once you get past "Hello, World!" there's an almost infinite range of possibilities. Ruby does a very, very good job of providing a massive <a href="http://rubygems.org">collection of libraries</a>, and a flexible language that makes creating damn near anything not only possible, but at some point intuitive.</p>
+
+<h4>Multi-paradigm</h4>
+
+<p>Pretty much everyone starts with procedural code. That's okay, it's a start. But object-oriented and functional paradigms have many, many advantages. Ruby's pure-OO nature makes it very easy to transition into writing object-oriented code. It borrows enough concepts from Lisp that you can get a feel for functional styles as well. Contrast this to C++ or Python, where the object-orientation is tacked-on, and the bolts are definitely showing.</p>
+
+<h4>Se habla Ruby</h4>
+
+<p>When it's a friend asking for advice, I'm fully expecting to be answering questions when they can't find an answer on <a href="http://stackoverflow.com">StackOverflow</a>. If they're learning Ruby, there's the advantage that I will probably be able to help with > 99% of their problems without Googling. Granted, this is true of a number of languages, but I probably wouldn't suggest that someone completley new to programming start out with C, Java, Scheme, Javascript, Clojure, or Perl just because I happen to know my way around them.</p>
+
+<p>Finally, I like introducing people to Ruby because it's a language optimized for programmer happiness.</p>
+
+<p><blockquote><p>For me the purpose of life is partly to have joy. Programmers often feel joy when they can concentrate on the creative side of programming, So Ruby is designed to make programmers happy.</p><footer><strong>Yukihiro Matsumoto,</strong> <cite><a href='http://www.artima.com/intv/rubyP.html'>www.artima.com/intv/rubyP.html/&hellip;</a></cite></footer></blockquote></p>
+
+<p>My hope, when someone shows an interest in creating software (or at least, learning what goes in to creating software), is that they'll fall in love with it like I did. I was bitten by the software bug when I was a little kid; it's been a hobby ever since. But it really wasn't until Ruby came along that I was certain I wanted to spend damn near every waking hour on this stuff.</p>
+
+<p>Why should I subject others to something less wonderful and joy-inducing than what I use every day?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hypermedia APIs: The New Wild West?]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/30/hypermedia-apis-the-new-wild-west/"/>
+    <updated>2012-05-30T13:26:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/30/hypermedia-apis-the-new-wild-west</id>
+    <content type="html"><![CDATA[<p>Two of the best presentations at RailsConf this year, <strong>Designing Hypermedia APIs</strong> by <a href="http://steveklabnik.com/">Steve Klabnik</a> and <strong>Rails: The Next Five Years</strong> by <a href="http://yehudakatz.com/">Yehuda Katz</a> were related to the topic of hypermedia APIs. The video of Steve's talk isn't up on Confreaks yet, but the slides are <a href="http://steveklabnik.github.com/hypermedia-presentation/#1">here</a>. I'll embed Yehuda's talk right here:</p>
+
+<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/UlMpIHH1K5s" frameborder="0" allowfullscreen></iframe>
+
+
+<p>The two big takeaways from these talks (for me, at least):</p>
+
+<ol>
+<li>We've come a long way in designing in implementing APIs. But now we're to the "hard part": Going from REST to true hypermedia.</li>
+<li>Rails is really, really good at creating de facto standards via "convention over configuration." But we don't go far enough, and that's where we shoot ourselves in the foot (think ActiveResource).</li>
+</ol>
+
+
+<h3>Why don't you REST for a while?</h3>
+
+<p>I know, it's stressful figuring this stuff out.  Rails going all RESTful was a big help when it came to creating uniform interfaces for our applications. HTML, XML, JSON... you could have it your way, right away. But going from RESTful resources to true hypermedia APIs is an even bigger leap forward than the move to REST, and that transition also needs to be planned and implemented carefully and correctly.</p>
+
+<p><code>as_json</code> will only get you so far. Yes, it will represent the resource in a way that is eminently consumable by a client application, whether that's Javascript in the browser, a mobile app, or curl. But your client still needs to know <em>far</em> too much about the structure of the resources on your server. That's tight coupling, which we all know is evil. It's even evilly-tight from a REST standpoint; if the client has to know <em>anything</em> about server-side resources, you're breaking the encapsulation layer between resources and the representation of those resources, which is what REST is all about, right?</p>
+
+<p>So what is to be done?</p>
+
+<!-- more -->
+
+
+<h3>HATEOAS</h3>
+
+<p>Yeah, there it is. <strong>Hypermedia As The Engine Of Application State.</strong> That last layer of REST that we'd rather not think about, much less try to implement.</p>
+
+<p>We know better, but we do all sorts of crazy things in order <em>not</em> to do it right. One of the most common sins (I'm guilty myself) is embedding nested resources inside of the requested resource.</p>
+
+<p>What's wrong with embedding, for instance, comments in the JSON representation of an article?</p>
+
+<p>If nothing else, when I request an article, I'm requesting a specific representation of a specific resource. I don't necessarily <em>want</em> all of its child resources or other associations. I should <em>know</em> about them, but not forced to accept them.</p>
+
+<p>Furthermore,</p>
+
+<p>I really like the example Steve used of implementing a <code>links</code> array in the returned object:</p>
+
+<p>```json Sample response http://steveklabnik.github.com/hypermedia-presentation/#47</p>
+
+<p>request("http://w3clove.com/api/",
+  "application/vnd.w3clove.validation+json")</p>
+
+<h1>=></h1>
+
+<p>{
+  "links":[
+  {"rel":"website-form", "href":"..."},
+  {"rel":"sitemap-form", "href":"..."}
+  ]
+}</p>
+
+<p>```</p>
+
+<p>What's especially interesting here is the Content-type: <code>application/vnd.w3clove.validation+json</code>. That was another big takeaway: I was unaware of the <code>vnd</code> prefix for defining your own content-types, rather than waiting (and waiting, and waiting...) for the W3C to define a standard.</p>
+
+<p><img class="float-right" src="http://imgs.xkcd.com/comics/standards.png"></p>
+
+<p>Please don't take that as encouragement to go create 2<sup>10</sup> new content-types all willy nilly. Use something that exists, preferably an accepted standard, unless there <em>really, really</em> isn't an acceptable standard for your use case.</p>
+
+<p>In that scenario, there's nothing wrong with defining a content-type that meets your needs, provided you thoroughly spec it and adhere to the spec.</p>
+
+<h3>as_json is not the answer</h3>
+
+<p>I want to go a little further into why links > nested resources.</p>
+
+<p>Let's say you have an <code>Article</code> class, which <code>has_many :comments</code> and <code>has_and_belongs_to_many :tags</code> You might think it's a good idea to do this:</p>
+
+<p>```ruby article.rb</p>
+
+<p>class Article &lt; ActiveRecord::Base</p>
+
+<p>  has_many :comments
+  has_and_belongs_to_many :tags
+  belongs_to :user</p>
+
+<p>  def as_json(options={})</p>
+
+<pre><code>options[:include] = {:comments =&gt; [], :tags =&gt; []}
+options[:except] = :user_id
+return super(options)
+</code></pre>
+
+<p>  end</p>
+
+<p>end</p>
+
+<p>```</p>
+
+<p>It's not necessarily terrible, but it's not optimal. Normally you might get back:</p>
+
+<p>```json</p>
+
+<p>{
+  article: {</p>
+
+<pre><code>title: "First Post!",
+body: "Chillwave fixie food truck vinyl. Squid cred +1, cardigan sustainable before they sold out wayfarers twee synth. Retro cliche 3 wolf moon banh mi, put a bird on it hella american apparel sriracha ennui artisan beard. Small batch four loko cardigan, umami stumptown keffiyeh cray street art etsy. Whatever high life synth godard 3 wolf moon, brunch PBR hella banh mi gluten-free vegan next level mustache stumptown lo-fi. Ethnic photo booth pork belly wayfarers, cardigan blog etsy portland mumblecore single-origin coffee post-ironic shoreditch. +1 typewriter sriracha authentic artisan master cleanse, bushwick freegan keytar."
+comments: [
+  {
+    id: 1,
+    body: "Dude!"
+  }
+],
+tags: [
+  {
+    id:3,
+    name: "hipster-crap"
+  }
+]
+</code></pre>
+
+<p>  }
+}</p>
+
+<p>```</p>
+
+<p>This might be okay until you end up with hundreds of long-winded comments about where to find the best kefir in Portland. And what if your client wants to follow the tags to find similar articles? Sure, they can assume you're following rails conventions for URIs and try to get "http://example.org/tags/3", but there's no guarantee that's what you're doing, and it's expecting too much of the client. What if you want to find more by the same author? you've decided in advance your clients don't need to see the user_id.</p>
+
+<p>Worse, you're now eager-loading all of your associations, which, while preferable to a risk of n+1 queries, does mean you're banging on your database harder.</p>
+
+<p>There's another added benefit: if <em>all</em> a resource needs to know about its associations is where to find them, you've just loosened the coupling between those classes. It's a Good Thing.</p>
+
+<p>It occurred to me that there's an (imperfect) metaphor for this: pass-by-value vs. pass-by-reference. Rather than copying the value from the server to the client, you pass a reference where the value can be retrieved. Yes, I know this is closer to C pointers ("pass-by-value where the value is a reference") than than true pass-by-reference. Anyhow.</p>
+
+<h3>Tradeoffs</h3>
+
+<p>There are definitely some potential latency-induced pitfalls here. By leaving the task of requesting the appropriate representations of the appropriate resources to the client, we're buying decoupling and a reduction in unnecessary database activity at the potential cost of <em>many</em> more HTTP requests.</p>
+
+<p>This might be true. But it just highlights a need that already existed: we really, really need to optimize HTTP. We need to use <a href="http://www.igvita.com/2011/10/04/optimizing-http-keep-alive-and-pipelining/">keep-alive and pipelining</a>, and we need to understand <a href="http://www.igvita.com/2011/10/20/faster-web-vs-tcp-slow-start/">TCP slow-start</a>. Among other things.</p>
+
+<h3>The Wild West</h3>
+
+<p>Now, back to the title line. Hypermedia API design is kinda chaotic right now, with all sorts of possible solutions, from the clever and innovative to the completely brain-damaged.</p>
+
+<p>One thing Rails has been pretty good at is pushing the envelope, gaining wide adoption of good ideas, and giving the other web frameworks something to aspire to/catch up with. We've seen this with MVC, REST, and now the asset pipeline. It is, to a large degree, the convention-over-configuration principle that drives this phenomenon, and in Yehuda's talk, he laments the state of ActiveResource, which is pretty useless for the most part, and (correctly, I think) blames the fact that we don't have a good convention for resource serialization, which ActiveResource could consume intelligently.</p>
+
+<p>There are plenty of good options out there already; the <a href="https://github.com/apotonick/roar">roar</a> gem recently got support for the <a href="http://stateless.co/hal_specification.html">JSON-HAL</a> content-type, which I think is a great approach to HATEOAS, although not perfect.</p>
+
+<p>The <a href="https://github.com/jcasimir/draper">draper</a> has HATEOAS helpers listed as a TODO, and that'll be great. If you need decorators, you should definitely be using draper. If you don't think you need decorators, you're probably wrong.</p>
+
+<p>Ultimately, however, I think for Rails applications to implement true hypermedia APIs in a consistent fashion, something needs to make it into Rails core that's better than the current serialization methods in <code>ActiveRecord::Base</code>. So I'm <strong>really, really</strong> happy about <code>ActiveModel::Serializers</code>. I think it points to the Right Thing. Please try it out, and use it in your apps. It's not in Rails core yet, but if we all start using it, there's a better chance of it being included in Rails 4. And that would be really, really cool. Better yet, you can fork and contribute to it (yeah, it's on my list to do... someday).</p>
+
+<p>The "wild west" can be exciting, but it's not where most of us want to live. Building sane infrastructure allows us to work at higher levels of abstraction, and that's where the <em>real</em> fun and excitement lives, right?</p>
+]]></content>
+  </entry>
+  
+</feed>

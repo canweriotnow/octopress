@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: generators | Practical Elegance]]></title>
+  <link href="http://decomplecting.org/blog/categories/generators/atom.xml" rel="self"/>
+  <link href="http://decomplecting.org/"/>
+  <updated>2012-10-31T15:38:37-04:00</updated>
+  <id>http://decomplecting.org/</id>
+  <author>
+    <name><![CDATA[Jason Lewis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Static Is Beautiful]]></title>
+    <link href="http://decomplecting.org/blog/2012/07/04/static-is-beautiful/"/>
+    <updated>2012-07-04T23:21:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/07/04/static-is-beautiful</id>
+    <content type="html"><![CDATA[<p>I want to return to the core sfocus of this blog, elegance and simplicity in technology, but in kind of a meta way.</p>
+
+<p>One trend that seems to be popping up again and again is the move away from over-featured and unmanageable content management systems (I'm looking at you, <a href="http://wordpress.org/">Wordpress</a>), and toward static site generators.</p>
+
+<p>This blog, for instance, is generated from <a href="http://daringfireball.net/projects/markdown/">Markdown</a> files by <a href="http://octopress.org/">Octopress</a>. More on Octopress later, but I want to survey the trend a bit.</p>
+
+<p>This post was prompted by one of the auto-tweets by <a href="https://twitter.com/rubygems">@rubygems</a>, about yet another static site generation tool called <a href="https://rubygems.org/gems/gumdrop">gumdrop</a>. I've been playing with a few different static site generation tools, so first I'd like to survey a few examples, and then I'll talk about why I think they matter.</p>
+
+<!-- more -->
+
+
+<h3>Jekyll</h3>
+
+<p><a href="https://github.com/mojombo/jekyll">Jekyll</a> is kinda the all-father of the current crop of static site generators. Created by <a href="http://tom.preston-werner.com/">Tom Preston-Werner</a> of <a href="https://github.com">GitHub</a>, it powers many, many <a href="http://pages.github.com/">GitHub Pages</a> sites, and is pretty much pure awesomesauce. It's very bare bones, but that's what allows for such enormous flexibility. It's also what allows Jekyll to serve as the backbone of something like Octopress.</p>
+
+<h3>Octopress</h3>
+
+<p><a href="http://octopress.org">Octopress</a> is my current favorite, as I use it all the time to power <a href="http://decomplecting.org">this blog</a>. Octopress wraps Jekyll with a bunch of templating goodness, which you can easily customize to your heart's content.</p>
+
+<p>One of the best thngs about Octopress, however, is its plugin system. Not only does it come pre-loaded with some snazzy plugins for the <a href="https://github.com/Shopify/liquid">Liquid</a> template language, but it makes it easy to extend with your own clever hacks.</p>
+
+<p>Better yet, as it's a hacker-oriented blogging engine, it makes it dead simple to set up common widgets and services, from a GitHub repo listing to Google Analytics, just by editing <code>_config.yml</code>, the global configuration file.</p>
+
+<p>Best of all, new post generation, testing, building, and deploying are all handled by <code>rake</code> tasks, and deployment via GitHub Pages, <a href="http://heroku.com">Heroku</a>, and <code>rsync</code> are easy as hell to configure.</p>
+
+<h3>Middleman</h3>
+
+<p><a href="http://middlemanapp.com/">Middleman</a> is a newer static site generation tool, with all the sauce. You can template/style/script with Haml, Slim, Sass, Compass, CoffeeScript, and I'm sure others. It comes with <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> baked in (if you're not using this, you probably should be), and it's built around <a href="http://www.sinatrarb.com">Sinatra</a>.</p>
+
+<p>I haven't deployed Middleman anywhere yet, as the only static-content site I'm running right now is this blog, but it's definitely on the radar for the second I want to branch out from blogging with this domain (or any of my others).</p>
+
+<h3>Gumdrop</h3>
+
+<p>I know way less about <a href="https://github.com/darthapo/gumdrop">gumdrop</a> than about the other static site generators out there... but the <a href="https://github.com/darthapo/gumdrop/wiki/Sites-Using-Gumdrop">sites powered by gumdrop</a> are nothing if not impressive. Gumdrop bills itself as "The sweet 'n simple cms/prototyping tool for creating static html websites and webapps."</p>
+
+<p>I can't argue. The generation looks slick and simple, but also powerfully configurable, thanks to the awesomesauce of Ruby blocks.</p>
+
+<p>I'll definitely be playing with this in my <em>copious</em> spare time.</p>
+
+<h2>Why Static Site Generation Matters</h2>
+
+<p>It's pretty simple, actually. It all comes down to Wordpress.</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>And there's only one thing worse in my eyes than PHP, and that's Wordpress PHP <a href="http://t.co/C40EfvOD" title="http://buff.ly/LkQIWH">buff.ly/LkQIWH</a></p>&mdash; Michael Robinson (@pagesofinterest) <a href="https://twitter.com/pagesofinterest/status/220254607849426946" data-datetime="2012-07-03T20:36:05+00:00">July 3, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>We all <em>know</em> PHP is <a href="http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/">a terrible excuse for a programming language</a>, and also that the blogging platform wars, until recently, came down to only WordPress vs. <a href="http://www.blogger.com">Blogger</a>. Of course, <a href="http://tumblr.com">Tumblr</a> and <a href="http://postero.us">Postero.us</a> have breathed new life into a limited set of choices. But unless you wanted only the most basic features a hosted platform (everything but WordPress, honestly) provided, you'd need to settle on WordPress, because as an open-source platform, it had this <del>great</del> almost usable ecosystems of custom plugins. And somehow, the blogging community convinced ourselves we <em>needed</em> this plugin marketplace.</p>
+
+<p>Now, don't get me wrong. As economies go, the WordPress plugin market has proved a lucrative environment for many freelance PHP developers I know. Mind you, because they were writing WordPress PHP 8-10 hours a day, their mental states ranged between suicidal and psychotic... we all have our limits.</p>
+
+<p>The need for a sane solution to this problem is, I think, what led to the development of blogging engines like <a href="http://fdv.github.com/typo/">typo</a>.</p>
+
+<p>And, I think, the attempt to build a new, saner, databased-backed, comprehensive, blog-aware CMS system learned that a databased-backed, comprehensive, blog-aware CMS system is a whole bunch of <a href="http://en.wikipedia.org/wiki/You_ain't_gonna_need_it">YAGNI</a> features rolled up in a big, painful bundle.</p>
+
+<p>Why not just generate your blog posts when you write them? Why not just use Javascript for whatever dynamic widgets you need? It's all HTML in the end, right?</p>
+
+<p>Possibly, some of the impetus for this is the arguable feature of PHP that, unlike Ruby on Rails (at that time), PHP was dirt-cheap to deploy/host, whereas RoR required either a VPS or a pricey Engine Yard instance. This was, after all, before the days of free-ish <a href="http://heroku.com">Heroku</a> instances for low-traffic apps. And, even then, what if your blog became insanely popular? It could get pricey pretty quickly, whereas you could have a medium-traffic WordPress blog on some PHP host for, what, US$3.00 a month?</p>
+
+<p>So economics and technology collide. We find ourselves searching for a simpler solution, using better tools and easier hosting. For static sites, you can have free hosting on GitHub Pages just by pushing a site to the your-username.github.com repo under your GitHub account. For that matter, you can host a static site (virtually) for free damn near anywhere you like.</p>
+
+<p>So <em>why</em> were we spending all this time and effort building out complicated content management systems, just to spend unnecessary time and money on a blog?</p>
+
+<p>Static site generators are the answer. Spend your coding time actually coding for web <em>applications,</em> not for (mostly) static content. Sure, the learning curve is higher to use Octopress vs. WordPress. But I think I've <a href="/blog/2012/06/06/hackers-need-our-own-everything/">addressed this issue</a>.</p>
+
+<p>Before you build another CMS, or decide to use WordPress because it's the "obvious choice," ask your self this: What are the features I <em>actually</em> need? Can these be met by <code>%w{Jekyll Octopress Middleman Gumdrop other-static-generator}</code>? Then do what makes sense. Needlessly complicating your online life is not a virtue.</p>
+]]></content>
+  </entry>
+  
+</feed>

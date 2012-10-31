@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: apps | Practical Elegance]]></title>
+  <link href="http://decomplecting.org/blog/categories/apps/atom.xml" rel="self"/>
+  <link href="http://decomplecting.org/"/>
+  <updated>2012-10-31T15:38:37-04:00</updated>
+  <id>http://decomplecting.org/</id>
+  <author>
+    <name><![CDATA[Jason Lewis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Hackers Need Our Own Everything]]></title>
+    <link href="http://decomplecting.org/blog/2012/06/06/hackers-need-our-own-everything/"/>
+    <updated>2012-06-06T11:29:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/06/06/hackers-need-our-own-everything</id>
+    <content type="html"><![CDATA[<p>When I conceived of this post, it was going to be about how damn awesome <a href="http://octopress.org">Octopress</a> is. And it certainly is awesome; it powers this blog, and makes writing it a joy, whereas trying to use <a href="http://wordpress.com">Wordpress</a>, <a href="http://blogger.com">Blogger</a>, or even newer alternatives like <a href="http://tumblr.com">Tumblr</a> or <a href="http://postero.us">Posterous</a> was downright painful. But what I'm more interested in is the growing trend among apps, services, and even operating systems that has made projects like Octopress necessary.</p>
+
+<h3>The Tragedy of Google</h3>
+
+<p>For such a long time, Google did search better than many of us ever dreamt <em>possible</em> in the pre-Google days. But it wasn't just the intelligence of the search algorithms, or the massive cache and index behind Google search. Google made it possible to craft a finely-honed query from the front page, with excellent support for literal strings, boolean operators, required inclusion/exclusion, etc. And then came Google+.</p>
+
+<p>Google's commitment to search had been on the decline for a while, it seems... the only new features search had acquired in years were fairly useless things like page previews and, briefly, Twitter integration. Because that's integral to search.</p>
+
+<p>But when Google launched its abortion of a social network, usable search had to go. Not only did they kill one of the <a href="http://productforums.google.com/forum/#!topic/websearch/3oIWbew9xdE">most useful search operators</a> (Boolean +), but they also started filtering search results based on social connections in Google+. While this doesn't <em>always</em> end in having to re-search without "personal" results, I have a feeling that's only because I'm connected to so many developers on Google+. But if Google+ hadn't been such an abject failure, my mom might be on there, and we typically search about very different kinds of "cookies."  The situation with Google is so bad at this point, that I often get better results from <a href="http://duckduckgo.com/">Duck Duck Go</a>, which wraps a ton of different search engines and websites, and attempts to break the "filter bubble" by presenting hte same results to everyone. I like this in principle, but I miss Google's synchronized search history and habit of learning what results are relevant to me to (usually) provide better results.</p>
+
+<!--more-->
+
+
+<h3>Blogging for Hackers</h3>
+
+<p>So, let's face it: unless you wanted to host your own blog, and either write your own engine, or tweak one into submission, keeping an attractive, maintainable, and useful blog was either an expensive or losing proposition. Sadly, this isn't a recent change like the other phenomena addressed in this post, but it's still an issue.</p>
+
+<p>What's slightly alarming is the trend away from traditional blogging engines like Wordpress and Blogger, which, while not exactly hacker-friendly, were oriented toward content creation. The newer generation of blogging services are much more oriented toward the re-posting of content. While I'm okay in principle with re-posting (and I think "remix culture" is awesome), when your priority is saturation with "viral content" rather than the creation of OC, it makes it easy to ignore the creation of tools which lend themselves to the creation of content.</p>
+
+<p>Octopress is awesome because it doesn't try to be everything to everybody. Billed as "A blogging framework for hackers," Octopress is basically a set of <code>rake</code> tasks and plugins for <a href="https://github.com/Shopify/liquid">Liquid</a> and <a href="http://compass-style.org/">Compass</a>, all wrapped up with the tasty goodness of <a href="https://github.com/mojombo/jekyll">Jekyll</a>, the static site generator that powers <a href="http://pages.github.com">Github Pages</a>.</p>
+
+<p>In a nutshell, this means I can use my favorite text editor (lately, either <a href="http://www.vim.org/">Vim</a> or <a href="http://www.sublimetext.com/2">Sublime Text 2</a>, depending on my mood) to create my posts in Markdown, Textile, or Haml, and have Octopress generate pretty-styled HTML, CSS and JS, and deploy my blog to Github Pages (or Heroku) with a rake task. Even for non-programming power users, or anyone frustrated with Wordpress, really, Octopress is worth checking out.</p>
+
+<h3>Apple to Developers: "Go Fuck Yourselves"</h3>
+
+<p>Okay, slight hyperbole. But it feels that way sometimes. I've been using <a href="http://macromates.com/">TextMate</a> on OS X for Ruby (and Perl, and C, and Clojure, you get the picture...) for such a long time now, that I'm <em>really</em> loathe to change my workflow. Even though, conceptually, I prefer the idea of using Linux on all the things. But since Apple is now <em>blatantly</em> <a href="http://www.apple.com/macosx/mountain-lion/features.html">trying to turn my worsktation into a tablet</a>, I'm forcing myself to use the <a href="http://lubuntu.org/">Lubuntu</a> box sitting next to my iMac as much as possible.</p>
+
+<p><img class="float-right" src="/images/post-img/mtlion1.png" width="400"></p>
+
+<p>It's not just the "aesthetic" changes that chafe. I can deal with <a href="http://unity.ubuntu.com/">annoying UI crap</a>, especially when it's optional. But Apple is also changing the developer ecosystem, first with the Mac App Store, then with Gatekeeper, which will warn against installation of software not signed with an Apple developer account by default. It has been pointed out that this behavior is fairly straightforward to alter, but I still find the whole process dubious and, for me at least, it's another straw on the OS X camel's back. I'm not arguing that no one should use OS X, I'm just saying it's less and less attractive to me as a development platform.</p>
+
+<p>The whole allure of OS X was that it was a stable, supported, POSIX-compliant operating system that was enjoyable to use but afforded the user all of the power and flexibility of Unix. It looks like those days are over, and the days of creating powerful tools for developers and designers to create whatever they could imagine are over. The Mac is turning into an overpowered tablet, suited for content consumption rather than creation.</p>
+
+<p>Apple is not alone in its efforts to neuter the desktop. Not to be outdone in locking down the OS and polluting the developer ecosystem, Microsoft is scrambling to release Windows 8 so that Windows users can be as disoriented as possbile. Although there are <a href="http://mobileopportunity.blogspot.com/2012/05/fear-and-loathing-and-windows-8.html">good</a> <a href="http://pcunix.hubpages.com/hub/Why-Windows-8-might-Kill-Microsoft">arguments</a> that Windows 8 holds the threat of finally toppling the waning Microsoft hegemony, I'm actually jealous of Windows 8 in one way: Windows 8 includes an almost-workalike Windows 7 compatibility mode. I <em>wish</em> Lion had a "act like Snow Leopard" mode. Although one of the articles I just cited laments the loss of the Start menu in Win7 mode, I don't think it's that much of a loss, if PowerShell is still included (or better yet, Cygwin).</p>
+
+<p><img class="float-left" src="/images/post-img/win8-1.jpg" width="400"></p>
+
+<p>I use Windows as little as possible, so I'm less annoyed about Windows 8 than I am Lion. But the trend is disturbing, and is even being echoed to a degree (a greatly diminished degree) in <a href="http://www.gnome.org/gnome-3/">GNOME 3</a> and <a href="http://unity.ubuntu.com/">Ubuntu Unity</a>. But on Linux, at least, I have the option of using whatever window manager and desktop environment works best for me (or none at all).</p>
+
+<p>I realize that commercial operating system vendors need to target the widest possible user base. But the much-ballyhooed rise of the <a href="http://www.forbes.com/sites/venkateshrao/2011/12/05/the-rise-of-developeronomics/">developer-centric economy</a> would <em>seem</em> to suggest that pissing off developers is a <em>bad</em> idea. Apple and Microsoft spent the better part of the 1980's and 1990's competing not only for market-share, but for developer mind-share. The movement toward locking us into proprietary toolchains and ecosystems (XCode for Apple, VisualStudio for Microsoft) looks like little more than a cynical attempt to chain down developers in a walled garden. Hopefully, we don't fall for it.</p>
+
+<h3>For Us, By Us</h3>
+
+<p>It's been <a href="http://en.wikipedia.org/wiki/Desktop_Linux#Year_of_Desktop_Linux">The Year Of Linux On The Desktop</a> since at <em>least</em> 2000. I'm not going to be the next one to make grand proclamations (other than "total world domination <em>soon</em>"). But for me... right now, my primary development machines are a 27" iMac running Snow Leopard, and a 15" MacBook Pro, also running Snow Leopard. I won't be upgrading to Lion, and I'll miss the pretty Apple hardware. But when these are ready for replacement... let's just say I really hope <a href="http://www.theverge.com/2012/5/7/3006266/dell-project-sputnik-ubuntu-xps-13-developers">Project Sputnik</a> is a huge success for Dell.</p>
+
+<p>Although it's commercial software, targeted toward business users (and consumers) that pays the bills for most of us, I think it's important to remember that the people who make those tools are an important audience, too. I want to see more software of all kinds (web, desktop, and CLI) created by developers, for developers. Preferably open-source tools we can tweak and extend and continue to make better. I think that's my goal for this year, anyhow. I'm going to focus my efforts on projects that make it more fun to be a hacker, whether that's something like making blogging easier, creating build tools, or Linux desktop enhancements that are friendly to those of us who spend most of the day switching between an editor, a shell, and a web browser. I hope others have the same itch, and see the same need, and push back against the disturbing trend of hostility toward open systems and (by extension) the developers who use them.</p>
+
+<p><strong>Update:</strong> Thanks to the discussion on <a href="http://www.reddit.com/r/programming/comments/uo2sk/hackers_need_our_own_everything/">this reddit thread</a>, as well as the comments, I made a couple of corrections, particularly re: Duck Duck Go and Gatekeeper. Thanks to everyone who commented.</p>
+]]></content>
+  </entry>
+  
+</feed>

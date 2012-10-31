@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: psychology | Practical Elegance]]></title>
+  <link href="http://decomplecting.org/blog/categories/psychology/atom.xml" rel="self"/>
+  <link href="http://decomplecting.org/"/>
+  <updated>2012-10-31T15:38:37-04:00</updated>
+  <id>http://decomplecting.org/</id>
+  <author>
+    <name><![CDATA[Jason Lewis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Feedback Loops]]></title>
+    <link href="http://decomplecting.org/blog/2012/10/31/feedback-loops/"/>
+    <updated>2012-10-31T14:12:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/10/31/feedback-loops</id>
+    <content type="html"><![CDATA[<p>Sadly, I haven't added a blog post in roughly 2.5 months. I've had ideas for posts, but when it came time to set pen to page (or fingers to keyboard, as teh case may be) I just haven't had it in me. I really enjoy writing this blog, too. I wasn't quite sure what was going on, until I read one of the most insightful blog posts I've ever seen: <a href="http://edu.mkrecny.com/thoughts/be-nice-to-programmers">Be Nice To Programmers</a>.</p>
+
+<p>The tl;dr is a dialogue between a programmer and a guy who wishes he had the chops because he thinks coding is the neatest job in the world. The programmer tells him he thinks coding is making him miserable because the the development/debug process is the ultimate negative feedback loop.</p>
+
+<p><blockquote><p>My workflow is something like this.</p></p><p><p>write some code<br/>run the code<br/>get an error message<br/>find the error and back to step 1<br/>Hour by hour, day after day, I do this. Always searching for what's wrong with what I'm creating, rarely thinking about what's good about it. It's a negative reinforcement feedback loop.</p></blockquote></p>
+
+<p><span class='pullquote-right' data-pullquote='The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control.'>
+I definitely get the sentiment. But I think of this as the inner loop in the red-green-refactor cycle, so to speak. Yeah, coding (<em>especially</em> doing proper TDD) is going to make you hate the world (and possibly feel like an idiot) sometimes. But overall... I was in a job interview a few weeks ago, and was asked why I love being a programmer. I didn't even have to think about my response: The main reason to become a programmer is that the position of 'God' is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control. Ultimately, that's the takeaway: programming is <em>awesome.</em> But a job is still a job, and I think that's where some of the negative feedback loop comes in.
+</span></p>
+
+<p>My last post was just before a huge project I'd both originated and put a large amount of my time and effort into over the course of 15-18 months was shelved. It was ready to ship, but corporate politics being what it is (i.e., something I'd schedule a root canal to avoid, <em>especially</em> where I work), I tried to just move on and not lose sleep over it. Still, it rankled.</p>
+
+<!-- more -->
+
+
+<p>I haven't pushed a single new commit to any of my projects on Github. I haven't written a blog post. I have an engineering pad with a bunch of scribbled, inchoate notes for things I want to do, but can't seem to move on anything.</p>
+
+<p>My own theory is that we (hackers) are especially sensitive to feedback loops. I could go <a href="http://decomplecting.org/blog/2012/05/22/passion/">on and on</a>, and even cite <a href="http://www.codinghorror.com/blog/2006/07/separating-programming-sheep-from-non-programming-goats.html">more</a> <a href="http://www.bricklin.com/wontprogram.htm">notable</a> <a href="http://www.codinghorror.com/blog/2010/02/the-nonprogramming-programmer.html">bloggers</a> than myself, on my theory of what could be referred to as "programmer exceptionalism." That's not to say we (programmers who can actually build working (and hopefully, elegant) systems) are in any way <em>better</em> than non-programmers (or the <a href="http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html">Java Schools</a> crowd); it's just that the preponderance of anecdotal evidence (not to mention some <a href="http://www.eis.mdx.ac.uk/research/PhDArea/saeed/paper1.pdf">proper research</a>) suggests that <em>programmers are not normal.</em></p>
+
+<p>"Sensitivity to feedback loops" could also be a symptom of the intuition many of us experience when faced with an implementation that just <em>feels</em> wrong. We can, through due diligence, prove that this is the case eventually; but what is it that drives us to find exploits, or benchmark competing implementations? It's that little voice in the back of your head whispering, "This is wrong. And also, stupid."</p>
+
+<p>My main focus in my day-to-day programming life right now is dealing with interfaces for yet another vendor product that is very wrong, and very, very stupid. So when I come home, I just want to play <a href="http://guildwars2.com">Guild Wars 2</a> and not really think about coding. Which makes me even sadder, because I love hacking on side projects.</p>
+
+<p>And it's not that I haven't had some fun and some successes in the meantime. I wrote a pretty cool framework in Clojure for generating and emailing reports from various datasources. The core of it is going to be open source, as soon as I get around to that. But the grind... the grind, man. The grind.</p>
+
+<p>I don't know what the solution is. We can't all be working on innovative, game-changing products all the time. And sometimes things will get shelved the day you expect them to ship. I do know there needs to be a way to <em>love</em> this shit without going crazy or making oneself miserable.</p>
+
+<p>So, interwebs... suggestions?</p>
+]]></content>
+  </entry>
+  
+</feed>

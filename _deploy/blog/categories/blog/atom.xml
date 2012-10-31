@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blog | Practical Elegance]]></title>
+  <link href="http://decomplecting.org/blog/categories/blog/atom.xml" rel="self"/>
+  <link href="http://decomplecting.org/"/>
+  <updated>2012-10-31T15:38:37-04:00</updated>
+  <id>http://decomplecting.org/</id>
+  <author>
+    <name><![CDATA[Jason Lewis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Starting Over]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/08/starting-over/"/>
+    <updated>2012-05-08T09:46:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/08/starting-over</id>
+    <content type="html"><![CDATA[<p>I decided to retire my old blog, which had devolved into a platform for rants rather than anything truly worthwhile... to me, anyhow. Sure, my rants were amusing at times, and people seemed to enjoy them, but that's not the point of blogging for me.</p>
+
+<p>I want to talk about things that really matter, which (for me) includes simple, powerful code that works the way it is intended to.</p>
+
+<p>So, trying this blogging thing again.</p>
+]]></content>
+  </entry>
+  
+</feed>

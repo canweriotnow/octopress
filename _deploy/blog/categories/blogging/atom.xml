@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: blogging | Practical Elegance]]></title>
+  <link href="http://decomplecting.org/blog/categories/blogging/atom.xml" rel="self"/>
+  <link href="http://decomplecting.org/"/>
+  <updated>2012-10-31T15:38:37-04:00</updated>
+  <id>http://decomplecting.org/</id>
+  <author>
+    <name><![CDATA[Jason Lewis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Feedback Loops]]></title>
+    <link href="http://decomplecting.org/blog/2012/10/31/feedback-loops/"/>
+    <updated>2012-10-31T14:12:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/10/31/feedback-loops</id>
+    <content type="html"><![CDATA[<p>Sadly, I haven't added a blog post in roughly 2.5 months. I've had ideas for posts, but when it came time to set pen to page (or fingers to keyboard, as teh case may be) I just haven't had it in me. I really enjoy writing this blog, too. I wasn't quite sure what was going on, until I read one of the most insightful blog posts I've ever seen: <a href="http://edu.mkrecny.com/thoughts/be-nice-to-programmers">Be Nice To Programmers</a>.</p>
+
+<p>The tl;dr is a dialogue between a programmer and a guy who wishes he had the chops because he thinks coding is the neatest job in the world. The programmer tells him he thinks coding is making him miserable because the the development/debug process is the ultimate negative feedback loop.</p>
+
+<p><blockquote><p>My workflow is something like this.</p></p><p><p>write some code<br/>run the code<br/>get an error message<br/>find the error and back to step 1<br/>Hour by hour, day after day, I do this. Always searching for what's wrong with what I'm creating, rarely thinking about what's good about it. It's a negative reinforcement feedback loop.</p></blockquote></p>
+
+<p><span class='pullquote-right' data-pullquote='The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control.'>
+I definitely get the sentiment. But I think of this as the inner loop in the red-green-refactor cycle, so to speak. Yeah, coding (<em>especially</em> doing proper TDD) is going to make you hate the world (and possibly feel like an idiot) sometimes. But overall... I was in a job interview a few weeks ago, and was asked why I love being a programmer. I didn't even have to think about my response: The main reason to become a programmer is that the position of 'God' is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control. Ultimately, that's the takeaway: programming is <em>awesome.</em> But a job is still a job, and I think that's where some of the negative feedback loop comes in.
+</span></p>
+
+<p>My last post was just before a huge project I'd both originated and put a large amount of my time and effort into over the course of 15-18 months was shelved. It was ready to ship, but corporate politics being what it is (i.e., something I'd schedule a root canal to avoid, <em>especially</em> where I work), I tried to just move on and not lose sleep over it. Still, it rankled.</p>
+
+<!-- more -->
+
+
+<p>I haven't pushed a single new commit to any of my projects on Github. I haven't written a blog post. I have an engineering pad with a bunch of scribbled, inchoate notes for things I want to do, but can't seem to move on anything.</p>
+
+<p>My own theory is that we (hackers) are especially sensitive to feedback loops. I could go <a href="http://decomplecting.org/blog/2012/05/22/passion/">on and on</a>, and even cite <a href="http://www.codinghorror.com/blog/2006/07/separating-programming-sheep-from-non-programming-goats.html">more</a> <a href="http://www.bricklin.com/wontprogram.htm">notable</a> <a href="http://www.codinghorror.com/blog/2010/02/the-nonprogramming-programmer.html">bloggers</a> than myself, on my theory of what could be referred to as "programmer exceptionalism." That's not to say we (programmers who can actually build working (and hopefully, elegant) systems) are in any way <em>better</em> than non-programmers (or the <a href="http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html">Java Schools</a> crowd); it's just that the preponderance of anecdotal evidence (not to mention some <a href="http://www.eis.mdx.ac.uk/research/PhDArea/saeed/paper1.pdf">proper research</a>) suggests that <em>programmers are not normal.</em></p>
+
+<p>"Sensitivity to feedback loops" could also be a symptom of the intuition many of us experience when faced with an implementation that just <em>feels</em> wrong. We can, through due diligence, prove that this is the case eventually; but what is it that drives us to find exploits, or benchmark competing implementations? It's that little voice in the back of your head whispering, "This is wrong. And also, stupid."</p>
+
+<p>My main focus in my day-to-day programming life right now is dealing with interfaces for yet another vendor product that is very wrong, and very, very stupid. So when I come home, I just want to play <a href="http://guildwars2.com">Guild Wars 2</a> and not really think about coding. Which makes me even sadder, because I love hacking on side projects.</p>
+
+<p>And it's not that I haven't had some fun and some successes in the meantime. I wrote a pretty cool framework in Clojure for generating and emailing reports from various datasources. The core of it is going to be open source, as soon as I get around to that. But the grind... the grind, man. The grind.</p>
+
+<p>I don't know what the solution is. We can't all be working on innovative, game-changing products all the time. And sometimes things will get shelved the day you expect them to ship. I do know there needs to be a way to <em>love</em> this shit without going crazy or making oneself miserable.</p>
+
+<p>So, interwebs... suggestions?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Static Is Beautiful]]></title>
+    <link href="http://decomplecting.org/blog/2012/07/04/static-is-beautiful/"/>
+    <updated>2012-07-04T23:21:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/07/04/static-is-beautiful</id>
+    <content type="html"><![CDATA[<p>I want to return to the core sfocus of this blog, elegance and simplicity in technology, but in kind of a meta way.</p>
+
+<p>One trend that seems to be popping up again and again is the move away from over-featured and unmanageable content management systems (I'm looking at you, <a href="http://wordpress.org/">Wordpress</a>), and toward static site generators.</p>
+
+<p>This blog, for instance, is generated from <a href="http://daringfireball.net/projects/markdown/">Markdown</a> files by <a href="http://octopress.org/">Octopress</a>. More on Octopress later, but I want to survey the trend a bit.</p>
+
+<p>This post was prompted by one of the auto-tweets by <a href="https://twitter.com/rubygems">@rubygems</a>, about yet another static site generation tool called <a href="https://rubygems.org/gems/gumdrop">gumdrop</a>. I've been playing with a few different static site generation tools, so first I'd like to survey a few examples, and then I'll talk about why I think they matter.</p>
+
+<!-- more -->
+
+
+<h3>Jekyll</h3>
+
+<p><a href="https://github.com/mojombo/jekyll">Jekyll</a> is kinda the all-father of the current crop of static site generators. Created by <a href="http://tom.preston-werner.com/">Tom Preston-Werner</a> of <a href="https://github.com">GitHub</a>, it powers many, many <a href="http://pages.github.com/">GitHub Pages</a> sites, and is pretty much pure awesomesauce. It's very bare bones, but that's what allows for such enormous flexibility. It's also what allows Jekyll to serve as the backbone of something like Octopress.</p>
+
+<h3>Octopress</h3>
+
+<p><a href="http://octopress.org">Octopress</a> is my current favorite, as I use it all the time to power <a href="http://decomplecting.org">this blog</a>. Octopress wraps Jekyll with a bunch of templating goodness, which you can easily customize to your heart's content.</p>
+
+<p>One of the best thngs about Octopress, however, is its plugin system. Not only does it come pre-loaded with some snazzy plugins for the <a href="https://github.com/Shopify/liquid">Liquid</a> template language, but it makes it easy to extend with your own clever hacks.</p>
+
+<p>Better yet, as it's a hacker-oriented blogging engine, it makes it dead simple to set up common widgets and services, from a GitHub repo listing to Google Analytics, just by editing <code>_config.yml</code>, the global configuration file.</p>
+
+<p>Best of all, new post generation, testing, building, and deploying are all handled by <code>rake</code> tasks, and deployment via GitHub Pages, <a href="http://heroku.com">Heroku</a>, and <code>rsync</code> are easy as hell to configure.</p>
+
+<h3>Middleman</h3>
+
+<p><a href="http://middlemanapp.com/">Middleman</a> is a newer static site generation tool, with all the sauce. You can template/style/script with Haml, Slim, Sass, Compass, CoffeeScript, and I'm sure others. It comes with <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> baked in (if you're not using this, you probably should be), and it's built around <a href="http://www.sinatrarb.com">Sinatra</a>.</p>
+
+<p>I haven't deployed Middleman anywhere yet, as the only static-content site I'm running right now is this blog, but it's definitely on the radar for the second I want to branch out from blogging with this domain (or any of my others).</p>
+
+<h3>Gumdrop</h3>
+
+<p>I know way less about <a href="https://github.com/darthapo/gumdrop">gumdrop</a> than about the other static site generators out there... but the <a href="https://github.com/darthapo/gumdrop/wiki/Sites-Using-Gumdrop">sites powered by gumdrop</a> are nothing if not impressive. Gumdrop bills itself as "The sweet 'n simple cms/prototyping tool for creating static html websites and webapps."</p>
+
+<p>I can't argue. The generation looks slick and simple, but also powerfully configurable, thanks to the awesomesauce of Ruby blocks.</p>
+
+<p>I'll definitely be playing with this in my <em>copious</em> spare time.</p>
+
+<h2>Why Static Site Generation Matters</h2>
+
+<p>It's pretty simple, actually. It all comes down to Wordpress.</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>And there's only one thing worse in my eyes than PHP, and that's Wordpress PHP <a href="http://t.co/C40EfvOD" title="http://buff.ly/LkQIWH">buff.ly/LkQIWH</a></p>&mdash; Michael Robinson (@pagesofinterest) <a href="https://twitter.com/pagesofinterest/status/220254607849426946" data-datetime="2012-07-03T20:36:05+00:00">July 3, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>We all <em>know</em> PHP is <a href="http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/">a terrible excuse for a programming language</a>, and also that the blogging platform wars, until recently, came down to only WordPress vs. <a href="http://www.blogger.com">Blogger</a>. Of course, <a href="http://tumblr.com">Tumblr</a> and <a href="http://postero.us">Postero.us</a> have breathed new life into a limited set of choices. But unless you wanted only the most basic features a hosted platform (everything but WordPress, honestly) provided, you'd need to settle on WordPress, because as an open-source platform, it had this <del>great</del> almost usable ecosystems of custom plugins. And somehow, the blogging community convinced ourselves we <em>needed</em> this plugin marketplace.</p>
+
+<p>Now, don't get me wrong. As economies go, the WordPress plugin market has proved a lucrative environment for many freelance PHP developers I know. Mind you, because they were writing WordPress PHP 8-10 hours a day, their mental states ranged between suicidal and psychotic... we all have our limits.</p>
+
+<p>The need for a sane solution to this problem is, I think, what led to the development of blogging engines like <a href="http://fdv.github.com/typo/">typo</a>.</p>
+
+<p>And, I think, the attempt to build a new, saner, databased-backed, comprehensive, blog-aware CMS system learned that a databased-backed, comprehensive, blog-aware CMS system is a whole bunch of <a href="http://en.wikipedia.org/wiki/You_ain't_gonna_need_it">YAGNI</a> features rolled up in a big, painful bundle.</p>
+
+<p>Why not just generate your blog posts when you write them? Why not just use Javascript for whatever dynamic widgets you need? It's all HTML in the end, right?</p>
+
+<p>Possibly, some of the impetus for this is the arguable feature of PHP that, unlike Ruby on Rails (at that time), PHP was dirt-cheap to deploy/host, whereas RoR required either a VPS or a pricey Engine Yard instance. This was, after all, before the days of free-ish <a href="http://heroku.com">Heroku</a> instances for low-traffic apps. And, even then, what if your blog became insanely popular? It could get pricey pretty quickly, whereas you could have a medium-traffic WordPress blog on some PHP host for, what, US$3.00 a month?</p>
+
+<p>So economics and technology collide. We find ourselves searching for a simpler solution, using better tools and easier hosting. For static sites, you can have free hosting on GitHub Pages just by pushing a site to the your-username.github.com repo under your GitHub account. For that matter, you can host a static site (virtually) for free damn near anywhere you like.</p>
+
+<p>So <em>why</em> were we spending all this time and effort building out complicated content management systems, just to spend unnecessary time and money on a blog?</p>
+
+<p>Static site generators are the answer. Spend your coding time actually coding for web <em>applications,</em> not for (mostly) static content. Sure, the learning curve is higher to use Octopress vs. WordPress. But I think I've <a href="/blog/2012/06/06/hackers-need-our-own-everything/">addressed this issue</a>.</p>
+
+<p>Before you build another CMS, or decide to use WordPress because it's the "obvious choice," ask your self this: What are the features I <em>actually</em> need? Can these be met by <code>%w{Jekyll Octopress Middleman Gumdrop other-static-generator}</code>? Then do what makes sense. Needlessly complicating your online life is not a virtue.</p>
+]]></content>
+  </entry>
+  
+</feed>

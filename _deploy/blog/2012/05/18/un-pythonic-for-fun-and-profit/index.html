@@ -1,0 +1,482 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Un-Pythonic for Fun and Profit - Practical Elegance</title>
+  <meta name="author" content="Jason Lewis">
+
+  
+  <meta name="description" content="This post isn&#8217;t meant to play into some hacker holy war, nor is it intended to denigrate the usefulness of Python for various tasks. Steve &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/PracticalElegance" rel="alternate" title="Practical Elegance" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Dosis|Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" >
+
+if (window.top !== window.self) {
+
+document.write = "";
+
+window.top.location = window.self.location; setTimeout(function(){
+
+document.body.innerHTML='';
+
+},1);
+
+window.self.onload=function(evt){
+
+document.body.innerHTML='';
+
+};
+
+}
+
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22978638-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Practical Elegance</a></h1>
+  
+    <h2>"Elegance is not a dispensable luxury." - Edsgar Dijkstra</h2>
+  
+</hgroup>
+
+
+  <a href="https://github.com/canweriotnow">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+  </a>
+
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/PracticalElegance" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:decomplecting.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Un-Pythonic for Fun and Profit</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-18T15:01:00-04:00" pubdate data-updated="true">2012-05-18</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>This post isn&#8217;t meant to play into some hacker holy war, nor is it intended to denigrate the usefulness of Python for various tasks. Steve Yegge has done <a href="https://sites.google.com/site/steveyegge2/tour-de-babel">a much better job than I can</a> of explicating some of the issues other programmers have with Python, both the language and the community around it; I still agree with his remarks there.</p>
+
+<p>But there <em>are</em> some (major, IMHO) issues with the &#8220;Pythonic&#8221; attitude toward programming. And they start with &#8220;The Zen of Python.&#8221;</p>
+
+<h2>The Zen of Python</h2>
+
+<p>There&#8217;s a lot to like about <a href="http://www.python.org/dev/peps/pep-0020/">The Zen of Python</a>. On the first face of it, it&#8217;s a pretty good set of principles:</p>
+
+<pre><code>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+</code></pre>
+
+<p>There&#8217;s a lot here that would be attractive, if not obvious, to any given Rubyist or Clojurian. I think the problem is that Pythonistas tend to get hung up on the <em>bad</em> elements of the &#8220;Zen of Python&#8221;, to the detriment of the positive ones. So I&#8217;ll just go through some of the ones that cause the most friction with non-Pythonistas.</p>
+
+<!-- more -->
+
+
+<h3>1. There should be one&#8211; and preferably only one &#8211;obvious way to do it.</h3>
+
+<p>I think this is the elephant in the room. Whereas Perl, Ruby, and (my god, to such a degree) Lisp are firmly in the <a href="http://catb.org/jargon/html/T/TMTOWTDI.html">TMTOWTDI</a> camp, Guido in his infinite wisdom has decreed that this principle (one vital to <em>programmer freedom</em>) should be abjured in favor of strict newb-safety, via the principle of having ONE way to do any given thing.</p>
+
+<p><img class="float-right" src="/images/helen-lovejoy.png"></p>
+
+<p>This is a real design flaw with Python. Valuing newb-friendliness over developer productivity (and happiness?) is great if you&#8217;re designing a strictly academic language.</p>
+
+<p>Actually, I take that back. It&#8217;s still a bad idea. Python shouldn&#8217;t even be used as a teaching language, because it confuses students. I&#8217;ve had first-year CS majors try to convince me that Python is as object-oriented as Ruby. This simply isn&#8217;t true; Python combines a hodgepodge of paradigms (granted, Ruby does as well), but at its core, Python is a procedural language with some OO tacked on as an afterthought, and you can still see the bolts. It has more in common with C++ than Smalltalk, in this respect. But if you&#8217;re learning your entire concept of object-orientation from Python, and you have a teacher or professor telling you it&#8217;s OO, how are you to know better.</p>
+
+<p>Getting back to the TOOWTDI principle, this is a more egregious violation of programmer freedom than significant whitespace (how I format my code is a personal, or team decision; I don&#8217;t need a language designer telling me how to indent). It&#8217;s so severe with Python that Guido originally planned to <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=98196">remove map(), reduce(), and lambda</a> from Python 3000.</p>
+
+<p>The argument from Python&#8217;s BDFL was that <code>map()</code> and <code>reduce()</code> were confusing and only existed in Python because some <a href="http://c2.com/cgi/wiki?SmugLispWeenie">Smug Lisp Weenie</a> had submitted them 12 years previously, and that list comprehensions were the Pythonical-Canonical way of dealing with lists. Okay, list comprehensions are okay and all (I&#8217;ll leave aside the debate over whether they are in any way more readable than functional constructs), but <em>who is it hurting to offer alternatives?</em></p>
+
+<p>Ruby has <code>#map</code> and <code>#reduce</code>, as well as <code>#collect</code> and <code>#inject</code>, which are aliases for the previous two methods (respectively). This doesn&#8217;t stop you from iterating over lists instead, using generators, or anything else you&#8217;d like to do. It just seems like a combination of &#8220;I don&#8217;t like the functional style, so nobody else can have it either,&#8221; along with &#8220;this might confuse a newb, and we&#8217;ll lose another convert!&#8221;, or something.</p>
+
+<h3>2. Beautiful is better than ugly.</h3>
+
+<p>Can&#8217;t argue with this one. Beautiful is <em>most certainly</em> better than ugly. When it comes to the Zen of Python, however, beauty is most definitely in the eye of the beholder.</p>
+
+<p>In a <a href="/blog/2012/05/08/simplicity/">previous post</a> I used David Gelerntner&#8217;s definition of &#8220;machine beauty,&#8221; i.e., &#8220;an inspired mating of simplicity and power.&#8221; I think this holds true, and is at the core of what we recognize as elegance in software.</p>
+
+<p>Sadly, I think it is quite clear that this is <em>not</em> what the Python community means by &#8220;beauty.&#8221; Python is always only too eager to sacrifice power (and even expressiveness) on the altar of a shallow view of &#8220;simplicity.&#8221;</p>
+
+<p>I can think of no better example than <code>lambda</code> in Python. Not only are Python lambdas a neutered shadow of lambdas in Ruby or Lisp, their mere existence irritated Python&#8217;s BDFL to the point that he wanted to excise them from the language altogether. (For more on lambas (and other syntax) in Ruby and Python, read <a href="http://peepcode.com/blog/2010/what-pythonistas-think-of-ruby">this</a> and then go watch <a href="http://vimeo.com/9471538">this</a>.)</p>
+
+<p>Now, I won&#8217;t go into lambdas and why they matter here, I&#8217;m sure you know how to Google. The point is that the Pythonic tendency, when confronted with a &#8220;distasteful&#8221; construct, seems fall into three categories (with possible overlap):</p>
+
+<ul>
+<li>Ban it from the language before implementation</li>
+<li>Remove it from the language, breaking backward-compatibility</li>
+<li>Make its userspace implementation impossible.</li>
+</ul>
+
+
+<p>Pythonistas are typically horrified by the fact that in Ruby, you can monkey-patch <code>Object</code> and extend the language in novel ways. I&#8217;m not sure how most Python aficionados feel about Lisp (<a href="http://norvig.com/python-lisp.html">Peter Norvig</a> notwithstanding), but I can&#8217;t imagine them being too friendly toward macros.</p>
+
+<h3>3. Simple is better than complex.</h3>
+
+<p>The reason I called Python&#8217;s concept of simplicity &#8220;shallow&#8221; is that it conflates &#8220;simple&#8221; with &#8220;easy.&#8221;</p>
+
+<p>Having multiple ways of doing something does not complect a programming language. Arbitrarily jumping between multiple possible implementations within the implementation of a single program <em>does</em> complect that codebase, but that&#8217;s why self-discipline is an important programmer trait.</p>
+
+<p>Self-discipline is important. I don&#8217;t need a programming language to impose this from without, and I <em>especially</em> don&#8217;t want Guido making these decisions for me. I don&#8217;t use <a href="http://c2.com/cgi/wiki?BondageAndDisciplineLanguage">bondage-and-discipline languages</a>, and neither should you.</p>
+
+<p>Seriously, guise.</p>
+
+<h3>4. Explicit is better than implicit.</h3>
+
+<p>I don&#8217;t care what your philosophy is, passing <code>self</code> as an explicit parameter is just evil.</p>
+
+<h3>Finally&#8230;</h3>
+
+<p>Well, there was more I was planning to cover, but this post is long enough as it is. I&#8217;ll probably do a follow-up at some point in the future. If you think I&#8217;m completely wrong, or just wrong on any of the points here, tell me why (preferably civilly) in the comments.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Jason Lewis</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-18T15:01:00-04:00" pubdate data-updated="true">2012-05-18</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/coding/'>coding</a>, <a class='category' href='/blog/categories/languages-/'>languages,</a>, <a class='category' href='/blog/categories/python-/'>python,</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit/" data-via="canweriotnow" data-counturl="http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/05/09/job-interview/" title="Previous Post: job_interview">&laquo; job_interview</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/05/22/passion/" title="Next Post: Passion, The Ultimate Virtue">Passion, The Ultimate Virtue &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <a href="http://internetdefenseleague.org">
+    <img src="http://internetdefenseleague.org/images/badges/final/super_badge.png" alt="Member of The Internet Defense League" />
+  </a>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/10/31/feedback-loops/">Feedback Loops</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and you</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/03/generational-impedance-mismatch/">Generational Impedance Mismatch</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/03/legacy-systems-on-rails-part-2/">Legacy Systems on Rails (Part 2)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/02/legacy-systems-on-rails-part-1/">Legacy Systems on Rails (Part 1)</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/canweriotnow">@canweriotnow</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'canweriotnow',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("canweriotnow", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/canweriotnow" class="twitter-follow-button" data-show-count="false">Follow @canweriotnow</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/canweriotnow?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/canweriotnow">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+<section>
+  <h1>Coderwall Badges</h1>
+  <p>
+    <script type="text/javascript">
+      function display_coderwall(args) {
+        var badges = args["data"]["badges"];
+        var wall = '';
+        for ( var i = 0; i < badges.length; i++ ) {
+          var alt_txt = badges[i]["name"];
+          var title_txt = badges[i]["name"] + ' - ' + badges[i]["description"];
+          wall += '<a href="http://coderwall.com/canweriotnow/"><img src="'
+            + badges[i]["badge"]
+            + '" width="48" height="48" alt="' + alt_txt
+            + '" title="' + title_txt
+            + '"/></a>';
+        }
+        document.write(wall);
+      }
+    </script>
+    <script src="http://coderwall.com/canweriotnow.json?callback=display_coderwall"></script>
+  </p>
+  
+  <p><a href="http://coderwall.com/canweriotnow"><img src="http://api.coderwall.com/canweriotnow/endorsecount.png" /></a></p>
+  
+</section>
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/110736810583208350607?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2012 - Jason Lewis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
+- Hosted by <a href="http://pages.github.com">Github Pages</a>
+</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'canweriotnow';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit/';
+        var disqus_url = 'http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

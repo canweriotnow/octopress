@@ -1,0 +1,1542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Practical Elegance]]></title>
+  <link href="http://decomplecting.org/atom.xml" rel="self"/>
+  <link href="http://decomplecting.org/"/>
+  <updated>2012-10-31T15:38:37-04:00</updated>
+  <id>http://decomplecting.org/</id>
+  <author>
+    <name><![CDATA[Jason Lewis]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Feedback Loops]]></title>
+    <link href="http://decomplecting.org/blog/2012/10/31/feedback-loops/"/>
+    <updated>2012-10-31T14:12:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/10/31/feedback-loops</id>
+    <content type="html"><![CDATA[<p>Sadly, I haven&#8217;t added a blog post in roughly 2.5 months. I&#8217;ve had ideas for posts, but when it came time to set pen to page (or fingers to keyboard, as teh case may be) I just haven&#8217;t had it in me. I really enjoy writing this blog, too. I wasn&#8217;t quite sure what was going on, until I read one of the most insightful blog posts I&#8217;ve ever seen: <a href="http://edu.mkrecny.com/thoughts/be-nice-to-programmers">Be Nice To Programmers</a>.</p>
+
+<p>The tl;dr is a dialogue between a programmer and a guy who wishes he had the chops because he thinks coding is the neatest job in the world. The programmer tells him he thinks coding is making him miserable because the the development/debug process is the ultimate negative feedback loop.</p>
+
+<blockquote><p>My workflow is something like this.</p><p>write some code<br/>run the code<br/>get an error message<br/>find the error and back to step 1<br/>Hour by hour, day after day, I do this. Always searching for what&#8217;s wrong with what I&#8217;m creating, rarely thinking about what&#8217;s good about it. It&#8217;s a negative reinforcement feedback loop.</p></blockquote>
+
+
+<p><span class='pullquote-right' data-pullquote='The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your _job_ is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control.'>
+I definitely get the sentiment. But I think of this as the inner loop in the red-green-refactor cycle, so to speak. Yeah, coding (<em>especially</em> doing proper TDD) is going to make you hate the world (and possibly feel like an idiot) sometimes. But overall&#8230; I was in a job interview a few weeks ago, and was asked why I love being a programmer. I didn&#8217;t even have to think about my response: The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control. Ultimately, that&#8217;s the takeaway: programming is <em>awesome.</em> But a job is still a job, and I think that&#8217;s where some of the negative feedback loop comes in.
+</span></p>
+
+<p>My last post was just before a huge project I&#8217;d both originated and put a large amount of my time and effort into over the course of 15-18 months was shelved. It was ready to ship, but corporate politics being what it is (i.e., something I&#8217;d schedule a root canal to avoid, <em>especially</em> where I work), I tried to just move on and not lose sleep over it. Still, it rankled.</p>
+
+<!-- more -->
+
+
+<p>I haven&#8217;t pushed a single new commit to any of my projects on Github. I haven&#8217;t written a blog post. I have an engineering pad with a bunch of scribbled, inchoate notes for things I want to do, but can&#8217;t seem to move on anything.</p>
+
+<p>My own theory is that we (hackers) are especially sensitive to feedback loops. I could go <a href="http://decomplecting.org/blog/2012/05/22/passion/">on and on</a>, and even cite <a href="http://www.codinghorror.com/blog/2006/07/separating-programming-sheep-from-non-programming-goats.html">more</a> <a href="http://www.bricklin.com/wontprogram.htm">notable</a> <a href="http://www.codinghorror.com/blog/2010/02/the-nonprogramming-programmer.html">bloggers</a> than myself, on my theory of what could be referred to as &#8220;programmer exceptionalism.&#8221; That&#8217;s not to say we (programmers who can actually build working (and hopefully, elegant) systems) are in any way <em>better</em> than non-programmers (or the <a href="http://www.joelonsoftware.com/articles/ThePerilsofJavaSchools.html">Java Schools</a> crowd); it&#8217;s just that the preponderance of anecdotal evidence (not to mention some <a href="http://www.eis.mdx.ac.uk/research/PhDArea/saeed/paper1.pdf">proper research</a>) suggests that <em>programmers are not normal.</em></p>
+
+<p>&#8220;Sensitivity to feedback loops&#8221; could also be a symptom of the intuition many of us experience when faced with an implementation that just <em>feels</em> wrong. We can, through due diligence, prove that this is the case eventually; but what is it that drives us to find exploits, or benchmark competing implementations? It&#8217;s that little voice in the back of your head whispering, &#8220;This is wrong. And also, stupid.&#8221;</p>
+
+<p>My main focus in my day-to-day programming life right now is dealing with interfaces for yet another vendor product that is very wrong, and very, very stupid. So when I come home, I just want to play <a href="http://guildwars2.com">Guild Wars 2</a> and not really think about coding. Which makes me even sadder, because I love hacking on side projects.</p>
+
+<p>And it&#8217;s not that I haven&#8217;t had some fun and some successes in the meantime. I wrote a pretty cool framework in Clojure for generating and emailing reports from various datasources. The core of it is going to be open source, as soon as I get around to that. But the grind&#8230; the grind, man. The grind.</p>
+
+<p>I don&#8217;t know what the solution is. We can&#8217;t all be working on innovative, game-changing products all the time. And sometimes things will get shelved the day you expect them to ship. I do know there needs to be a way to <em>love</em> this shit without going crazy or making oneself miserable.</p>
+
+<p>So, interwebs&#8230; suggestions?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[LadyCoders, Twitroversy, and you]]></title>
+    <link href="http://decomplecting.org/blog/2012/08/13/ladycoders/"/>
+    <updated>2012-08-13T21:41:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/08/13/ladycoders</id>
+    <content type="html"><![CDATA[<p>So, I had intended my next post to address some of the (valid) criticism of Github that&#8217;s been making the rounds lately, but a much more disturbing Twitroversy has emerged today.</p>
+
+<p>A group of women called <a href="http://ladycoders.com">LadyCoders</a> started a <a href="http://www.kickstarter.com/projects/166494057/ladycoders-get-hired-seattle-2012">Kickstarter campaign</a> to fund a conference/seminar geared toward helping women to get programming and other tech jobs. Great idea, right? There are <a href="http://girldevelopit.com/">many</a> <a href="http://www.blackgirlscode.com/">projects</a> devoted to giving women the skills they need to write software, but as far as addressing the fundamental issue that the industry itself is pretty much a boys&#8217; club (not assigning blame, just acknowledging reality), much less has been done in that area.</p>
+
+<p>So the good folks at LadyCoders wanted to help get women <em>hired,</em> not just trained. Pretty cool.</p>
+
+<p>Well, a lot of people thought so. As I write this, they&#8217;re &lt; US$6k away from their US$23k funding goal. But&#8230; well, there was some dissent:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>Sick and wrong: &#8220;it’s our job (for now) to be easily integrated into an all-male team, **nonthreatening,** and hyper-skilled&#8221;- <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a></p>&mdash; Shanley Kane (@shanley) <a href="https://twitter.com/shanley/status/235163013227880449" data-datetime="2012-08-13T23:56:46+00:00">August 13, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I completely get where @shanley is coming from&#8230; but the amount of Twitroversy here seemed&#8230; disproportionate.</p>
+
+<!--more-->
+
+
+<p>Sorry for picking on @shanley so much, but&#8230; then there was this:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>Legit response from <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a>: &#8220;I know what works, whether or not it&#8217;s PC.&#8221; Please do not fund this shit on kickstarter.</p>&mdash; Shanley Kane (@shanley) <a href="https://twitter.com/shanley/status/235166808880074753" data-datetime="2012-08-14T00:11:51+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>You can go search for @ladycoders mentions on Twitter if you want to see more&#8230; but here&#8217;s the issue I take: fundamentally, the issue LadyCoders is trying to address is that the software industry is a male-dominated space which has been difficult for even the most highly-skilled women to penetrate.</p>
+
+<p>I can&#8217;t speculate as to the eventual success or failure of LadyCoders as far as increasing the number of women working in software development or IT in general. But I do see the pragmatic value of a quasi-entryist, realpolitik solution to this problem.</p>
+
+<p>Criticizing an organization trying to serve a real, valid feminist goal (material gains for women in a historically male-dominated sector), by all means necessary, just seems counter-productive. &#8220;Seem non-threatening&#8221; might be advice that highlights now fucked-up society is, but it isn&#8217;t fucked-up advice if your goal is material gains for an oppressed group. Once you&#8217;ve achieved your goals, shift the goalposts of &#8220;(non-)threatening&#8221; in the desired direction.</p>
+
+<p>Queer/trans folks have been doing this for years, right? Really, everyone has&#8230; You don&#8217;t go into your job interview in the clothes you wear to the club. If your subculture doesn&#8217;t match, you don&#8217;t interview in your bondage pants and Aus-Rotten t-shirt (old punk, here)&#8230; if who or what you are is out of the mainstream, you mute it depending on the culture of where you want a job.</p>
+
+<p>For many folks, &#8220;passing&#8221; is an option. I think what LadyCoders is trying to highlight or confront (I hope they correct me if I&#8217;m wrong) is that gender isn&#8217;t really the issue, it&#8217;s perception, stereotypes, and cultural bias; by ameliorating/sidestepping the (currently wrong and terrible) negative perception women sometimes have in techie circles, you have more opportunity to break down the perception.</p>
+
+<p>You cover tattoos, take out piercings&#8230; none of this is <strong>right,</strong> but it&#8217;s just how it is, and you need to get inside before you can try to change anything.</p>
+
+<h3>Partial Measures</h3>
+
+<p>While I appreciate the validity of realpolitik solutions, I also acknowledge that it&#8217;s <em>fucking frustrating.</em></p>
+
+<blockquote class="twitter-tweet"><p>Women, people of color, and other marginalized groups have been forced to work within the system forever. It&#8217;s time to burn the system down.</p>&mdash; Ashe Dryden (@ashedryden) <a href="https://twitter.com/ashedryden/status/235167798211534848" data-datetime="2012-08-14T00:15:46+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>There are few tweets I agree with more.</p>
+
+<p>But it&#8217;s this whole realpolitik thing.</p>
+
+<p>The same sentiment that comes down so hard on LadyCoders (and seems to be responsible for <a href="http://ladycoders.tumblr.com/day/2012/08/13">some DDOS attacks</a>), echoes the sentiment that some &#8220;anarchists&#8221; (scare quotes belie my own prejudice) have against labor unions and other &#8220;recuperative&#8221; examples of self-organization by the proletariat and other oppressed groups.</p>
+
+<p>Personally, I think it&#8217;s time for a new social order. But until that order is ready to self-organize and build a new society from the ashes of the old, we need every possible means of achieving material gains for every group that has been deprived by our current society. And if that means women helping women to get their foot in the door at a <em>(for now)</em> male-dominated workplace, that&#8217;s better than women <em>not</em> getting the opportunity to make incremental material gains.</p>
+
+<p>I get the frustration, I do. I don&#8217;t fault anyone (including those I embedded tweets from) for being frustrated. But attacking those who share your goals because they lack your ideological purity&#8230; that&#8217;s a recipe for burning out without accomplishing anything. Stop it.</p>
+
+<p>So I hope you will help LadyCoders reach their KickStarter goal; if it&#8217;s a flop, well, something else will come along. If it&#8217;s a success, hopefully more cynical, realpolitik, entryist projects will get more women into male-dominated fields and achieve positive change within those fields, and material gains for women.</p>
+
+<h4>Personal Note</h4>
+
+<p>This is my hacker blog, so I don&#8217;t usually post anything related to my personal politics here. Other than my free software zealotry, I really think the set intersection of my professional and personal/political life is a narrow band indeed.</p>
+
+<p>But this sort of goes to the heart of a number of overlapping conversations I&#8217;ve been having of late, and I think the same sort of demand for a certain ideological purity is at the heart of many of these&#8230; so once it started to attack something I see as having a potential net positive effect on the software industry, and on the economic situation of women in general&#8230; I had to comment.</p>
+
+<p>I don&#8217;t fundamentally disagree with most of the criticism leveled toward LadyCoders on Twitter, either&#8230; I just think the caremad arguments are counterproductive, like most infighting.</p>
+
+<p>Also&#8230; I don&#8217;t necessarily think everything in their seminar is necessarily the best idea&#8230; but just because I <a href="https://rubygems.org/gems/job_interview">wrote a gem to help with job interviews</a> doesn&#8217;t mean I really know what women encounter in the hiring process. So I&#8217;m willing to assume the ladies at LadyCoders know what they&#8217;re doing better than I do.</p>
+
+<p>Back to apolitical coding tips next post, I promise. Unless you&#8217;re into that whole Steve Yegge liberal/conservative software engineering idea. In which case&#8230; you&#8217;re on your own.</p>
+
+<h4>UPDATE</h4>
+
+<p>After I first posted this, the awesome @chriseppstein suggested all might not be legit:</p>
+
+<blockquote class="twitter-tweet"><p>Pretty sure you guys are getting trolled pretty hard by <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a>.</p>&mdash; Chris Eppstein (@chriseppstein) <a href="https://twitter.com/chriseppstein/status/235210422477799424" data-datetime="2012-08-14T03:05:09+00:00">August 14, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I don&#8217;t think LadyCoders is a troll, but if it is, pretty damn epic, and I&#8217;ll admit to be taken in. Either way, though, I think the analysis above holds true&#8230; feel free to disagree in the comments, however, as always.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Generational Impedance Mismatch]]></title>
+    <link href="http://decomplecting.org/blog/2012/08/03/generational-impedance-mismatch/"/>
+    <updated>2012-08-03T15:48:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/08/03/generational-impedance-mismatch</id>
+    <content type="html"><![CDATA[<p>One thing I&#8217;ve come to observe working in higher ed is that you can run into a lot of issues with what I want to term &#8220;generational impedance mismatch.&#8221; It&#8217;s what happens when your ostensible customers are about 40 years older than your target demographic.</p>
+
+<p>When I started on an internal administrative application about two years ago, I threw in some error pages with lolcats on them because&#8230; well, error pages are boring. Those got yanked because the customer thought they were &#8220;unprofessional.&#8221; Okay, sure. It&#8217;s an administrative app, so maybe this isn&#8217;t the best thing to throw up after a catastrophic failure:</p>
+
+<p><img class="center" src="http://decomplecting.org/images/post-img/im-in-ur-serverz.jpeg"></p>
+
+<p>But the new crop of apps I&#8217;m writing don&#8217;t target middle-aged administrators; they target students. Specifically, in addition to doing mundane things like reporting your a lost ID card or checking balances, there&#8217;s a whole social gaming component. So far, I&#8217;ve been pretty successful at keeping things amusing (between the student focus group we assembled and the <a href="http://reddit.com/r/jhu">JHU subreddit</a>, my sense of humor is quickly vindicated), but the text is&#8230; kinda stodgy.</p>
+
+<p>I was discussing this with a co-worker, and we hit on what I think is a brilliant way of balancing conflicting stakeholder needs. The customer wants rather formal, business-like text that drily describes various functions of the application. On the other hand, students are going to be bored, and love easter eggs and humor. But we know how to deal with target demographics who speak different languages, don&#8217;t we? Localization to the rescue!</p>
+
+<!--more-->
+
+
+<p>We can go from a default:</p>
+
+<figure class='code'><figcaption><span>en.yml  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">en</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">hello</span><span class="p-Indicator">:</span> <span class="s">&quot;Hi</span><span class="nv"> </span><span class="s">there!&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>to a specialized locale for old people:</p>
+
+<figure class='code'><figcaption><span>en-old.yml  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='yaml'><span class='line'><span class="l-Scalar-Plain">en-old</span><span class="p-Indicator">:</span>
+</span><span class='line'>  <span class="l-Scalar-Plain">hello</span><span class="p-Indicator">:</span> <span class="s">&quot;Why,</span><span class="nv"> </span><span class="s">good</span><span class="nv"> </span><span class="s">morrow,</span><span class="nv"> </span><span class="s">sir</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">madam.&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Since we track birthdates, it makes it really easy:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">ApplicationController</span> <span class="o">&lt;</span> <span class="no">ActionController</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">before_filter</span> <span class="ss">:localize_for_the_aged</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="kp">private</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">localize_for_the_aged</span>
+</span><span class='line'>    <span class="no">I18n</span><span class="o">.</span><span class="n">default_locale</span> <span class="o">=</span> <span class="ss">:en</span>
+</span><span class='line'>    <span class="k">if</span> <span class="n">current_user</span><span class="o">.</span><span class="n">try</span><span class="p">(</span><span class="ss">:old?</span><span class="p">)</span>
+</span><span class='line'>      <span class="no">I18n</span><span class="o">.</span><span class="n">locale</span> <span class="o">=</span> <span class="ss">:&quot;en-old&quot;</span>
+</span><span class='line'>    <span class="k">end</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="nc">User</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">old?</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">birthdate</span><span class="o">.</span><span class="n">nil?</span> <span class="o">||</span> <span class="nb">self</span><span class="o">.</span><span class="n">birthdate</span> <span class="o">&lt;</span> <span class="mi">40</span><span class="o">.</span><span class="n">years</span><span class="o">.</span><span class="n">ago</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Simple! Now our middle-aged customer will see a formal greeting, while our teenage/twentysomething users won&#8217;t think they&#8217;ve stumbled into Downton Abbey.</p>
+
+<h3>Don&#8217;t try this at work</h3>
+
+<p>Seriously, I hope you realize this was satire. Learn to talk to your customers, as painful as that might be, and convince them. Do A/B testing or have a focus group. Win over your users, and your customer will probably see the light of day. If not, you can always <a href="http://clientsfromhell.net">whinge about it here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Legacy Systems on Rails (Part 2)]]></title>
+    <link href="http://decomplecting.org/blog/2012/08/03/legacy-systems-on-rails-part-2/"/>
+    <updated>2012-08-03T11:38:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/08/03/legacy-systems-on-rails-part-2</id>
+    <content type="html"><![CDATA[<p>This will be a quick one. I just wanted to give an example of how Ruby&#8217;s open classes can be a lifesaver when a vendor makes bizarre choices, which you then have to deal with.</p>
+
+<h3>Into the mouth of madness</h3>
+
+<p>So let&#8217;s imagine you&#8217;re a software engineer (actually, to make a decision this crazy, you&#8217;d probably have to have a title like Señor Software Architect, or possibly VP of Development). You need to store precise date values for an OLTP system in the database. Although you know that Oracle&#8217;s TIMESTAMP datatype will store a time right down to sub-millisecond precision, that&#8217;s just too easy. Or, at least, too sane.</p>
+
+<p>Then you remember the <a href="http://en.wikipedia.org/wiki/Julian_day">Julian day</a> system. Perfect! You can just use floats to reperesent the time, with the Julian day number as the integral part, and the time of day represented as the fractional part! Even better, you decide to make up your own offset instead of using a standard Day of Calendar Reform, <em>and</em> to store the local time instead of UTC.</p>
+
+<p>If you have ever considered something like this, step away from the computer. I&#8217;m revoking your programmer license. Leaving aside the general inaccuracy of floats (you wouldn&#8217;t use a float to represent money, why the hell would it be a good idea for time?), there are <em>existing datatypes</em> for this! Moving on&#8230;</p>
+
+<!--more-->
+
+
+<h3>Monkey-patching to the rescue!</h3>
+
+<p>Since datetimes are represented as floating-point values internally, we&#8217;ll need to have a way of converting between those and normal datetime types. So I&#8217;ll start by introducing a few monkey-patches in an intializer, so they get loaded before anything else.</p>
+
+<figure class='code'><figcaption><span>date_fixes.rb  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="c1"># We need two values because the offset is from midnight instead of noon, </span>
+</span><span class='line'><span class="c1"># so the standard methods for handling Julian day values get confused.</span>
+</span><span class='line'>
+</span><span class='line'><span class="no">SG1</span> <span class="o">=</span> <span class="mi">2415019</span>
+</span><span class='line'><span class="no">SG2</span> <span class="o">=</span> <span class="mi">2415018</span><span class="o">.</span><span class="mi">5</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="o">::</span><span class="nb">Float</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">vendor_to_dt</span>
+</span><span class='line'>    <span class="n">date</span> <span class="o">=</span> <span class="no">DateTime</span><span class="o">.</span><span class="n">jd</span><span class="p">(</span><span class="nb">self</span> <span class="o">+</span> <span class="no">SG1</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">to_date</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">vendor_to_dt</span><span class="o">.</span><span class="n">to_date</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">to_time</span>
+</span><span class='line'>    <span class="n">t</span> <span class="o">=</span> <span class="nb">self</span><span class="o">.</span><span class="n">vendor_to_dt</span><span class="o">.</span><span class="n">in_time_zone</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="o">::</span><span class="no">DateTime</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">to_vendor</span>
+</span><span class='line'>    <span class="c1"># This next one looks stupid but it&#39;s necessary</span>
+</span><span class='line'>    <span class="n">time</span> <span class="o">=</span> <span class="no">DateTime</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="nb">self</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-%dT%H:%M:%S&#39;</span><span class="p">))</span>
+</span><span class='line'>    <span class="n">time</span><span class="o">.</span><span class="n">ajd</span><span class="o">.</span><span class="n">to_f</span> <span class="o">-</span> <span class="no">SG2</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="o">::</span><span class="no">Time</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">to_vendor</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">to_datetime</span><span class="o">.</span><span class="n">to_vendor</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">class</span> <span class="o">::</span><span class="no">Date</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">to_vendor</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">to_datetime</span><span class="o">.</span><span class="n">to_vendor</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So now Float, Date, DateTime and Time can all convert happily (well, mayby not happily) back and forth and we can deal with something reasonable in our classes, like so:</p>
+
+<figure class='code'><figcaption><span>Customer  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Customer</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">opendatetime</span>
+</span><span class='line'>    <span class="n">read_attribute</span><span class="p">(</span><span class="ss">:opendatetime</span><span class="p">)</span><span class="o">.</span><span class="n">to_time</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">opendatetime</span><span class="o">=</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">write_attribute</span><span class="p">(</span><span class="ss">:opendatetime</span><span class="p">,</span> <span class="n">time</span><span class="o">.</span><span class="n">to_vendor</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I specifically didn&#8217;t use <code>to_f</code> as the method on Time, Date, etc. because I wanted to be clear this wasn&#8217;t just a Float, it was a vendor-specific implementation.</p>
+
+<p>Anyhow, that&#8217;s it for this one. As usual, comments, etc.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Legacy Systems on Rails (Part 1)]]></title>
+    <link href="http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1/"/>
+    <updated>2012-08-02T14:48:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1</id>
+    <content type="html"><![CDATA[<p>Much of my job consists of providing customized or novel interfaces for a complex legacy system which, although still maintained by the vendor (who shall remain nameless), does not currently (nor do I ever expect it to) meet many of our institutional needs.</p>
+
+<p>Since I spend a lot of time on this, I figured it would be a good topic for a series of posts, hence the &#8220;Part 1&#8221; in the title. Hopefully I&#8217;ll actually follow through on it.</p>
+
+<p>The first thing I did was to replace a few aging Perl CGI scripts with a Rails app, which was interesting. The notion that Rails is far easier to use for greenfield projects than for legacy systems is probably accurate, but it&#8217;s not universally true.</p>
+
+<p>This back-end is an Oracle database with over 450 tables and a hodgepodge of different strategies for how relationships should be modeled. I&#8217;m pretty sure it was my second or third day on the job that I was asked to implement a feature (in the old Perl codebase) that should have been straightforward given the relationships between two particular entities, but ended up requiring six inner joins and two left outer joins, IIRC. Just to give you an idea of what I&#8217;m dealing with.</p>
+
+<p>Anyhow, the first time around, I wrote an ActiveRecord model for each table, did my <code>has_many</code>&#8217;s and <code>belongs_to</code>&#8217;s, et cetera. Some were easier than others. There were a <em>lot</em> of conditions hashes in some of those associations.</p>
+
+<p>When the project scope started to grow beyond a single web app, and I started designing a REST API for the system, I had the opportunity to scratch some of the itches that had been bugging me about the original implementation from the very beginning.</p>
+
+<!--more-->
+
+
+<h3>When Good Patterns Go Bad</h3>
+
+<p>The first thing I needed to do was to solve an issue with the EAV tables. EAV (Entity-Attribute-Value) is an okay model for sparse data. Somehow, the designers of this system decided to use it for custom fields where <strong>every</strong> entity has <strong>every</strong> attribute. When a custom field is added, a row is inserted in the definition table for the attribute. Then a row is inserted in the value table for <strong>every single customer.</strong> It&#8217;s slow, to say the least. In the original (naive) implementation, this meant every time a new attribute definition was added, I added an association to the Customer class. And there are a <em>lot</em> of attributes.</p>
+
+<p>I wan&#8217;t about to make that mistake again.</p>
+
+<h3>Metaprogramming to the rescue</h3>
+
+<p>First I started with the definition table:</p>
+
+<figure class='code'><figcaption><span>FieldDef  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">FieldDef</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="n">set_table_name</span> <span class="s1">&#39;custom_field_def&#39;</span>
+</span><span class='line'>  <span class="n">set_primary_key</span> <span class="ss">:custom_field_def_id</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">has_many</span> <span class="ss">:field_values</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">symbol</span>
+</span><span class='line'>    <span class="nb">self</span><span class="o">.</span><span class="n">title</span><span class="o">.</span><span class="n">parameterize</span><span class="p">(</span><span class="s1">&#39;_&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_sym</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Pretty straightforward. The only extra thing is that <code>symbol</code> method, which returns a snake cased version of the &#8216;title&#8217; attribute, suitable for using as a method name.</p>
+
+<p>Next comes the field value table:</p>
+
+<figure class='code'><figcaption><span>FieldValue  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">FieldValue</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="n">set_table_name</span> <span class="s1">&#39;custom_field_value&#39;</span>
+</span><span class='line'>  <span class="n">set_primary_keys</span> <span class="ss">:cust_id</span><span class="p">,</span> <span class="ss">:custom_field_def_id</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:customer</span><span class="p">,</span> <span class="ss">:foreign_kay</span> <span class="o">=&gt;</span> <span class="ss">:cust_id</span>
+</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:field_def</span><span class="p">,</span> <span class="ss">:foreign_key</span> <span class="o">=&gt;</span> <span class="ss">:custom_field_def_id</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Nothing out of the ordinary here (although I&#8217;d like to thank Dr. Nic and Charlie Savage for their work on <a href="https://github.com/drnic/composite_primary_keys">composite_primary_keys</a>, it&#8217;s a lifesaver).</p>
+
+<p>Of course, the goal here is eliminating the 40-odd lines of has_many and accepts_nested_attributes_for in the Customer class. This is where Ruby really shines:</p>
+
+<figure class='code'><figcaption><span>Customer  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Customer</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>  <span class="n">set_table_name</span> <span class="s1">&#39;customer&#39;</span>
+</span><span class='line'>  <span class="n">set_primary_key</span> <span class="ss">:cust_id</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># Here&#39;s where we dynamically generate associations at runtime</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="no">FieldDef</span><span class="o">.</span><span class="n">find_each</span> <span class="k">do</span> <span class="o">|</span><span class="n">field</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">has_one</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="ss">:class_name</span> <span class="o">=&gt;</span> <span class="s1">&#39;FieldValue&#39;</span><span class="p">,</span>
+</span><span class='line'>                          <span class="ss">:foreign_key</span> <span class="o">=&gt;</span> <span class="ss">:cust_id</span><span class="p">,</span>
+</span><span class='line'>                          <span class="ss">:conditions</span> <span class="o">=&gt;</span> <span class="nb">proc</span> <span class="p">{</span><span class="s2">&quot;customer_def_field_def_id = </span><span class="si">#{</span><span class="n">field</span><span class="o">.</span><span class="n">id</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="n">accepts_nested_attributes_for</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span>
+</span><span class='line'>    <span class="n">delegate</span> <span class="ss">:field_value</span><span class="p">,</span>  <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="ss">:prefix</span> <span class="o">=&gt;</span> <span class="kp">true</span>
+</span><span class='line'>    <span class="n">delegate</span> <span class="ss">:field_value</span><span class="o">=</span><span class="p">,</span> <span class="ss">:to</span> <span class="o">=&gt;</span> <span class="n">field</span><span class="o">.</span><span class="n">symbol</span><span class="p">,</span> <span class="ss">:prefix</span> <span class="o">=&gt;</span> <span class="kp">true</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="c1"># snip</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This iterates over the rows of <code>custom_field_def</code>, generates an association for each entry, adds the <code>accepts_nested_attributes_for</code> declaration, and even delegates the getter and setters for the column we&#8217;re really interested in (<code>"CUSTOM_FIELD_VALUE"."FIELD_VALUE"</code>).</p>
+
+<p>I don&#8217;t claim it&#8217;s <em>the</em> most elegant solution, but it&#8217;s a lot better than in the previous iteration. It&#8217;s important to remember that although Rails&#8217; opinionated nature makes it a little more awkward to deal with a legacy sytem than with a brand new project, Ruby gives you all the tools you could want to overcome whatever hurdles you might encounter.</p>
+
+<p> If you have any questions or suggestions for improvement, please let me know in the comments!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Higher Education Needs a Revolution]]></title>
+    <link href="http://decomplecting.org/blog/2012/07/18/higher-education-needs-a-revolution/"/>
+    <updated>2012-07-18T19:59:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/07/18/higher-education-needs-a-revolution</id>
+    <content type="html"><![CDATA[<p>Yesterday, <a href="http://coursera.com">Coursera</a> announced that 12 more universities had joined their program of creating massive open online courses, or MOOCs (one of them was <a href="http://www.jhu.edu">Johns Hopkins University</a>, where I work, so I was especially excited&#8230; we&#8217;re not always &#8220;early adopters&#8221;).</p>
+
+<p>Coursera is extremely cool. I&#8217;m currently taking UC Berkely&#8217;s <a href="https://www.coursera.org/course/saas">Software Engineering for SaaS</a> class (nothing new for me so far, but it&#8217;s enjoyable), and I took the <a href="https://www.coursera.org/course/ml">Machine Learning</a> class earlier this year. Well, most of it&#8230; I got a little too busy with work and family and didn&#8217;t quite finish. But I still learned a lot, and used math I thought I&#8217;d forgotten. So all in all, a win.</p>
+
+<p>Not quite finishing is a common thread in my life. I&#8217;m just a few credits away from a Bachelor&#8217;s in philosophy. Also, graphic design. Probably computer science as well. My Achilles&#8217; heel was always General Education courses. I want to learn almost everything I possibly can, but generally I either want to learn something so I can do something with it, or learn something because I have a compelling fascination with the topic. Most Gen Ed courses did neither for me, and when I&#8217;m not interested, I&#8217;m not motivated. This might be a character flaw. Two universities so far seemed to think so.</p>
+
+<p>It seems like the whole obsession with &#8220;general education&#8221; is dying. Johns Hopkins, for instance, has no general requirements, only departmental requirements for majors (and minors, natch). That&#8217;s extremely cool. It also costs over US$50k a year to attend. That&#8217;s not so cool.</p>
+
+<!--more-->
+
+
+<p>Last year, Peter Norvig and Sebastian Thrun decided to offer their Stanford AI class online, for free. They didn&#8217;t tell Stanford before they announced this, so there was a bit of a kerfuffle, but it happened. Another reminder of that all-important maxim:</p>
+
+<blockquote><p>It&#8217;s easier to ask forgiveness than it is to get permission.</p><footer><strong>Rear Adm. Dr. Grace Murray Hopper</strong> <cite>Chips Ahoy (July 1986)</cite></footer></blockquote>
+
+
+<p>Anyhow, they had hoped for maybe 2,000 students. After a couple of weeks, they were at 58,000. After the New York Times covered the experiment, enrollment had soared to over 100,000.</p>
+
+<p>Probably most didn&#8217;t finish the class. But it was enough of a phenomenon that Thrun quit Stanford to found <a href="http://www.udacity.com/">Udacity</a>, another startup engaged in producing and distributing MOOCs (Coursera was founded by fellow Stanford computer scientists Deborah Koller and Andrew Ng). Add to this <a href="http://www.edxonline.org/">edX</a>, a MOOC-producing partnership of MIT and Harvard, and you have a significant trend in the world of Higher Ed.</p>
+
+<h3>The End of Higher Ed?</h3>
+
+<p>In Forbes, Susan Adams penned the alarmist-sounding <a href="http://www.forbes.com/sites/susanadams/2012/07/17/is-coursera-the-beginning-of-the-end-for-traditional-higher-education/">Is Coursera the Beginning of the End for Traditional Higher Education?</a>. But it&#8217;s not nearly as alarming (if you&#8217;re a higher ed institution) as the prediction by Sebastian Thrun from <a href="http://www.wired.com/wiredscience/2012/03/ff_aiclass">an article in Wired last March</a>:</p>
+
+<blockquote><p>Fifty years from now, according to Thrun, there will be only 10 institutions in the whole world that deliver higher education.</p><footer><strong>Sebastian Thrun, Wired 20.03</strong> <cite><a href='http://www.wired.com/wiredscience/2012/03/ff_aiclass/'>&#8220;The Stanford Education Experiment Could Change Higher Learning Forever&#8221;</a></cite></footer></blockquote>
+
+
+<p>Remember, this <em>is</em> the guy who built Google&#8217;s self-driving car, so when he makes predictions about the future&#8230; I think it&#8217;s wise to pay attention.</p>
+
+<h3>Veritas vos liberabit</h3>
+
+<p>Something to remember about our institutions of higher education: they&#8217;re based on a model that emerged in the Middle Ages; Oxford and Cambridge were established for the teaching of Scholastic philosophy, primary to the clergy. This was long before Gutenberg&#8217;s innovation of movable type, so books were rare and expensive, so it made sense to create centers where the books could be read to students, and discussed.</p>
+
+<p>The Enlightenment shifted the focus to the natural sciences, and later the concept of a <a href="http://en.wikipedia.org/wiki/Liberal_education">liberal education</a> came to the fore. The system of general education requirements is based in this ideology. I won&#8217;t debate the value of a liberal education, but it is worth analyzing its position as an anachronism.</p>
+
+<p>Up until the 20th century, the idea that a university education was for anyone but the children of the aristocracy (or, at least, the bourgeoisie) would have seemed preposterous. But after the second World War, and the G.I. Bill, colleges were flooded with applicants newly able to afford the luxury of a liberal education. As business began to demand an influx of college graduates, public higher education expanded exponentially, to fill the demand of the children of the middle class for degrees needed to pursue lucrative careers.</p>
+
+<p>Somewhere in this process, the focus of higher education shifted from liberal education to career preparation. It was the open secret of the entire higher ed system, but as long as general education nodded in the direction of a traditional liberal arts curriculum, it could remain an open secret.</p>
+
+<blockquote><p>And the people in the houses<br/>All went to the university,<br/>Where they were put in boxes<br/>And they came out all the same,<br/>And there&#8217;s doctors and lawyers,<br/>And business executives,<br/>And they&#8217;re all made out of ticky tacky<br/>And they all look just the same.</p><footer><strong>Malvina Reynolds</strong> <cite>Little Boxes</cite></footer></blockquote>
+
+
+<p>In this process, however, the value of degrees was diluted. It&#8217;s basic economics; in a system based on scarcity, the more of something there is, the less valuable it is. And so, the Bachelor&#8217;s degree became the new high school diploma. And business discovered that a B.A. or B.S. didn&#8217;t guarantee much, especially in technical fields.</p>
+
+<p><img class="center" src="http://decomplecting.org/images/post-img/thinks-college-degree.png" title="&#34;College Freshman Meme: Thinks College Degree Will Provide Him With Career&#34;" alt="&#34;College Freshman Meme: Thinks College Degree Will Provide Him With Career&#34;"></p>
+
+<h3>Coding a Revolution</h3>
+
+<p>Coursera, Udacity, and edX have the potential to create the first disruptive technology in the higher ed domain. Sure, the notion of online, collaborative courseware is nothing new. <a href="http://www.blackboard.com">Blackboard</a> has been milking this space for years, with a product reviled by students and faculty alike. But this is different. Blackboard is internal to higher ed institutions; these companies are taking learning out of the university, and making it available to anyone with an interest. Through software and course content sourced from experts in various fields, combined with certification programs, they have the potential to change the social meaning of higher education.</p>
+
+<p>For centuries, the social value of a university education has been tied to the degrees conferred by an accredited institution. Accreditation is granted by organizations such as the <a href="http://www.msche.org/">Middle States Commission on Higher Education</a>, a unit of the <a href="http://www.middlestates.org/">Middle States Association of Colelges and Schools</a>, whose members are the schools themselves. Self-regulation works so well for the finance industry&#8230;</p>
+
+<p>Coursera says they have no plan to offer degrees, only certificates from instructors (as opposed to institutions), so far. Although, the University of Washington is planning to offer credits in conjunction with their Coursera courses. So we&#8217;ll see.</p>
+
+<p>Udacity, on the other hand, while not offering degrees, offers a (possibly) more rigorous certification process; rather than just passing the course, a student must take a certification exam in a testing center or online. This carries a fee, unlike Coursera&#8217;s instructor certs. Probably not a bad business model (Coursera, for its part, doesn&#8217;t seem to have a monetization strategy).</p>
+
+<p>In either case, I think there&#8217;s an element of shrewdness here. There&#8217;s a principle that <a href="http://academia.stackexchange.com/a/2339">&#8220;specific coursework&#8230;does not belong in a CV.&#8221;</a>. Of course, <em>certifications</em> are fair game. My intuition is that (particularly given the background of the principles) there&#8217;s a push here away from degrees and toward domain-specific information on résumés and curricula vitae. For technical fields, I think it&#8217;s not only brilliant, but past due.</p>
+
+<p>For liberal arts and humanities&#8230; I&#8217;m not sure. Coursera and Udacity started off with computer science and engineering courses because it&#8217;s easy to find a technical solution to grading programming exercises; basically, it&#8217;s <a href="http://travis-ci.org/">Travis CI</a>. If it builds and the tests pass, you&#8217;ve passed the test. Fuzzy subjects are a little more difficult. But this is an early iteration, so anything is possible.</p>
+
+<h3>The Value of College</h3>
+
+<p>Many of the articles about Coursera over the past couple of days have followed a similar pattern. They discuss the disruptive (and democratizing) potential of Coursera, Udacity, and edX; they cover the significance of the buy-in from world-class research universities; and then they get kind of nostalgic, wondering if we won&#8217;t lose something valuable if brick-and-mortar institutions fall by the wayside.</p>
+
+<p>I think the college experience is something wonderful; I didn&#8217;t even graduate, and I wouldn&#8217;t trade my years at uni for anything&#8230; well, maybe a <a href="http://www.cray.com/Products/XK6/KX6.aspx">Cray XK6</a> all to myself. Not much I wouldn&#8217;t do for that. But, I digress. The value of a brick-and-mortar institution isn&#8217;t in the lectures; it&#8217;s in the collaboration of like-minded individuals in the rarified environment of limited responsibility, educational opportunity, and funded research. Sort of like this:</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/qYx7YG0RsFY" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Okay, maybe not like that. But there is something special about the college experience. Honestly, though, is it exclusive to college?</p>
+
+<p>I lived in collective anarcho-punk houses for years after I dropped out of college&#8230; they&#8217;re a lot like frat houses, but co-ed and without all the date rape. And actually, more studying.</p>
+
+<p>I could imagine graduating from high school a few years from now, and deciding that I cared more about computer science than a B.S. in computer science. Taking CS 101 from Stanford on Coursera. Forming a local study group, with a few like-minded individuals. Then renting a big house, and continuing to take CS courses together. Hell, maybe saying &#8220;screw these old guys who are into degrees, let&#8217;s do a startup and make a billion dollars.&#8221;</p>
+
+<p>Just an idea. But hacker houses aren&#8217;t that new an idea&#8230; <a href="http://farmhouse.la/">Farmhouse</a> in LA has been around for a while&#8230; it&#8217;s apparently a big Silicon Valley trend, as well. Why not do that as students?</p>
+
+<h3>What is to be done?</h3>
+
+<p>Much of this is speculation. But ultimately, the effect of these startups is to democratize higher learning, to wrest it from the grasp of an elite and to provide it to anyone with internet access. And that&#8217;s a good thing, whatever the consequences. I think we&#8217;re in the midst of a transitional period in education, higher and otherwise.</p>
+
+<p>My mother taught elementary school for thirty-odd years. I dragged her into the world of computers when I was a tiny kid, and she in turn dragged her school district (with some kicking and screaming). Institutional education is often change-averse, and a little coercion is usually required.</p>
+
+<p>I don&#8217;t know if the participating institutions are even cognizant of the potential of this technology to revolutionize how higher ed functions. But ultimately, for the majority of the population, it is dysfunctional. Providing education to all, free of charge, is a social good, and a necessary progression. We&#8217;ve needed this for a long time. We&#8217;ve just been waiting on the technology. Now that it&#8217;s here, there is no turning back. And that&#8217;s good, too.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Static Is Beautiful]]></title>
+    <link href="http://decomplecting.org/blog/2012/07/04/static-is-beautiful/"/>
+    <updated>2012-07-04T23:21:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/07/04/static-is-beautiful</id>
+    <content type="html"><![CDATA[<p>I want to return to the core sfocus of this blog, elegance and simplicity in technology, but in kind of a meta way.</p>
+
+<p>One trend that seems to be popping up again and again is the move away from over-featured and unmanageable content management systems (I&#8217;m looking at you, <a href="http://wordpress.org/">Wordpress</a>), and toward static site generators.</p>
+
+<p>This blog, for instance, is generated from <a href="http://daringfireball.net/projects/markdown/">Markdown</a> files by <a href="http://octopress.org/">Octopress</a>. More on Octopress later, but I want to survey the trend a bit.</p>
+
+<p>This post was prompted by one of the auto-tweets by <a href="https://twitter.com/rubygems">@rubygems</a>, about yet another static site generation tool called <a href="https://rubygems.org/gems/gumdrop">gumdrop</a>. I&#8217;ve been playing with a few different static site generation tools, so first I&#8217;d like to survey a few examples, and then I&#8217;ll talk about why I think they matter.</p>
+
+<!-- more -->
+
+
+<h3>Jekyll</h3>
+
+<p><a href="https://github.com/mojombo/jekyll">Jekyll</a> is kinda the all-father of the current crop of static site generators. Created by <a href="http://tom.preston-werner.com/">Tom Preston-Werner</a> of <a href="https://github.com">GitHub</a>, it powers many, many <a href="http://pages.github.com/">GitHub Pages</a> sites, and is pretty much pure awesomesauce. It&#8217;s very bare bones, but that&#8217;s what allows for such enormous flexibility. It&#8217;s also what allows Jekyll to serve as the backbone of something like Octopress.</p>
+
+<h3>Octopress</h3>
+
+<p><a href="http://octopress.org">Octopress</a> is my current favorite, as I use it all the time to power <a href="http://decomplecting.org">this blog</a>. Octopress wraps Jekyll with a bunch of templating goodness, which you can easily customize to your heart&#8217;s content.</p>
+
+<p>One of the best thngs about Octopress, however, is its plugin system. Not only does it come pre-loaded with some snazzy plugins for the <a href="https://github.com/Shopify/liquid">Liquid</a> template language, but it makes it easy to extend with your own clever hacks.</p>
+
+<p>Better yet, as it&#8217;s a hacker-oriented blogging engine, it makes it dead simple to set up common widgets and services, from a GitHub repo listing to Google Analytics, just by editing <code>_config.yml</code>, the global configuration file.</p>
+
+<p>Best of all, new post generation, testing, building, and deploying are all handled by <code>rake</code> tasks, and deployment via GitHub Pages, <a href="http://heroku.com">Heroku</a>, and <code>rsync</code> are easy as hell to configure.</p>
+
+<h3>Middleman</h3>
+
+<p><a href="http://middlemanapp.com/">Middleman</a> is a newer static site generation tool, with all the sauce. You can template/style/script with Haml, Slim, Sass, Compass, CoffeeScript, and I&#8217;m sure others. It comes with <a href="http://html5boilerplate.com/">HTML5 Boilerplate</a> baked in (if you&#8217;re not using this, you probably should be), and it&#8217;s built around <a href="http://www.sinatrarb.com">Sinatra</a>.</p>
+
+<p>I haven&#8217;t deployed Middleman anywhere yet, as the only static-content site I&#8217;m running right now is this blog, but it&#8217;s definitely on the radar for the second I want to branch out from blogging with this domain (or any of my others).</p>
+
+<h3>Gumdrop</h3>
+
+<p>I know way less about <a href="https://github.com/darthapo/gumdrop">gumdrop</a> than about the other static site generators out there&#8230; but the <a href="https://github.com/darthapo/gumdrop/wiki/Sites-Using-Gumdrop">sites powered by gumdrop</a> are nothing if not impressive. Gumdrop bills itself as &#8220;The sweet &#8216;n simple cms/prototyping tool for creating static html websites and webapps.&#8221;</p>
+
+<p>I can&#8217;t argue. The generation looks slick and simple, but also powerfully configurable, thanks to the awesomesauce of Ruby blocks.</p>
+
+<p>I&#8217;ll definitely be playing with this in my <em>copious</em> spare time.</p>
+
+<h2>Why Static Site Generation Matters</h2>
+
+<p>It&#8217;s pretty simple, actually. It all comes down to Wordpress.</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>And there&#8217;s only one thing worse in my eyes than PHP, and that&#8217;s Wordpress PHP <a href="http://t.co/C40EfvOD" title="http://buff.ly/LkQIWH">buff.ly/LkQIWH</a></p>&mdash; Michael Robinson (@pagesofinterest) <a href="https://twitter.com/pagesofinterest/status/220254607849426946" data-datetime="2012-07-03T20:36:05+00:00">July 3, 2012</a></blockquote>
+
+
+<script src="http://decomplecting.org//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>We all <em>know</em> PHP is <a href="http://me.veekun.com/blog/2012/04/09/php-a-fractal-of-bad-design/">a terrible excuse for a programming language</a>, and also that the blogging platform wars, until recently, came down to only WordPress vs. <a href="http://www.blogger.com">Blogger</a>. Of course, <a href="http://tumblr.com">Tumblr</a> and <a href="http://postero.us">Postero.us</a> have breathed new life into a limited set of choices. But unless you wanted only the most basic features a hosted platform (everything but WordPress, honestly) provided, you&#8217;d need to settle on WordPress, because as an open-source platform, it had this <del>great</del> almost usable ecosystems of custom plugins. And somehow, the blogging community convinced ourselves we <em>needed</em> this plugin marketplace.</p>
+
+<p>Now, don&#8217;t get me wrong. As economies go, the WordPress plugin market has proved a lucrative environment for many freelance PHP developers I know. Mind you, because they were writing WordPress PHP 8-10 hours a day, their mental states ranged between suicidal and psychotic&#8230; we all have our limits.</p>
+
+<p>The need for a sane solution to this problem is, I think, what led to the development of blogging engines like <a href="http://fdv.github.com/typo/">typo</a>.</p>
+
+<p>And, I think, the attempt to build a new, saner, databased-backed, comprehensive, blog-aware CMS system learned that a databased-backed, comprehensive, blog-aware CMS system is a whole bunch of <a href="http://en.wikipedia.org/wiki/You_ain't_gonna_need_it">YAGNI</a> features rolled up in a big, painful bundle.</p>
+
+<p>Why not just generate your blog posts when you write them? Why not just use Javascript for whatever dynamic widgets you need? It&#8217;s all HTML in the end, right?</p>
+
+<p>Possibly, some of the impetus for this is the arguable feature of PHP that, unlike Ruby on Rails (at that time), PHP was dirt-cheap to deploy/host, whereas RoR required either a VPS or a pricey Engine Yard instance. This was, after all, before the days of free-ish <a href="http://heroku.com">Heroku</a> instances for low-traffic apps. And, even then, what if your blog became insanely popular? It could get pricey pretty quickly, whereas you could have a medium-traffic WordPress blog on some PHP host for, what, US$3.00 a month?</p>
+
+<p>So economics and technology collide. We find ourselves searching for a simpler solution, using better tools and easier hosting. For static sites, you can have free hosting on GitHub Pages just by pushing a site to the your-username.github.com repo under your GitHub account. For that matter, you can host a static site (virtually) for free damn near anywhere you like.</p>
+
+<p>So <em>why</em> were we spending all this time and effort building out complicated content management systems, just to spend unnecessary time and money on a blog?</p>
+
+<p>Static site generators are the answer. Spend your coding time actually coding for web <em>applications,</em> not for (mostly) static content. Sure, the learning curve is higher to use Octopress vs. WordPress. But I think I&#8217;ve <a href="http://decomplecting.org/blog/2012/06/06/hackers-need-our-own-everything/">addressed this issue</a>.</p>
+
+<p>Before you build another CMS, or decide to use WordPress because it&#8217;s the &#8220;obvious choice,&#8221; ask your self this: What are the features I <em>actually</em> need? Can these be met by <code>%w{Jekyll Octopress Middleman Gumdrop other-static-generator}</code>? Then do what makes sense. Needlessly complicating your online life is not a virtue.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hackers Need Our Own Everything]]></title>
+    <link href="http://decomplecting.org/blog/2012/06/06/hackers-need-our-own-everything/"/>
+    <updated>2012-06-06T11:29:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/06/06/hackers-need-our-own-everything</id>
+    <content type="html"><![CDATA[<p>When I conceived of this post, it was going to be about how damn awesome <a href="http://octopress.org">Octopress</a> is. And it certainly is awesome; it powers this blog, and makes writing it a joy, whereas trying to use <a href="http://wordpress.com">Wordpress</a>, <a href="http://blogger.com">Blogger</a>, or even newer alternatives like <a href="http://tumblr.com">Tumblr</a> or <a href="http://postero.us">Posterous</a> was downright painful. But what I&#8217;m more interested in is the growing trend among apps, services, and even operating systems that has made projects like Octopress necessary.</p>
+
+<h3>The Tragedy of Google</h3>
+
+<p>For such a long time, Google did search better than many of us ever dreamt <em>possible</em> in the pre-Google days. But it wasn&#8217;t just the intelligence of the search algorithms, or the massive cache and index behind Google search. Google made it possible to craft a finely-honed query from the front page, with excellent support for literal strings, boolean operators, required inclusion/exclusion, etc. And then came Google+.</p>
+
+<p>Google&#8217;s commitment to search had been on the decline for a while, it seems&#8230; the only new features search had acquired in years were fairly useless things like page previews and, briefly, Twitter integration. Because that&#8217;s integral to search.</p>
+
+<p>But when Google launched its abortion of a social network, usable search had to go. Not only did they kill one of the <a href="http://productforums.google.com/forum/#!topic/websearch/3oIWbew9xdE">most useful search operators</a> (Boolean +), but they also started filtering search results based on social connections in Google+. While this doesn&#8217;t <em>always</em> end in having to re-search without &#8220;personal&#8221; results, I have a feeling that&#8217;s only because I&#8217;m connected to so many developers on Google+. But if Google+ hadn&#8217;t been such an abject failure, my mom might be on there, and we typically search about very different kinds of &#8220;cookies.&#8221;  The situation with Google is so bad at this point, that I often get better results from <a href="http://duckduckgo.com/">Duck Duck Go</a>, which wraps a ton of different search engines and websites, and attempts to break the &#8220;filter bubble&#8221; by presenting hte same results to everyone. I like this in principle, but I miss Google&#8217;s synchronized search history and habit of learning what results are relevant to me to (usually) provide better results.</p>
+
+<!--more-->
+
+
+<h3>Blogging for Hackers</h3>
+
+<p>So, let&#8217;s face it: unless you wanted to host your own blog, and either write your own engine, or tweak one into submission, keeping an attractive, maintainable, and useful blog was either an expensive or losing proposition. Sadly, this isn&#8217;t a recent change like the other phenomena addressed in this post, but it&#8217;s still an issue.</p>
+
+<p>What&#8217;s slightly alarming is the trend away from traditional blogging engines like Wordpress and Blogger, which, while not exactly hacker-friendly, were oriented toward content creation. The newer generation of blogging services are much more oriented toward the re-posting of content. While I&#8217;m okay in principle with re-posting (and I think &#8220;remix culture&#8221; is awesome), when your priority is saturation with &#8220;viral content&#8221; rather than the creation of OC, it makes it easy to ignore the creation of tools which lend themselves to the creation of content.</p>
+
+<p>Octopress is awesome because it doesn&#8217;t try to be everything to everybody. Billed as &#8220;A blogging framework for hackers,&#8221; Octopress is basically a set of <code>rake</code> tasks and plugins for <a href="https://github.com/Shopify/liquid">Liquid</a> and <a href="http://compass-style.org/">Compass</a>, all wrapped up with the tasty goodness of <a href="https://github.com/mojombo/jekyll">Jekyll</a>, the static site generator that powers <a href="http://pages.github.com">Github Pages</a>.</p>
+
+<p>In a nutshell, this means I can use my favorite text editor (lately, either <a href="http://www.vim.org/">Vim</a> or <a href="http://www.sublimetext.com/2">Sublime Text 2</a>, depending on my mood) to create my posts in Markdown, Textile, or Haml, and have Octopress generate pretty-styled HTML, CSS and JS, and deploy my blog to Github Pages (or Heroku) with a rake task. Even for non-programming power users, or anyone frustrated with Wordpress, really, Octopress is worth checking out.</p>
+
+<h3>Apple to Developers: &#8220;Go Fuck Yourselves&#8221;</h3>
+
+<p>Okay, slight hyperbole. But it feels that way sometimes. I&#8217;ve been using <a href="http://macromates.com/">TextMate</a> on OS X for Ruby (and Perl, and C, and Clojure, you get the picture&#8230;) for such a long time now, that I&#8217;m <em>really</em> loathe to change my workflow. Even though, conceptually, I prefer the idea of using Linux on all the things. But since Apple is now <em>blatantly</em> <a href="http://www.apple.com/macosx/mountain-lion/features.html">trying to turn my worsktation into a tablet</a>, I&#8217;m forcing myself to use the <a href="http://lubuntu.org/">Lubuntu</a> box sitting next to my iMac as much as possible.</p>
+
+<p><img class="float-right" src="http://decomplecting.org/images/post-img/mtlion1.png" width="400"></p>
+
+<p>It&#8217;s not just the &#8220;aesthetic&#8221; changes that chafe. I can deal with <a href="http://unity.ubuntu.com/">annoying UI crap</a>, especially when it&#8217;s optional. But Apple is also changing the developer ecosystem, first with the Mac App Store, then with Gatekeeper, which will warn against installation of software not signed with an Apple developer account by default. It has been pointed out that this behavior is fairly straightforward to alter, but I still find the whole process dubious and, for me at least, it&#8217;s another straw on the OS X camel&#8217;s back. I&#8217;m not arguing that no one should use OS X, I&#8217;m just saying it&#8217;s less and less attractive to me as a development platform.</p>
+
+<p>The whole allure of OS X was that it was a stable, supported, POSIX-compliant operating system that was enjoyable to use but afforded the user all of the power and flexibility of Unix. It looks like those days are over, and the days of creating powerful tools for developers and designers to create whatever they could imagine are over. The Mac is turning into an overpowered tablet, suited for content consumption rather than creation.</p>
+
+<p>Apple is not alone in its efforts to neuter the desktop. Not to be outdone in locking down the OS and polluting the developer ecosystem, Microsoft is scrambling to release Windows 8 so that Windows users can be as disoriented as possbile. Although there are <a href="http://mobileopportunity.blogspot.com/2012/05/fear-and-loathing-and-windows-8.html">good</a> <a href="http://pcunix.hubpages.com/hub/Why-Windows-8-might-Kill-Microsoft">arguments</a> that Windows 8 holds the threat of finally toppling the waning Microsoft hegemony, I&#8217;m actually jealous of Windows 8 in one way: Windows 8 includes an almost-workalike Windows 7 compatibility mode. I <em>wish</em> Lion had a &#8220;act like Snow Leopard&#8221; mode. Although one of the articles I just cited laments the loss of the Start menu in Win7 mode, I don&#8217;t think it&#8217;s that much of a loss, if PowerShell is still included (or better yet, Cygwin).</p>
+
+<p><img class="float-left" src="http://decomplecting.org/images/post-img/win8-1.jpg" width="400"></p>
+
+<p>I use Windows as little as possible, so I&#8217;m less annoyed about Windows 8 than I am Lion. But the trend is disturbing, and is even being echoed to a degree (a greatly diminished degree) in <a href="http://www.gnome.org/gnome-3/">GNOME 3</a> and <a href="http://unity.ubuntu.com/">Ubuntu Unity</a>. But on Linux, at least, I have the option of using whatever window manager and desktop environment works best for me (or none at all).</p>
+
+<p>I realize that commercial operating system vendors need to target the widest possible user base. But the much-ballyhooed rise of the <a href="http://www.forbes.com/sites/venkateshrao/2011/12/05/the-rise-of-developeronomics/">developer-centric economy</a> would <em>seem</em> to suggest that pissing off developers is a <em>bad</em> idea. Apple and Microsoft spent the better part of the 1980&#8217;s and 1990&#8217;s competing not only for market-share, but for developer mind-share. The movement toward locking us into proprietary toolchains and ecosystems (XCode for Apple, VisualStudio for Microsoft) looks like little more than a cynical attempt to chain down developers in a walled garden. Hopefully, we don&#8217;t fall for it.</p>
+
+<h3>For Us, By Us</h3>
+
+<p>It&#8217;s been <a href="http://en.wikipedia.org/wiki/Desktop_Linux#Year_of_Desktop_Linux">The Year Of Linux On The Desktop</a> since at <em>least</em> 2000. I&#8217;m not going to be the next one to make grand proclamations (other than &#8220;total world domination <em>soon</em>&#8221;). But for me&#8230; right now, my primary development machines are a 27&#8221; iMac running Snow Leopard, and a 15&#8221; MacBook Pro, also running Snow Leopard. I won&#8217;t be upgrading to Lion, and I&#8217;ll miss the pretty Apple hardware. But when these are ready for replacement&#8230; let&#8217;s just say I really hope <a href="http://www.theverge.com/2012/5/7/3006266/dell-project-sputnik-ubuntu-xps-13-developers">Project Sputnik</a> is a huge success for Dell.</p>
+
+<p>Although it&#8217;s commercial software, targeted toward business users (and consumers) that pays the bills for most of us, I think it&#8217;s important to remember that the people who make those tools are an important audience, too. I want to see more software of all kinds (web, desktop, and CLI) created by developers, for developers. Preferably open-source tools we can tweak and extend and continue to make better. I think that&#8217;s my goal for this year, anyhow. I&#8217;m going to focus my efforts on projects that make it more fun to be a hacker, whether that&#8217;s something like making blogging easier, creating build tools, or Linux desktop enhancements that are friendly to those of us who spend most of the day switching between an editor, a shell, and a web browser. I hope others have the same itch, and see the same need, and push back against the disturbing trend of hostility toward open systems and (by extension) the developers who use them.</p>
+
+<p><strong>Update:</strong> Thanks to the discussion on <a href="http://www.reddit.com/r/programming/comments/uo2sk/hackers_need_our_own_everything/">this reddit thread</a>, as well as the comments, I made a couple of corrections, particularly re: Duck Duck Go and Gatekeeper. Thanks to everyone who commented.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Try Ruby... Seriously.]]></title>
+    <link href="http://decomplecting.org/blog/2012/06/01/try-ruby-seriously/"/>
+    <updated>2012-06-01T20:05:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/06/01/try-ruby-seriously</id>
+    <content type="html"><![CDATA[<p>Every now and then someone comes to me for advice because they (or someone they know) wants to learn to code and has no idea where to start. Usually, the first thing I do is send them to <a href="http://tryruby.org">tryruby.org</a>, the awesome web-based REPL and tutorial the <a href="http://codeschool.com">Code School</a> folks put together, based on <a href="http://mislav.uniqpath.com/poignant-guide/">_why&#8217;s (poignant) guide to ruby</a>.</p>
+
+<p>Lately, I&#8217;ve been wondering if that&#8217;s the best advice. Only because I constantly re-evaluate <em>everything</em> on the chance that it might be sub-optimal. Ruby is pretty easy to learn, but it&#8217;s also easy to learn terrible, terrible habits. Maybe a more constraining language would be more suitable?</p>
+
+<p>I have to admit, as much as I generally <a href="http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit/">dislike Python</a>, it probably <em>is</em> the easiest language to learn, and it rarely gives you enough rope to hang yourself. So am I just letting my own prejudices guide my recommendations to other people?</p>
+
+<!-- more -->
+
+
+<p>Upon reflection, the language matters a lot less than the person. My egalitarian sensibilities make the idea that any reasonably intelligent person can learn to code, given the desire and determination, quite attractive. But alas, we must be wary of cognitive bias. It&#8217;s become increasingly clear that <a href="http://www.codinghorror.com/blog/2006/07/separating-programming-sheep-from-non-programming-goats.html">programming isn&#8217;t for everyone</a>. So as much as I like the idea that <a href="http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html">everyone should know how to code</a>, I have to admit that whatever innate ability it is that makes for a Real Programmer, not everyone has it. <a href="http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html">Not even all of us working as software developers</a>.</p>
+
+<p>I recently came across <a href="http://cs.stackexchange.com/questions/1954/criteria-for-selecting-language-for-first-programming-course">this question</a> asking for &#8220;Criteria for selecting language for first programming course&#8221; on the <a href="http://cs.stackexchange.com/">CS StackExchange forum</a>. Answering that question (<a href="http://cs.stackexchange.com/questions/1954/criteria-for-selecting-language-for-first-programming-course/1967#1967">here</a>) helped me to clarify some of the reasons I usually recommend Ruby.</p>
+
+<h4>Simplicity</h4>
+
+<p>Ruby is incredibly simple to pick up. Now, like anything, Ruby is hard to do <em>well</em>, but it is fairly straightforward to learn. My first language was BASIC on a <a href="http://en.wikipedia.org/wiki/Texas_Instruments_TI-99/4A">Texas Instruments 99/4A</a>. It was hard, but rewarding. I wrote stupid little games, and it was entertaining. Of course, I was 5 or 6 at the time&#8230;</p>
+
+<p>The point here is that you want two things for people who have never coded before: immediate positive reinforcement (it&#8217;s fairly straightforward to make <em>something</em> that runs successfully), and a syntax that&#8217;s easy get your mind around. Ruby fulfills those goals quite nicely.</p>
+
+<h4>Richness</h4>
+
+<p>Once you get past &#8220;Hello, World!&#8221; there&#8217;s an almost infinite range of possibilities. Ruby does a very, very good job of providing a massive <a href="http://rubygems.org">collection of libraries</a>, and a flexible language that makes creating damn near anything not only possible, but at some point intuitive.</p>
+
+<h4>Multi-paradigm</h4>
+
+<p>Pretty much everyone starts with procedural code. That&#8217;s okay, it&#8217;s a start. But object-oriented and functional paradigms have many, many advantages. Ruby&#8217;s pure-OO nature makes it very easy to transition into writing object-oriented code. It borrows enough concepts from Lisp that you can get a feel for functional styles as well. Contrast this to C++ or Python, where the object-orientation is tacked-on, and the bolts are definitely showing.</p>
+
+<h4>Se habla Ruby</h4>
+
+<p>When it&#8217;s a friend asking for advice, I&#8217;m fully expecting to be answering questions when they can&#8217;t find an answer on <a href="http://stackoverflow.com">StackOverflow</a>. If they&#8217;re learning Ruby, there&#8217;s the advantage that I will probably be able to help with > 99% of their problems without Googling. Granted, this is true of a number of languages, but I probably wouldn&#8217;t suggest that someone completley new to programming start out with C, Java, Scheme, Javascript, Clojure, or Perl just because I happen to know my way around them.</p>
+
+<p>Finally, I like introducing people to Ruby because it&#8217;s a language optimized for programmer happiness.</p>
+
+<blockquote><p>For me the purpose of life is partly to have joy. Programmers often feel joy when they can concentrate on the creative side of programming, So Ruby is designed to make programmers happy.</p><footer><strong>Yukihiro Matsumoto,</strong> <cite><a href='http://www.artima.com/intv/rubyP.html'>www.artima.com/intv/rubyP.html/&hellip;</a></cite></footer></blockquote>
+
+
+<p>My hope, when someone shows an interest in creating software (or at least, learning what goes in to creating software), is that they&#8217;ll fall in love with it like I did. I was bitten by the software bug when I was a little kid; it&#8217;s been a hobby ever since. But it really wasn&#8217;t until Ruby came along that I was certain I wanted to spend damn near every waking hour on this stuff.</p>
+
+<p>Why should I subject others to something less wonderful and joy-inducing than what I use every day?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Hypermedia APIs: The New Wild West?]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/30/hypermedia-apis-the-new-wild-west/"/>
+    <updated>2012-05-30T13:26:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/30/hypermedia-apis-the-new-wild-west</id>
+    <content type="html"><![CDATA[<p>Two of the best presentations at RailsConf this year, <strong>Designing Hypermedia APIs</strong> by <a href="http://steveklabnik.com/">Steve Klabnik</a> and <strong>Rails: The Next Five Years</strong> by <a href="http://yehudakatz.com/">Yehuda Katz</a> were related to the topic of hypermedia APIs. The video of Steve&#8217;s talk isn&#8217;t up on Confreaks yet, but the slides are <a href="http://steveklabnik.github.com/hypermedia-presentation/#1">here</a>. I&#8217;ll embed Yehuda&#8217;s talk right here:</p>
+
+<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/UlMpIHH1K5s" frameborder="0" allowfullscreen></iframe>
+
+
+<p>The two big takeaways from these talks (for me, at least):</p>
+
+<ol>
+<li>We&#8217;ve come a long way in designing in implementing APIs. But now we&#8217;re to the &#8220;hard part&#8221;: Going from REST to true hypermedia.</li>
+<li>Rails is really, really good at creating de facto standards via &#8220;convention over configuration.&#8221; But we don&#8217;t go far enough, and that&#8217;s where we shoot ourselves in the foot (think ActiveResource).</li>
+</ol>
+
+
+<h3>Why don&#8217;t you REST for a while?</h3>
+
+<p>I know, it&#8217;s stressful figuring this stuff out.  Rails going all RESTful was a big help when it came to creating uniform interfaces for our applications. HTML, XML, JSON&#8230; you could have it your way, right away. But going from RESTful resources to true hypermedia APIs is an even bigger leap forward than the move to REST, and that transition also needs to be planned and implemented carefully and correctly.</p>
+
+<p><code>as_json</code> will only get you so far. Yes, it will represent the resource in a way that is eminently consumable by a client application, whether that&#8217;s Javascript in the browser, a mobile app, or curl. But your client still needs to know <em>far</em> too much about the structure of the resources on your server. That&#8217;s tight coupling, which we all know is evil. It&#8217;s even evilly-tight from a REST standpoint; if the client has to know <em>anything</em> about server-side resources, you&#8217;re breaking the encapsulation layer between resources and the representation of those resources, which is what REST is all about, right?</p>
+
+<p>So what is to be done?</p>
+
+<!-- more -->
+
+
+<h3>HATEOAS</h3>
+
+<p>Yeah, there it is. <strong>Hypermedia As The Engine Of Application State.</strong> That last layer of REST that we&#8217;d rather not think about, much less try to implement.</p>
+
+<p>We know better, but we do all sorts of crazy things in order <em>not</em> to do it right. One of the most common sins (I&#8217;m guilty myself) is embedding nested resources inside of the requested resource.</p>
+
+<p>What&#8217;s wrong with embedding, for instance, comments in the JSON representation of an article?</p>
+
+<p>If nothing else, when I request an article, I&#8217;m requesting a specific representation of a specific resource. I don&#8217;t necessarily <em>want</em> all of its child resources or other associations. I should <em>know</em> about them, but not forced to accept them.</p>
+
+<p>Furthermore,</p>
+
+<p>I really like the example Steve used of implementing a <code>links</code> array in the returned object:</p>
+
+<figure class='code'><figcaption><span>Sample response </span><a href='http://steveklabnik.github.com/hypermedia-presentation/#47'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="err">request(</span><span class="s2">&quot;http://w3clove.com/api/&quot;</span><span class="err">,</span>
+</span><span class='line'>  <span class="s2">&quot;application/vnd.w3clove.validation+json&quot;</span><span class="err">)</span>
+</span><span class='line'><span class="err">#</span> <span class="err">=&gt;</span>
+</span><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="nt">&quot;links&quot;</span><span class="p">:[</span>
+</span><span class='line'>  <span class="p">{</span><span class="nt">&quot;rel&quot;</span><span class="p">:</span><span class="s2">&quot;website-form&quot;</span><span class="p">,</span> <span class="nt">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;...&quot;</span><span class="p">},</span>
+</span><span class='line'>  <span class="p">{</span><span class="nt">&quot;rel&quot;</span><span class="p">:</span><span class="s2">&quot;sitemap-form&quot;</span><span class="p">,</span> <span class="nt">&quot;href&quot;</span><span class="p">:</span><span class="s2">&quot;...&quot;</span><span class="p">}</span>
+</span><span class='line'>  <span class="p">]</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What&#8217;s especially interesting here is the Content-type: <code>application/vnd.w3clove.validation+json</code>. That was another big takeaway: I was unaware of the <code>vnd</code> prefix for defining your own content-types, rather than waiting (and waiting, and waiting&#8230;) for the W3C to define a standard.</p>
+
+<p><img class="float-right" src="http://imgs.xkcd.com/comics/standards.png"></p>
+
+<p>Please don&#8217;t take that as encouragement to go create 2<sup>10</sup> new content-types all willy nilly. Use something that exists, preferably an accepted standard, unless there <em>really, really</em> isn&#8217;t an acceptable standard for your use case.</p>
+
+<p>In that scenario, there&#8217;s nothing wrong with defining a content-type that meets your needs, provided you thoroughly spec it and adhere to the spec.</p>
+
+<h3>as_json is not the answer</h3>
+
+<p>I want to go a little further into why links > nested resources.</p>
+
+<p>Let&#8217;s say you have an <code>Article</code> class, which <code>has_many :comments</code> and <code>has_and_belongs_to_many :tags</code> You might think it&#8217;s a good idea to do this:</p>
+
+<figure class='code'><figcaption><span>article.rb</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Article</span> <span class="o">&lt;</span> <span class="no">ActiveRecord</span><span class="o">::</span><span class="no">Base</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">has_many</span> <span class="ss">:comments</span>
+</span><span class='line'>  <span class="n">has_and_belongs_to_many</span> <span class="ss">:tags</span>
+</span><span class='line'>  <span class="n">belongs_to</span> <span class="ss">:user</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">as_json</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="p">{})</span>
+</span><span class='line'>    <span class="n">options</span><span class="o">[</span><span class="ss">:include</span><span class="o">]</span> <span class="o">=</span> <span class="p">{</span><span class="ss">:comments</span> <span class="o">=&gt;</span> <span class="o">[]</span><span class="p">,</span> <span class="ss">:tags</span> <span class="o">=&gt;</span> <span class="o">[]</span><span class="p">}</span>
+</span><span class='line'>    <span class="n">options</span><span class="o">[</span><span class="ss">:except</span><span class="o">]</span> <span class="o">=</span> <span class="ss">:user_id</span>
+</span><span class='line'>    <span class="k">return</span> <span class="k">super</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It&#8217;s not necessarily terrible, but it&#8217;s not optimal. Normally you might get back:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+</pre></td><td class='code'><pre><code class='json'><span class='line'><span class="p">{</span>
+</span><span class='line'>  <span class="err">article:</span> <span class="err">{</span>
+</span><span class='line'>    <span class="err">title:</span> <span class="nt">&quot;First Post!&quot;</span><span class="p">,</span>
+</span><span class='line'>    <span class="err">body:</span> <span class="nt">&quot;Chillwave fixie food truck vinyl. Squid cred +1, cardigan sustainable before they sold out wayfarers twee synth. Retro cliche 3 wolf moon banh mi, put a bird on it hella american apparel sriracha ennui artisan beard. Small batch four loko cardigan, umami stumptown keffiyeh cray street art etsy. Whatever high life synth godard 3 wolf moon, brunch PBR hella banh mi gluten-free vegan next level mustache stumptown lo-fi. Ethnic photo booth pork belly wayfarers, cardigan blog etsy portland mumblecore single-origin coffee post-ironic shoreditch. +1 typewriter sriracha authentic artisan master cleanse, bushwick freegan keytar.&quot;</span>
+</span><span class='line'>    <span class="err">comments</span><span class="p">:</span> <span class="p">[</span>
+</span><span class='line'>      <span class="p">{</span>
+</span><span class='line'>        <span class="err">id:</span> <span class="err">1,</span>
+</span><span class='line'>        <span class="err">body:</span> <span class="nt">&quot;Dude!&quot;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="p">],</span>
+</span><span class='line'>    <span class="err">tags:</span> <span class="err">[</span>
+</span><span class='line'>      <span class="err">{</span>
+</span><span class='line'>        <span class="err">id:3,</span>
+</span><span class='line'>        <span class="err">name:</span> <span class="nt">&quot;hipster-crap&quot;</span>
+</span><span class='line'>      <span class="p">}</span>
+</span><span class='line'>    <span class="err">]</span>
+</span><span class='line'>  <span class="err">}</span>
+</span><span class='line'><span class="err">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This might be okay until you end up with hundreds of long-winded comments about where to find the best kefir in Portland. And what if your client wants to follow the tags to find similar articles? Sure, they can assume you&#8217;re following rails conventions for URIs and try to get &#8220;http://example.org/tags/3&#8221;, but there&#8217;s no guarantee that&#8217;s what you&#8217;re doing, and it&#8217;s expecting too much of the client. What if you want to find more by the same author? you&#8217;ve decided in advance your clients don&#8217;t need to see the user_id.</p>
+
+<p>Worse, you&#8217;re now eager-loading all of your associations, which, while preferable to a risk of n+1 queries, does mean you&#8217;re banging on your database harder.</p>
+
+<p>There&#8217;s another added benefit: if <em>all</em> a resource needs to know about its associations is where to find them, you&#8217;ve just loosened the coupling between those classes. It&#8217;s a Good Thing.</p>
+
+<p>It occurred to me that there&#8217;s an (imperfect) metaphor for this: pass-by-value vs. pass-by-reference. Rather than copying the value from the server to the client, you pass a reference where the value can be retrieved. Yes, I know this is closer to C pointers (&#8220;pass-by-value where the value is a reference&#8221;) than than true pass-by-reference. Anyhow.</p>
+
+<h3>Tradeoffs</h3>
+
+<p>There are definitely some potential latency-induced pitfalls here. By leaving the task of requesting the appropriate representations of the appropriate resources to the client, we&#8217;re buying decoupling and a reduction in unnecessary database activity at the potential cost of <em>many</em> more HTTP requests.</p>
+
+<p>This might be true. But it just highlights a need that already existed: we really, really need to optimize HTTP. We need to use <a href="http://www.igvita.com/2011/10/04/optimizing-http-keep-alive-and-pipelining/">keep-alive and pipelining</a>, and we need to understand <a href="http://www.igvita.com/2011/10/20/faster-web-vs-tcp-slow-start/">TCP slow-start</a>. Among other things.</p>
+
+<h3>The Wild West</h3>
+
+<p>Now, back to the title line. Hypermedia API design is kinda chaotic right now, with all sorts of possible solutions, from the clever and innovative to the completely brain-damaged.</p>
+
+<p>One thing Rails has been pretty good at is pushing the envelope, gaining wide adoption of good ideas, and giving the other web frameworks something to aspire to/catch up with. We&#8217;ve seen this with MVC, REST, and now the asset pipeline. It is, to a large degree, the convention-over-configuration principle that drives this phenomenon, and in Yehuda&#8217;s talk, he laments the state of ActiveResource, which is pretty useless for the most part, and (correctly, I think) blames the fact that we don&#8217;t have a good convention for resource serialization, which ActiveResource could consume intelligently.</p>
+
+<p>There are plenty of good options out there already; the <a href="https://github.com/apotonick/roar">roar</a> gem recently got support for the <a href="http://stateless.co/hal_specification.html">JSON-HAL</a> content-type, which I think is a great approach to HATEOAS, although not perfect.</p>
+
+<p>The <a href="https://github.com/jcasimir/draper">draper</a> has HATEOAS helpers listed as a TODO, and that&#8217;ll be great. If you need decorators, you should definitely be using draper. If you don&#8217;t think you need decorators, you&#8217;re probably wrong.</p>
+
+<p>Ultimately, however, I think for Rails applications to implement true hypermedia APIs in a consistent fashion, something needs to make it into Rails core that&#8217;s better than the current serialization methods in <code>ActiveRecord::Base</code>. So I&#8217;m <strong>really, really</strong> happy about <code>ActiveModel::Serializers</code>. I think it points to the Right Thing. Please try it out, and use it in your apps. It&#8217;s not in Rails core yet, but if we all start using it, there&#8217;s a better chance of it being included in Rails 4. And that would be really, really cool. Better yet, you can fork and contribute to it (yeah, it&#8217;s on my list to do&#8230; someday).</p>
+
+<p>The &#8220;wild west&#8221; can be exciting, but it&#8217;s not where most of us want to live. Building sane infrastructure allows us to work at higher levels of abstraction, and that&#8217;s where the <em>real</em> fun and excitement lives, right?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Elegant Organizations]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/29/elegant-organizations/"/>
+    <updated>2012-05-29T20:56:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/29/elegant-organizations</id>
+    <content type="html"><![CDATA[<p>For a long time, Jason Fried&#8217;s article <a href="http://www.inc.com/magazine/20110401/jason-fried-why-i-run-a-flat-company.html">Why I Run a Flat Company</a> has seemed like an unrealistic dream that only works in rarified pockets of hacker utopia.</p>
+
+<p>You have to understand, I work for an institution which, between the university, hospital(s), and various other divisions, employs over 40k people, enrolls over 20k students, treats countless patients, and who knows how many vendors and contractors add complexity to the mix.</p>
+
+<p>But I still think there&#8217;s something to this &#8220;flat company&#8221; idea. My team is a bit of an oddity, and I think that&#8217;s what allows us to be agile and innovative in a way that&#8217;s impossible for most of the other software teams. The team is, on an org chart, pretty much flat. We have a team lead, to whom we <em>don&#8217;t</em> report (on paper).</p>
+
+<p>Let me backtrack a bit. In interest of full disclosure, I do have a bit of a cognitive bias in favor of flat organizations. My lefty politics tend toward anarchist-communism, so I have a certain degree of distrust for <em>any</em> hierarchy. I think this goes back to the important distinction between <em>having</em> authority and <em>being an</em> authority. The difference between a bestowed, arbitrary power, and the innate power of being intelligent, capable, and well-informed.</p>
+
+<!-- more -->
+
+
+<p>From this perspective, the (practical) ideal would be a democratically-managed, worker-owned organization where salaries/wages were ditched in favor of profit sharing.</p>
+
+<p>I think software is one business where this ideal is eminently practicable; but let me get back to &#8220;the real world.&#8221;</p>
+
+<p>Specifically, my job.</p>
+
+<p>On an org chart, it goes CIO -> Sr. Director -> Director -> me. Let me note <em>this is weird</em> for my organization. Normally, it would be something like CIO -> Sr. Director -> Director -> IT Manager -> IT Architect -> Señor Software Engineer -> Software Engineer -> Señor Programmer Analyst (me) and there would likely be some kind of &#8220;Peasant Programmer Analyst&#8221; for whom I was responsible. I won&#8217;t go into the fact that if I wrote out what I actually do, it would be 2-3 levels above my pay grade (well, at least not yet).</p>
+
+<p>My team creates enhancements for legacy systems that makes jaws drop among senior VPs from the company that sold us these systems. It&#8217;s super cool, and after our public release this summer, I&#8217;ll be able to talk about them. And beleive me, I will. I&#8217;m super-proud of this stuff.</p>
+
+<p>But the question remains, how is it we pull this stuff off with 1.4 developers, one sysadmin/network engineer/informal team lead, and one hardware/support guy?</p>
+
+<p>I think the lack of formal management is key. Our director is fairly hands-off, as long as we&#8217;re meeting goals and keeping the customers satisfied (which we nearly always are). Our team lead recognizes where the real expertise is among the team, and defers to the judgment of the de facto &#8220;experts&#8221; where appropriate. We are a flat team in an eminently hierarchical organization. And we kick ass.</p>
+
+<p>Recently, our audacious innovation has come onto the radar of the CIO and senior IT management team (among others). That&#8217;s pretty damn cool, on the one hand. On the other, by being <em>off</em> the radar, we&#8217;ve managed to create this cohesive little unit that actually <em>works.</em> We&#8217;ve also been able to choose a stack based on what will pull off the impossible in a timely fashion, rather than what our approved vendors provide.</p>
+
+<p>We run <a href="http://debian.org">Debian</a> on most of our production servers. Our web apps are built with <a href="http://rubyonrails.org">Ruby on Rails</a>, and there&#8217;s some <a href="http://jruby.org">JRuby</a> and <a href="http://clojure.org">Clojure</a> stuff in the works.</p>
+
+<p>This is unheard of. This in a place where Windows Server is the default, where ASP.NET is the preferred web technology&#8230;</p>
+
+<p>I think the problem with having layers and layers of management is that managers need to look like they&#8217;re <em>doing</em> something. Usually, this invovles purchasing decisions, standards impostion, and adding more layers of inefficient management.</p>
+
+<p>When you have a relatively flat organization, it&#8217;s more important to hire smart people who can generally handle themselves, set the mat a task, and be ready to support them as necessary. That&#8217;s how we work, and the result speaks for itself.</p>
+
+<blockquote><p>We&#8217;ve experimented with promoting a few people to manager-level roles. In some cases, this has worked out; in others, it hasn&#8217;t. But one thing we&#8217;ve found is that groups that manage themselves are often better off than groups that are managed by a single person. So when groups do require structure, we get them to manage themselves.</p><footer><strong>Jason Fried,</strong> <cite><a href='http://www.inc.com/magazine/20110401/jason-fried-why-i-run-a-flat-company.html'>www.inc.com/magazine/20110401/&hellip;</a></cite></footer></blockquote>
+
+
+<p>Of course, innovation isn&#8217;t <em>always</em> the top priority. But I think whenever possible, it should be towards the very top of the list. Innovation is the key to competitiveness, and whether you&#8217;re a university, a hospital, or a software company, ultimately it comes down to the bottom line: how do we increase revenues and decrease expenditures?</p>
+
+<p>Creating innovative features that can attract new customers, and save work for staff, at the same time, ultimately mean that deep down, you&#8217;re a profit center, even if you&#8217;re still classified by the dreaded beancounters as a cost center. And in this crazy, mixed-up world, that&#8217;s what it&#8217;s all about.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Passion, The Ultimate Virtue]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/22/passion/"/>
+    <updated>2012-05-22T20:04:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/22/passion</id>
+    <content type="html"><![CDATA[<p>I&#8217;m finally reading <a href="http://www.chadfowler.com">Chad Fowler</a>&#8217;s excellent book, <a href="http://pragprog.com/book/cfcar2/the-passionate-programmer">The Passionate Programmer</a>, and in it he recounts an experience that was chillingly familiar.</p>
+
+<p>A music major, Chad fell into working at his university&#8217;s IT department as if by accident. Initially, he was worried that his lack of professional experience or training would prove an embarrassment; after all, here he was working alongside people with advanced degrees in computer science.</p>
+
+<blockquote><p>Within a few days of work, the truth started to sink in. These people don&#8217;t know what the hell they&#8217;re doing! In fact, some people were watching me work and taking notes! People with master&#8217;s degrees in computer science!</p></blockquote>
+
+<p><img class="float-left" src="http://decomplecting.org/images/passionate-programmer.png"></p>
+
+<p>I can definitely relate. I work at a university as well, and it&#8217;s actually my first formal software development position. I&#8217;ve been coding as part of my job (and my full-time hobby) for years&#8230; as far back as high school, in fact. I learned BASIC on a Texas Instruments 99/4A when I was 4 or 5. But prior to this, my paid software development work had either been freelance stuff or encountering a problem in a non-technical job that I could solve faster by hacking something together.</p>
+
+<p>I work on a small team on which I&#8217;m the only full-time developer (I&#8217;ll come back to this later). Recently, IT had a major re-org which put my team under a new director and in the same organizational unit as a large team of developers.</p>
+
+<!-- more -->
+
+
+<p>At first, I was super-excited&#8230; to actually have other developers I could at least bounce ideas off of? What a windfall! Then I found out our new director used to be a programmer herself! Fantastic!</p>
+
+<p>Our director actually is pretty fantastic, but my naïve illusions about these other developers were soon dispelled.</p>
+
+<h2>Meet the developers</h2>
+
+<p>Shortly after the re-org, I started working a day a week at the campus where most of IT is centered rather than the main university campus where I usually work. At first it was okay; everyone I met seemed nice enough, and they had better coffee than the break room back at my usual location.</p>
+
+<p>I think it was maybe the second time I went up there, I was eating lunch with some of of the devs from our new sister team, some of whom I was meeting for the first time. The conversation went something like this:</p>
+
+<p>Let&#8217;s call my interlocutor Al.</p>
+
+<hr />
+
+<p><strong>Me:</strong> Hi, I&#8217;m Jason.</p>
+
+<p><strong>Al:</strong> Hi Jason, I&#8217;m Al. So what do you do?</p>
+
+<p><strong>Me:</strong> Oh, I&#8217;m on the ID Services team. I mostly work on custom web apps to interface with our legacy systems, but I&#8217;m starting to do some Android stuff as well.</p>
+
+<p><strong>Al:</strong> That&#8217;s neat. I work on $some_project. So what do you do for fun?</p>
+
+<p><strong>Me:</strong> I read a lot, and hack on open source projects as much as I can. I&#8217;m actually also working on teaching myself Lisp right now.</p>
+
+<p><strong>Al:</strong> Uh-huh. And what do you do with your other hand?</p>
+
+<hr />
+
+<p>Okay, for a moment I was almost speechless. Then I thought: <em>Okay, maybe I pegged this guy wrong as a developer. Business analyst, maybe?</em></p>
+
+<p>Nope. This was a developer who (apparently?) hated programming. He basically said as much. Maybe not hated, but took no joy in it.</p>
+
+<p>This was actually pretty typical of many other developers I met up there. Not all, of course. There were a few gems amongst the stones.</p>
+
+<p>Suffice to say, I lost interest in being in that environment pretty quickly. So when I moved later that year, I wasn&#8217;t too upset that the difficulty of commuting to that campus made it impractical to work from there on a regular basis.</p>
+
+<p>I&#8217;m not sure I realized it at the time, but I think the attitude toward coding I saw in those developers is <em>absolutely</em> reflected in their product.</p>
+
+<p>It&#8217;s a mission-critical enterprise system which, to be fair, does its job effectively. But certainly <em>not</em> elegantly.</p>
+
+<p>Like many projects here (and I&#8217;m sure it&#8217;s not atypical of higher ed in general), that team works on a legacy, vendor-supplied product that has been customized, extended, and tweaked beyond recognition.</p>
+
+<p>My job isn&#8217;t that different.</p>
+
+<p>Except they have a team of 25 or so working on a project with a clunky, it&#8217;s-obviously-ASP.NET web interface that users love to hate (actually, I think there&#8217;s a lot of ASP classic, VB6, and other stuff going on behind the scenes, but I don&#8217;t really want to know).</p>
+
+<p>Actually, not just users&#8230; one of the first pieces of my predecessor&#8217;s code I looked at had a number of comments about this system, because my team has to pull data from it. I&#8217;ll call that system HORUS (not its real name) for the purposes of illustration.</p>
+
+<figure class='code'><figcaption><span>horus-interface.pl</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+</pre></td><td class='code'><pre><code class='perl'><span class='line'>    <span class="k">my</span> <span class="nv">@data</span> <span class="o">=</span> <span class="n">horus_data</span><span class="p">();</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="c1"># I&#39;m going to stab HORUS in the face.</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">my</span> <span class="nv">$converter</span> <span class="o">=</span> <span class="nn">Text::</span><span class="n">Iconv</span><span class="o">-&gt;</span><span class="k">new</span><span class="p">(</span><span class="s">&quot;LATIN1&quot;</span><span class="p">,</span><span class="s">&quot;UTF8&quot;</span><span class="p">);</span>
+</span><span class='line'>    <span class="nv">$converter</span><span class="o">-&gt;</span><span class="n">set_attr</span><span class="p">(</span><span class="s">&quot;transliterate&quot;</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="k">foreach</span> <span class="k">my</span> <span class="nv">$record</span> <span class="p">(</span><span class="nv">@data</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>      <span class="c1"># HORUS lies about UTF-16. It&#39;s actually UTF-8 sprinkled with high-bit ASCII chars. Ffs.</span>
+</span><span class='line'>      <span class="nv">$converter</span><span class="o">-&gt;</span><span class="n">convert</span><span class="p">(</span><span class="nv">$record</span><span class="p">);</span>
+</span><span class='line'>
+</span><span class='line'>    <span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The Perl is probably all wrong, but the comments are basically verbatim (other than the name, of course).</p>
+
+<p>I&#8217;m one guy, armed only with Ruby, Rails, and sheer bloody-mindedness. Well, not alone anymore; we recently added 40% of an FTE to our team. So we have 1.4 people on development now; that&#8217;s a 40% increase in staff in one year! Unthinkable!</p>
+
+<p>But, I digress.</p>
+
+<h2>It&#8217;s just a job</h2>
+
+<p>I think it&#8217;s easy to build a crap product when it&#8217;s just a job. If I was given the choice between being associated with a crap product and finding a new job, I&#8217;d be out the door; but apparently that&#8217;s just me.</p>
+
+<p>Dealing with legacy systems is hard, and often thankless. But it&#8217;s no excuse. I think if you <em>love</em> code, and have a passion both for writing code, and for code that not only compiles and runs, but that is elegant, even beautiful, it&#8217;s makes all the difference in the world.</p>
+
+<p>Not that I don&#8217;t have some skeletons in the closet. Or, at least, some crawling, eldritch horrors in the codebase. The first application I wrote, for administrative users, is something I&#8217;ve been begging to rewrite, because I can&#8217;t stand maintaining it. Someday that&#8217;ll happen. Then I&#8217;ll have decent test coverage and all the other things I wish I&#8217;d done right the first time.</p>
+
+<p>But the fact that (by my standards) a sloppy, poorly tested monstrosity is in production, and <em>I&#8217;m</em> responsible for it&#8230; I literally lose sleep over this.</p>
+
+<p>I don&#8217;t think Al even thinks about how stable, orthogonal, or DRY his code is when he commits it, much less once it&#8217;s been running in production for a year and only breaks down or corrupts data on edge cases.</p>
+
+<p>It&#8217;s not just that, though.</p>
+
+<p>I will never trust a developer who only codes from 9 to 5. <em>Especially</em> one who works on an enterprise-y system. Enterprise-y systems are rarely fun. So if you don&#8217;t get your programming jollies at work (or, if jollies are an occasional perk rather than a frequent occurrence), you&#8217;ve got to get them hacking on an open source project, or some prototype for this crazy start-up you might do one day, right?</p>
+
+<p>Unless you <em>don&#8217;t get</em> jollies. At least, not from coding.</p>
+
+<p>I don&#8217;t understand how this can even be possible, but the evidence is overwhelming that there are people out there, working professionally as software developers, who don&#8217;t care for it all that much.</p>
+
+<p>I have a feeling that developer apathy is the root cause of a <em>lot</em> of bad software.</p>
+
+<p>If you are truly passionate about building beautiful, reliable systems that solve real problems for real people, you don&#8217;t work 9 to 5. You go home and hack on open source projects. Maybe just for fun, maybe to learn something new, maybe to scratch an itch. Perhaps it&#8217;s a library you want to use at work, but it just needs one more feature to be a good fit.</p>
+
+<p>You read blogs and mailing lists to stay on top of the latest developments in the languages and frameworks you use, so you can use them more effectively.</p>
+
+<p>You learn new languages, and play with new frameworks, because it&#8217;s fun, and it makes you better at what you do.</p>
+
+<p>You learn a Lisp, or maybe Haskell, just because you heard it will be both challenging and rewarding.</p>
+
+<p>You follow people like <a href="https://twitter.com/#!/chadfowler">@chadfowler</a>, <a href="https://twitter.com/#!/steveklabnik">@steveklabnik</a>, and <a href="https://twitter.com/#!/fogus">@fogus</a> on Twitter because you&#8217;ll learn from them, be entertained, and interact with really, really smart people, even if in 140-character bursts.</p>
+
+<p>You join a local user group, go to hackfests, seek out people who won&#8217;t zone out when you wax poetic about how <em>fucking cool</em> Clojure is. Or whatever you&#8217;re on about this week.</p>
+
+<p>You get a lambda (inside parentheses!) tattooed on your forearm.</p>
+
+<p>Okay, maybe that last one is just me.</p>
+
+<p>You always try to be the worst guy in every band you&#8217;re in.</p>
+
+<h2>Being the worst</h2>
+
+<p>This is probably the one thing that really chafes about my current job. Working on a team with 1.4 developers is hard enough; when you&#8217;re the de facto lead developer, and fairly isolated in terms of problem domain, physical location, and platform, it&#8217;s hard to find someone better to spot your WTFs, suggest refactorings, etc.</p>
+
+<p>Working on open source projects helps, and there&#8217;s always IRC, and <a href="http://stackoverflow.com">Stack Overflow</a>. The newer Stack Exchange site, <a href="http://codereview.stackexchange.com">Code Review</a>, as well as <a href="http://programmers.stackexchange.com">Programmers</a> are also fantastic resources.</p>
+
+<p>Whether you&#8217;re on a team with many senior developers, or a lone wolf, however, having mentors or resources available isn&#8217;t enough. You have to care about your craft enough to take advantage of whatever is available, because improving your craft <em>matters.</em></p>
+
+<h2>Virtues</h2>
+
+<p>I used to do a lot of Perl coding. I taught myself Perl in high school, and it was probably one of the best things I ever did.</p>
+
+<p><img class="float-right" src="http://imgs.xkcd.com/comics/11th_grade.png"></p>
+
+<p>I used Perl a lot, and though I never did fully grasp the full depth of references in Perl ( although that may actually <a href="https://sites.google.com/site/steveyegge2/ancient-languages-perl">be an indicator of sanity</a>), I loved certain things about the philosophy. Or, at least, the philosophy behind the philosophy. The idea that the chief virtues of a programmer were <a href="http://c2.com/cgi/wiki?LazinessImpatienceHubris">laziness, impatience, and hubris</a> struck a chord with me. If you read <a href="http://www.oreilly.com/catalog/pperl3/">Programming Perl</a>, a clear distinction is made between <em>true</em> laziness, impatience, and hubris, and a false, <em>shallow</em> laziness, impatience, and hubris. I think the true versions of these virtues stem from an even deeper virtue: passion.</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/Bz2-49q6DOI" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Passion is such a hackneyed concept nowadays that it has become almost meaningless. Which is maybe part of the reason I procrastinated for so long before picking up <em>The Passionate Programmer</em> (sorry, Chad!). But I think in a very real sense, what the best developers have in common is a true <em>passion</em> for writing code and building systems.</p>
+
+<blockquote><p><strong>Passion</strong> (from the Ancient Greek verb πάσχω (paskho) meaning to suffer) is a term applied to a very strong feeling about a person or thing. Passion is an intense emotion compelling feeling, enthusiasm, or desire for something.</p></blockquote>
+
+<p>- <a href="" title="http://en.wikipedia.org/wiki/Passion_(emotion)">Wikipedia</a></p>
+
+<p>I think those of us who truly care do <em>suffer</em> for our software. We drive ourselves mad hunting down <a href="http://www.catb.org/jargon/html/H/heisenbug.html">heisenbugs</a> and corner cases, stay up nights obsessively scratching this or that itch, lie awake mentally refactoring a junk-drawer class that has been bothering us for weeks, and even stay in jobs where we&#8217;re underpaid and overworked (for a while, at least) just because we&#8217;re given reasonable autonomy and the chance to hack on something really <em>cool.</em></p>
+
+<h2>Conclusion</h2>
+
+<p>We have enough mediocre developers. If we ever don&#8217;t have a local surplus, there are plenty waiting in the wings. That&#8217;s what off-shoring is for.</p>
+
+<p>If you&#8217;re thinking of learning to code because it seems like a solid career choice, rather than out of an inner compulsion, <a href="http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html">please don&#8217;t</a>.</p>
+
+<p>I love meeting programmers. I have far too many friends whose eyes glaze over when I talk about the cool tricks Clojure employs to get around the JVM&#8217;s lack of tail-call optimization.</p>
+
+<p>But when I meet someone who is actively creating software, who doesn&#8217;t even express the slightest curiosity about virtual machines or tail recursion&#8230; it depresses the hell out of me.</p>
+
+<p>Anyhow&#8230; go read Chad&#8217;s book. And <em>love the hell out of</em> coding, or GTFO. There are plenty of jobs out there for you to hate; please stop diluting the overall quality of the world&#8217;s software through sheer apathy.</p>
+
+<p><strong>Update:</strong> As per usual, Paul Graham <a href="http://paulgraham.com/love.html">has this topic covered</a>. I just discovered his &#8220;How To Do What You Love&#8221; essay, however, so it&#8217;s new to me. But you should read that, too.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Un-Pythonic for Fun and Profit]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit/"/>
+    <updated>2012-05-18T15:01:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/18/un-pythonic-for-fun-and-profit</id>
+    <content type="html"><![CDATA[<p>This post isn&#8217;t meant to play into some hacker holy war, nor is it intended to denigrate the usefulness of Python for various tasks. Steve Yegge has done <a href="https://sites.google.com/site/steveyegge2/tour-de-babel">a much better job than I can</a> of explicating some of the issues other programmers have with Python, both the language and the community around it; I still agree with his remarks there.</p>
+
+<p>But there <em>are</em> some (major, IMHO) issues with the &#8220;Pythonic&#8221; attitude toward programming. And they start with &#8220;The Zen of Python.&#8221;</p>
+
+<h2>The Zen of Python</h2>
+
+<p>There&#8217;s a lot to like about <a href="http://www.python.org/dev/peps/pep-0020/">The Zen of Python</a>. On the first face of it, it&#8217;s a pretty good set of principles:</p>
+
+<pre><code>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!
+</code></pre>
+
+<p>There&#8217;s a lot here that would be attractive, if not obvious, to any given Rubyist or Clojurian. I think the problem is that Pythonistas tend to get hung up on the <em>bad</em> elements of the &#8220;Zen of Python&#8221;, to the detriment of the positive ones. So I&#8217;ll just go through some of the ones that cause the most friction with non-Pythonistas.</p>
+
+<!-- more -->
+
+
+<h3>1. There should be one&#8211; and preferably only one &#8211;obvious way to do it.</h3>
+
+<p>I think this is the elephant in the room. Whereas Perl, Ruby, and (my god, to such a degree) Lisp are firmly in the <a href="http://catb.org/jargon/html/T/TMTOWTDI.html">TMTOWTDI</a> camp, Guido in his infinite wisdom has decreed that this principle (one vital to <em>programmer freedom</em>) should be abjured in favor of strict newb-safety, via the principle of having ONE way to do any given thing.</p>
+
+<p><img class="float-right" src="http://decomplecting.org/images/helen-lovejoy.png"></p>
+
+<p>This is a real design flaw with Python. Valuing newb-friendliness over developer productivity (and happiness?) is great if you&#8217;re designing a strictly academic language.</p>
+
+<p>Actually, I take that back. It&#8217;s still a bad idea. Python shouldn&#8217;t even be used as a teaching language, because it confuses students. I&#8217;ve had first-year CS majors try to convince me that Python is as object-oriented as Ruby. This simply isn&#8217;t true; Python combines a hodgepodge of paradigms (granted, Ruby does as well), but at its core, Python is a procedural language with some OO tacked on as an afterthought, and you can still see the bolts. It has more in common with C++ than Smalltalk, in this respect. But if you&#8217;re learning your entire concept of object-orientation from Python, and you have a teacher or professor telling you it&#8217;s OO, how are you to know better.</p>
+
+<p>Getting back to the TOOWTDI principle, this is a more egregious violation of programmer freedom than significant whitespace (how I format my code is a personal, or team decision; I don&#8217;t need a language designer telling me how to indent). It&#8217;s so severe with Python that Guido originally planned to <a href="http://www.artima.com/weblogs/viewpost.jsp?thread=98196">remove map(), reduce(), and lambda</a> from Python 3000.</p>
+
+<p>The argument from Python&#8217;s BDFL was that <code>map()</code> and <code>reduce()</code> were confusing and only existed in Python because some <a href="http://c2.com/cgi/wiki?SmugLispWeenie">Smug Lisp Weenie</a> had submitted them 12 years previously, and that list comprehensions were the Pythonical-Canonical way of dealing with lists. Okay, list comprehensions are okay and all (I&#8217;ll leave aside the debate over whether they are in any way more readable than functional constructs), but <em>who is it hurting to offer alternatives?</em></p>
+
+<p>Ruby has <code>#map</code> and <code>#reduce</code>, as well as <code>#collect</code> and <code>#inject</code>, which are aliases for the previous two methods (respectively). This doesn&#8217;t stop you from iterating over lists instead, using generators, or anything else you&#8217;d like to do. It just seems like a combination of &#8220;I don&#8217;t like the functional style, so nobody else can have it either,&#8221; along with &#8220;this might confuse a newb, and we&#8217;ll lose another convert!&#8221;, or something.</p>
+
+<h3>2. Beautiful is better than ugly.</h3>
+
+<p>Can&#8217;t argue with this one. Beautiful is <em>most certainly</em> better than ugly. When it comes to the Zen of Python, however, beauty is most definitely in the eye of the beholder.</p>
+
+<p>In a <a href="http://decomplecting.org/blog/2012/05/08/simplicity/">previous post</a> I used David Gelerntner&#8217;s definition of &#8220;machine beauty,&#8221; i.e., &#8220;an inspired mating of simplicity and power.&#8221; I think this holds true, and is at the core of what we recognize as elegance in software.</p>
+
+<p>Sadly, I think it is quite clear that this is <em>not</em> what the Python community means by &#8220;beauty.&#8221; Python is always only too eager to sacrifice power (and even expressiveness) on the altar of a shallow view of &#8220;simplicity.&#8221;</p>
+
+<p>I can think of no better example than <code>lambda</code> in Python. Not only are Python lambdas a neutered shadow of lambdas in Ruby or Lisp, their mere existence irritated Python&#8217;s BDFL to the point that he wanted to excise them from the language altogether. (For more on lambas (and other syntax) in Ruby and Python, read <a href="http://peepcode.com/blog/2010/what-pythonistas-think-of-ruby">this</a> and then go watch <a href="http://vimeo.com/9471538">this</a>.)</p>
+
+<p>Now, I won&#8217;t go into lambdas and why they matter here, I&#8217;m sure you know how to Google. The point is that the Pythonic tendency, when confronted with a &#8220;distasteful&#8221; construct, seems fall into three categories (with possible overlap):</p>
+
+<ul>
+<li>Ban it from the language before implementation</li>
+<li>Remove it from the language, breaking backward-compatibility</li>
+<li>Make its userspace implementation impossible.</li>
+</ul>
+
+
+<p>Pythonistas are typically horrified by the fact that in Ruby, you can monkey-patch <code>Object</code> and extend the language in novel ways. I&#8217;m not sure how most Python aficionados feel about Lisp (<a href="http://norvig.com/python-lisp.html">Peter Norvig</a> notwithstanding), but I can&#8217;t imagine them being too friendly toward macros.</p>
+
+<h3>3. Simple is better than complex.</h3>
+
+<p>The reason I called Python&#8217;s concept of simplicity &#8220;shallow&#8221; is that it conflates &#8220;simple&#8221; with &#8220;easy.&#8221;</p>
+
+<p>Having multiple ways of doing something does not complect a programming language. Arbitrarily jumping between multiple possible implementations within the implementation of a single program <em>does</em> complect that codebase, but that&#8217;s why self-discipline is an important programmer trait.</p>
+
+<p>Self-discipline is important. I don&#8217;t need a programming language to impose this from without, and I <em>especially</em> don&#8217;t want Guido making these decisions for me. I don&#8217;t use <a href="http://c2.com/cgi/wiki?BondageAndDisciplineLanguage">bondage-and-discipline languages</a>, and neither should you.</p>
+
+<p>Seriously, guise.</p>
+
+<h3>4. Explicit is better than implicit.</h3>
+
+<p>I don&#8217;t care what your philosophy is, passing <code>self</code> as an explicit parameter is just evil.</p>
+
+<h3>Finally&#8230;</h3>
+
+<p>Well, there was more I was planning to cover, but this post is long enough as it is. I&#8217;ll probably do a follow-up at some point in the future. If you think I&#8217;m completely wrong, or just wrong on any of the points here, tell me why (preferably civilly) in the comments.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[job_interview]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/09/job-interview/"/>
+    <updated>2012-05-09T13:14:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/09/job-interview</id>
+    <content type="html"><![CDATA[<p>So, I wanted to plug a little project that <a href="https://twitter.com/#!/micahjgates">Micah Gates</a> and I hacked together at <a href="http://railsconf.austinonrails.org/bohconf">BohConf</a>, the awesome un-conference and hackfest that runs parallel to <a href="http://railsconf2012.com">RailsConf</a> each year.</p>
+
+<p>It&#8217;s called <a href="https://github.com/ruby-jokes/job_interview">job_interview</a>, and it&#8217;s a Ruby gem to automate some of the tedium of programmer job interviews.</p>
+
+<p>As an example, let&#8217;s take <a href="http://www.codinghorror.com/blog/2007/02/why-cant-programmers-program.html">FizzBuzz</a>, a typical interview screening question intended to weed out the applicants who can&#8217;t write code to save their lives. In Ruby, you might implement FizzBuzz like this:</p>
+
+<figure class='code'><figcaption><span>FizzBuzz </span><a href='https://github.com/ruby-jokes/job\_interview/blob/master/lib/job\_interview/fizz\_buzz.rb'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">fizz_buzz</span><span class="p">(</span><span class="n">max</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">Array</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="n">max</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">i</span><span class="o">|</span>
+</span><span class='line'>    <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
+</span><span class='line'>    <span class="n">val</span>  <span class="o">=</span> <span class="p">(</span><span class="n">j</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">?</span> <span class="s2">&quot;Fizz&quot;</span> <span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="o">+</span>
+</span><span class='line'>    <span class="p">(</span><span class="n">j</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">?</span> <span class="s2">&quot;Buzz&quot;</span> <span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+</span><span class='line'>    <span class="n">val</span><span class="o">.</span><span class="n">empty?</span> <span class="p">?</span>  <span class="n">j</span><span class="o">.</span><span class="n">to_s</span>  <span class="p">:</span> <span class="n">val</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>But that&#8217;s just tedious. With job_interview, it&#8217;s dead simple:</p>
+
+<figure class='code'><figcaption><span>job_interview FizzBuzz</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">require</span> <span class="s1">&#39;job_interview&#39;</span>
+</span><span class='line'><span class="vi">@answer</span> <span class="o">=</span> <span class="no">JobInterview</span><span class="o">::</span><span class="no">Answer</span><span class="o">.</span><span class="n">new</span>
+</span><span class='line'><span class="vi">@answer</span><span class="o">.</span><span class="n">fizz_buzz</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'> <span class="o">=&gt;</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s2">&quot;Fizz&quot;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;Buzz&quot;</span><span class="o">]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>It also does Fibonacci sequences (recursive, iterative, and matrix strategies), a quine, the first <em>n</em> primes, and, of course, &#8220;Hello, World!&#8221;</p>
+
+<p>That wasn&#8217;t enough, though.</p>
+
+<p>It will also answer the bullshit personal questions that everyone lies about anyway!</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="kp">include</span> <span class="no">JobInterview</span><span class="o">::</span><span class="no">Questions</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Q. Where do you see yourself in 5 years?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">in_5_years</span>
+</span><span class='line'>
+</span><span class='line'> <span class="o">=&gt;</span> <span class="s2">&quot;I&#39;d like to have made someone else rich with my re-contextualized non-volatile open architecture.&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Q. Why do you want to work here?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">why_here</span>
+</span><span class='line'>
+</span><span class='line'> <span class="o">=&gt;</span> <span class="s2">&quot;Your company has revolutionized seamless next generation interface.&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Q. Does P = NP?</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="n">p_equals_np</span>
+</span><span class='line'>
+</span><span class='line'> <span class="o">=&gt;</span> <span class="s2">&quot;I doubt it, but it would make life easier for traveling salesmen.&quot;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>&#8230;and many more.</p>
+
+<p>We aim for 100% test coverage with RSpec, so we&#8217;re confident that this is a robust solution for a range of job interview scenarios.</p>
+
+<p>We did a lightning talk at RailsConf 2012, and you can <a href="http://ruby-jokes.github.com/job_interview/pres.html">see the slides here</a>.</p>
+
+<p>Next time you face an interview for a programming job, work smarter, not harder.</p>
+
+<p><code>gem install job_interview</code></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Simplicity]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/08/simplicity/"/>
+    <updated>2012-05-08T10:15:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/08/simplicity</id>
+    <content type="html"><![CDATA[<h3>Machine Beauty</h3>
+
+<p><img class="float-left" src="http://photo.goodreads.com/books/1171573120l/107615.jpg" width="250"></p>
+
+<p>In his essay <a href="http://www.goodreads.com/book/show/107615.Machine_Beauty">Machine Beauty</a>, David Gelernter defines &#8220;machine beauty&#8221; as an inspired mating of simplicity and power. In software, I think this is also what we mean when we talk about &#8220;elegance.&#8221;</p>
+
+<p>The Dijkstra quote that serves as a tagline for this blog is actually truncated; the full quote reads:</p>
+
+<blockquote><p>Elegance is not a dispensable luxury but a quality that decides between success and failure.</p></blockquote>
+
+<p>This is not (necessarily) an economic truth; few people would describe any product from Microsoft as elegant, but they have been economically successful. However, the painful experience of using Microsoft software, the unreliability of both systems and applications, the general clunkiness of Windows applications, indicates that the software here is indeed a failure.</p>
+
+<p>Software is a failure when it becomes an obstacle to productivity rather than an aid to it; when you must serve the compiler (or interpreter) rather than the compiler serving you (think Java boilerplate). From an end-user standpoint, the failure comes when the interface imposes unnatural workflows and ceremony that interrupts the natural flow of completing a task.</p>
+
+<p>Software is successful when you hardly notice it&#8217;s there; when it becomes a natural extension of the self, an augmentation to human ability. In terms of systems, think of the Macintosh when it was introduced; nothing before had been so intuitive, and enabling. In terms of programming languages, Ruby leaps immediately to mind. It is so expressive that it no longer feels like &#8220;coding&#8221;; you are just expressing your thoughts in a syntax that feels almost immediately as natural as a spoken language.</p>
+
+<!-- more -->
+
+
+<h3>Simplicity Matters</h3>
+
+<p>One of the most interesting (inspiring?) talks at <a href="http://railsconf2012.com/">RailsConf</a> this year was Rich Hickey&#8217;s keynote entitled &#8220;Simplicity Matters&#8221;. Here&#8217;s the video, you should watch it:</p>
+
+<iframe width="560" height="315" src="http://www.youtube-nocookie.com/embed/rI8tNMsozo0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>One of the most important points he makes, early on in the talk, is that we often tend to conflate &#8220;simple&#8221; with &#8220;easy,&#8221; and this is far from accurate. It&#8217;s all too easy to complect the design of languages, systems, and applications, rather than maintain simplicity and elegance. He&#8217;s kind of (allusively) hard on Rails, but not without reason. One of the ongoing efforts in the refactoring and continued development of Rails is to simplify the codebase as well as the APIs.</p>
+
+<h3>Practical Elegance</h3>
+
+<p>There are two modern programming languages that I think exemplify the marriage of power and simplicity that constitutes elegance. The first, which I use every day, is Ruby.</p>
+
+<p>For instance, consider the following accumulator generator in C++:</p>
+
+<figure class='code'><figcaption><span>Accumulator Generator </span><a href='http://www.paulgraham.com/accgen.html'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+</pre></td><td class='code'><pre><code class='c++'><span class='line'><span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">T</span><span class="o">&gt;</span>
+</span><span class='line'><span class="k">struct</span> <span class="n">Acc</span> <span class="p">{</span>
+</span><span class='line'>  <span class="n">Acc</span><span class="p">(</span><span class="n">T</span> <span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">:</span> <span class="n">n</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">U</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="n">Acc</span><span class="p">(</span><span class="k">const</span> <span class="n">Acc</span><span class="o">&lt;</span><span class="n">U</span><span class="o">&gt;&amp;</span> <span class="n">u</span><span class="p">)</span>
+</span><span class='line'>  <span class="o">:</span> <span class="n">n</span><span class="p">(</span><span class="n">u</span><span class="p">.</span><span class="n">n</span><span class="p">)</span> <span class="p">{}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="k">template</span><span class="o">&lt;</span><span class="k">typename</span> <span class="n">U</span><span class="o">&gt;</span>
+</span><span class='line'>  <span class="n">T</span> <span class="k">operator</span><span class="p">()(</span><span class="n">U</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+</span><span class='line'>    <span class="k">return</span> <span class="n">n</span> <span class="o">+=</span> <span class="n">i</span><span class="p">;</span>
+</span><span class='line'>  <span class="p">}</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="n">T</span> <span class="n">n</span><span class="p">;</span>
+</span><span class='line'><span class="p">};</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Super clear, right? Readable? Oh, yeah.</p>
+
+<p>Hardly. But maybe it&#8217;s not fair to pick on C++, simplicity was (sadly) never a design goal.
+Python is a more modern programming language, it&#8217;s designed to be easy for new programmers to learn.</p>
+
+<figure class='code'><figcaption><span>Accumulator Generator </span><a href='http://www.paulgraham.com/accgen.html'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class='python'><span class='line'><span class="k">class</span> <span class="nc">foo</span><span class="p">:</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+</span><span class='line'>    <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span>
+</span><span class='line'>  <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
+</span><span class='line'>    <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">+=</span> <span class="n">i</span>
+</span><span class='line'>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">n</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Simpler than C++, sure. But you still have all these explicit calls to self, and a class definition that should be unnecessary in a functional construct like an accumulator generator. It&#8217;s an improvement, but still ugly as hell.</p>
+
+<p>Now let&#8217;s look at Ruby:</p>
+
+<figure class='code'><figcaption><span>Accumulator Generator </span><a href='http://www.paulgraham.com/accgen.html'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">foo</span> <span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span class='line'>  <span class="nb">lambda</span> <span class="p">{</span><span class="o">|</span><span class="n">i</span><span class="o">|</span> <span class="n">n</span> <span class="o">+=</span> <span class="n">i</span> <span class="p">}</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Wow. Three lines of code (although it could be written in one). If you understand lambdas, it&#8217;s obvious what&#8217;s going on here at a glance. You initalize <code>foo</code> with a value, and it returns a lambda that will accumulate any values passed to it.</p>
+
+<p>Ruby makes the solution completely obvious.</p>
+
+<p><em>Note: all examples above from <a href="http://www.paulgraham.com/accgen.html">Paul Graham&#8217;s website</a></em></p>
+
+<h3>Clojure</h3>
+
+<p>The other language that has me in awe of its marriage of power and simplicity is <a href="http://clojure.org">Clojure</a>. Clojure is a Lisp dialect targeting the JVM, and I encourage anyone out there to explore it. Here&#8217;s the above construct in Clojure:</p>
+
+<figure class='code'><figcaption><span>Accumulator Generator</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="kd">defn </span><span class="nv">accum</span> <span class="p">[</span><span class="nv">n</span><span class="p">]</span>
+</span><span class='line'>  <span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">acc</span> <span class="p">(</span><span class="nf">atom</span> <span class="nv">n</span><span class="p">)]</span>
+</span><span class='line'>    <span class="p">(</span><span class="k">fn </span><span class="p">[</span><span class="nv">m</span><span class="p">]</span> <span class="p">(</span><span class="nf">swap!</span> <span class="nv">acc</span> <span class="nb">+ </span><span class="nv">m</span><span class="p">))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Anyhow, it&#8217;s a little less immediately obvious than in a language like Python or Ruby (or, for that matter, Lisps like Scheme or Common Lisp). Why is this? As I mentioned previously, Clojure, while technically an &#8220;impure&#8221; functional language (as in, side-effects are allowed), tries to treat side-effects as a special case; so, for instance, most data structures in Clojure are immutable. The <code>atom</code> construct in Clojure creates a reference type that can access shared, independent, mutable state. The <code>swap!</code> function allows the value of the atom to be updated.</p>
+
+<p>&#8220;Wait,&#8221; you might exclaim, &#8220;that seems harder to work with! Aren&#8217;t immutable data structures introducing complexity!?!?&#8221;</p>
+
+<p>Clearly, if you share this opinion, you&#8217;ve never tried to deal with concurrency. Clojure&#8217;s preference for immutable data structures isn&#8217;t <em>easier</em> than the usual acceptance of side-effects; but it is <em>simpler.</em> Making me think before I do an operation for side-effects in effect makes me think hard about many cases where I have an opportunity to complect my code.</p>
+
+<p>I&#8217;ve heard the argument that Python&#8217;s bondage-and-discipline approach to programmer freedom is comparable, but I call shenanigans. It&#8217;s too much to go into here, but I think another day I&#8217;ll go into everything that&#8217;s wrong with &#8220;The Zen of Python.&#8221;</p>
+
+<p>Anyhow&#8230; I thought these preliminary thoughts on what simplicity really means would be a good start for a blog entitled <em>Practical Elegance.</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Starting Over]]></title>
+    <link href="http://decomplecting.org/blog/2012/05/08/starting-over/"/>
+    <updated>2012-05-08T09:46:00-04:00</updated>
+    <id>http://decomplecting.org/blog/2012/05/08/starting-over</id>
+    <content type="html"><![CDATA[<p>I decided to retire my old blog, which had devolved into a platform for rants rather than anything truly worthwhile&#8230; to me, anyhow. Sure, my rants were amusing at times, and people seemed to enjoy them, but that&#8217;s not the point of blogging for me.</p>
+
+<p>I want to talk about things that really matter, which (for me) includes simple, powerful code that works the way it is intended to.</p>
+
+<p>So, trying this blogging thing again.</p>
+]]></content>
+  </entry>
+  
+</feed>
