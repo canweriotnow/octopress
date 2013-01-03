@@ -1,1 +1,853 @@
-My Octopress Page is coming soon &hellip;
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Practical Elegance</title>
+  <meta name="author" content="Jason Lewis">
+
+  
+  <meta name="description" content="I&#8217;ve been following with great interest the recent debate over DCI vs. Concerns vs. Whatever in Ruby. The best take I&#8217;ve seen, however, &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://decomplecting.org">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/PracticalElegance" rel="alternate" title="Practical Elegance" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Dosis|Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" >
+
+if (window.top !== window.self) {
+
+document.write = "";
+
+window.top.location = window.self.location; setTimeout(function(){
+
+document.body.innerHTML='';
+
+},1);
+
+window.self.onload=function(evt){
+
+document.body.innerHTML='';
+
+};
+
+}
+
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22978638-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Practical Elegance</a></h1>
+  
+    <h2>"Elegance is not a dispensable luxury." - Edsgar Dijkstra</h2>
+  
+</hgroup>
+
+
+  <a href="https://github.com/canweriotnow">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+  </a>
+
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/PracticalElegance" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:decomplecting.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/03/dci-the-right-idea-for-the-wrong-paradigm/">DCI: The Right Idea for the Wrong Paradigm</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-03T01:10:00-05:00" pubdate data-updated="true">2013-01-03</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been following with great interest the recent debate over DCI vs. Concerns vs. Whatever in Ruby. The best take I&#8217;ve seen, however, is Tony Arcieri&#8217;s recent post, <a href="http://tonyarcieri.com/dci-in-ruby-is-completely-broken">&#8220;DCI&#8221; in Ruby Is Compeltely Broken</a>.</p>
+
+<p>Reading his post, it ocurred to me that what Rubyists are trying to do with <code>object.extend(Module)</code> is precisely what Lisp hackers have been doing for years with macros, but it&#8217;s an ugly hack when applied in the wrong paradigm (or, at least, the wrong language).</p>
+
+<p>Now, I was initially a big fan <em>conceptually</em> of DCI. It seemed intuitive, even familiar. And it helped that it was the brainchild of Trygve Reenskaug, the erstwhile inventor of MVC, possibly one of the most useful OOP patterns ever devised.</p>
+
+<p>But the more familiar it seemed, the more difficult it seemed to implement properly, much less efficiently, even in the purest of modern OO languages, i.e., Ruby.</p>
+
+<p>It wasn&#8217;t until I tried to forget everything I knew about OOP that its familiarity became clear: this novel appropach to object-oriented design is embedded in the most natural thing in the world in the oldest of functional programming languages, Lisp.</p>
+
+<p>Enter the macro. In Clojure, providing context to a function is straightforward using a macro, for instance, a database query (n.b., most of this is straight example code from <a href="http://en.wikibooks.org">wikibooks.org</a>).</p>
+
+<figure class='code'><figcaption><span>Set up JDBC connection </span><a href='http://en.wikibooks.org/wiki/Clojure_Programming/Examples/JDBC_Examples#PostgreSQL'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="nf">use</span> <span class="ss">&#39;clojure.java.jdbc</span><span class="p">)</span>
+</span><span class='line'>
+</span><span class='line'><span class="p">(</span><span class="k">let </span><span class="p">[</span><span class="nv">db-host</span> <span class="s">&quot;localhost&quot;</span>
+</span><span class='line'>      <span class="nv">db-port</span> <span class="mi">5432</span>
+</span><span class='line'>      <span class="nv">db-name</span> <span class="s">&quot;a_database&quot;</span><span class="p">]</span>
+</span><span class='line'>
+</span><span class='line'>  <span class="p">(</span><span class="k">def </span><span class="nv">db</span> <span class="p">{</span><span class="ss">:classname</span> <span class="s">&quot;org.postgresql.Driver&quot;</span> <span class="c1">; must be in classpath</span>
+</span><span class='line'>           <span class="ss">:subprotocol</span> <span class="s">&quot;postgresql&quot;</span>
+</span><span class='line'>           <span class="ss">:subname</span> <span class="p">(</span><span class="nb">str </span><span class="s">&quot;//&quot;</span> <span class="nv">db-host</span> <span class="s">&quot;:&quot;</span> <span class="nv">db-port</span> <span class="s">&quot;/&quot;</span> <span class="nv">db-name</span><span class="p">)</span>
+</span><span class='line'>           <span class="c1">; Any additional keys are passed to the driver</span>
+</span><span class='line'>           <span class="c1">; as driver-specific properties.</span>
+</span><span class='line'>           <span class="ss">:user</span> <span class="s">&quot;a_user&quot;</span>
+</span><span class='line'>           <span class="ss">:password</span> <span class="s">&quot;secret&quot;</span><span class="p">}))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This provides the context for the <code>with-connection</code> macro:</p>
+
+<figure class='code'><figcaption><span>SELECT Statement </span><a href='http://en.wikibooks.org/wiki/Clojure_Programming/Examples/JDBC_Examples#SELECT'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="nf">with-connection</span> <span class="nv">db</span>
+</span><span class='line'>   <span class="p">(</span><span class="nf">with-query-results</span> <span class="nv">rs</span> <span class="p">[</span><span class="s">&quot;select * from blogs&quot;</span><span class="p">]</span>
+</span><span class='line'>     <span class="c1">; rs will be a sequence of maps, </span>
+</span><span class='line'>     <span class="c1">; one for each record in the result set. </span>
+</span><span class='line'>     <span class="p">(</span><span class="nb">dorun </span><span class="p">(</span><span class="nb">map </span><span class="o">#</span><span class="p">(</span><span class="nb">println </span><span class="p">(</span><span class="ss">:title</span> <span class="nv">%</span><span class="p">))</span> <span class="nv">rs</span><span class="p">))))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I&#8217;m using the simplest of (admittedly cribbed) examples here for the sake of demonstration, but right away here, we&#8217;ve got the D and C of DCI - Data and Context. As for interaction&#8230; we could easily conceive of a <code>with-role</code> macro which determines the interaction of the database connection and the actual application of the <code>with-connection</code> macro, whether it invokes a SELECT, CREATE, UPDATE, or DELETE statement.</p>
+
+<p>In a Lisp, this level of composition is completely <em>natural,</em> is my point. In a language like Ruby (which despite having much of the Lisp nature, is OO to its core), and especially in a framework like Rails, with its cargo-cult Design Pattern-worshipping user base (I&#8217;m going to take some shit for that one, but accept that I&#8217;m exaggerating and flame with that in mind), is it any surprise that a pattern that makes <em>total sense</em> in an FP context is going to be a hot controversy in an OOP context?</p>
+
+<p>I agree with Tony&#8217;s post that &#8220;DCI&#8221; in Rails is totally broken. But that&#8217;s because, IMHO, DCI isn&#8217;t the best pattern for OOP. Yeah, Ruby has <em>lots</em> of functional features, but maybe we need to rethink how we&#8217;re doing this DCI stuff (or Concerns, or whatever), on the basis that messing with inheritance and the class hierarchy is the <em>wrong thing,</em> and perhaps we should be creatively exploring the use of blocks and lambdas and Ruby&#8217;s other functional constructs.</p>
+
+<p>I&#8217;m not offering any solutions here, but I&#8217;m hoping I can contribute to the conversation. Step away from the mixins, away from the class hierarchy, away from the object model. Maybe take another read of Design Patterns and see if DCI is another hot YAGNI thing. I don&#8217;t know yet. I just know it reminds me of how things are AWESOME in a whole other paradigm that doesn&#8217;t necessarily apply to your Rails app.</p>
+
+<p>As a caveat, I should say that I haven&#8217;t really tried to use this DCI mojo in a production application, although I have played with different ideas about it Just For Fun&copy;. If you think I&#8217;m wrong, or have the whole thing arse-about-face, I&#8217;d be happy to discuss it in the comments.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/02/legacy-systems-on-rails-part-3/">Legacy Systems on Rails (Part 3)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-02T13:25:00-04:00" pubdate data-updated="true">2012-11-02</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&#8217;s been a while since my last post in this series (if you missed them, here are parts <a href="http://decomplecting.org/blog/2012/08/02/legacy-systems-on-rails-part-1/">one</a> and <a href="http://decomplecting.org/blog/2012/08/03/legacy-systems-on-rails-part-2/">two</a>) but I wanted to return to the topic of building out Rails applications on top of legacy systems.</p>
+
+<h3>Abstraction is your friend</h3>
+
+<p>I think if there&#8217;s a common theme in these posts, it&#8217;s abstraction. Primarily, using Ruby and Rails to abstract away the crazy implementation details of a system that&#8217;s been accumulating cruft for over twenty years. I&#8217;m going to start referring to this system as &#8220;Bubba&#8221; for the sake of convenience (and since I don&#8217;t have permission from the vendor to say what it actually is).</p>
+
+<p>I mentioned in Part One that most of the access to the backend system going forward is occurring via a REST API wrapping the Oracle database that serve&#8217;s as Bubba&#8217;s back-end. Today I wanted to look at how the user-facing portions are constructed.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/11/02/legacy-systems-on-rails-part-3/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/10/31/feedback-loops/">Feedback Loops</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-31T14:12:00-04:00" pubdate data-updated="true">2012-10-31</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Sadly, I haven&#8217;t added a blog post in roughly 2.5 months. I&#8217;ve had ideas for posts, but when it came time to set pen to page (or fingers to keyboard, as teh case may be) I just haven&#8217;t had it in me. I really enjoy writing this blog, too. I wasn&#8217;t quite sure what was going on, until I read one of the most insightful blog posts I&#8217;ve ever seen: <a href="http://edu.mkrecny.com/thoughts/be-nice-to-programmers">Be Nice To Programmers</a>.</p>
+
+<p>The tl;dr is a dialogue between a programmer and a guy who wishes he had the chops because he thinks coding is the neatest job in the world. The programmer tells him he thinks coding is making him miserable because the the development/debug process is the ultimate negative feedback loop.</p>
+
+<blockquote><p>My workflow is something like this.</p><p>write some code<br/>run the code<br/>get an error message<br/>find the error and back to step 1<br/>Hour by hour, day after day, I do this. Always searching for what&#8217;s wrong with what I&#8217;m creating, rarely thinking about what&#8217;s good about it. It&#8217;s a negative reinforcement feedback loop.</p></blockquote>
+
+
+<p><span class='pullquote-right' data-pullquote='The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your _job_ is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control.'>
+I definitely get the sentiment. But I think of this as the inner loop in the red-green-refactor cycle, so to speak. Yeah, coding (<em>especially</em> doing proper TDD) is going to make you hate the world (and possibly feel like an idiot) sometimes. But overall&#8230; I was in a job interview a few weeks ago, and was asked why I love being a programmer. I didn&#8217;t even have to think about my response: The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your <em>job</em> is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control. Ultimately, that&#8217;s the takeaway: programming is <em>awesome.</em> But a job is still a job, and I think that&#8217;s where some of the negative feedback loop comes in.
+</span></p>
+
+<p>My last post was just before a huge project I&#8217;d both originated and put a large amount of my time and effort into over the course of 15-18 months was shelved. It was ready to ship, but corporate politics being what it is (i.e., something I&#8217;d schedule a root canal to avoid, <em>especially</em> where I work), I tried to just move on and not lose sleep over it. Still, it rankled.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/10/31/feedback-loops/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and You</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-13T21:41:00-04:00" pubdate data-updated="true">2012-08-13</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>So, I had intended my next post to address some of the (valid) criticism of Github that&#8217;s been making the rounds lately, but a much more disturbing Twitroversy has emerged today.</p>
+
+<p>A group of women called <a href="http://ladycoders.com">LadyCoders</a> started a <a href="http://www.kickstarter.com/projects/166494057/ladycoders-get-hired-seattle-2012">Kickstarter campaign</a> to fund a conference/seminar geared toward helping women to get programming and other tech jobs. Great idea, right? There are <a href="http://girldevelopit.com/">many</a> <a href="http://www.blackgirlscode.com/">projects</a> devoted to giving women the skills they need to write software, but as far as addressing the fundamental issue that the industry itself is pretty much a boys&#8217; club (not assigning blame, just acknowledging reality), much less has been done in that area.</p>
+
+<p>So the good folks at LadyCoders wanted to help get women <em>hired,</em> not just trained. Pretty cool.</p>
+
+<p>Well, a lot of people thought so. As I write this, they&#8217;re &lt; US$6k away from their US$23k funding goal. But&#8230; well, there was some dissent:</p>
+
+<blockquote class="twitter-tweet tw-align-center"><p>Sick and wrong: &#8220;it’s our job (for now) to be easily integrated into an all-male team, **nonthreatening,** and hyper-skilled&#8221;- <a href="https://twitter.com/ladycoders"><s>@</s><b>ladycoders</b></a></p>&mdash; Shanley Kane (@shanley) <a href="https://twitter.com/shanley/status/235163013227880449" data-datetime="2012-08-13T23:56:46+00:00">August 13, 2012</a></blockquote>
+
+
+<script src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>I completely get where @shanley is coming from&#8230; but the amount of Twitroversy here seemed&#8230; disproportionate.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/08/13/ladycoders/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/03/generational-impedance-mismatch/">Generational Impedance Mismatch</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-03T15:48:00-04:00" pubdate data-updated="true">2012-08-03</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One thing I&#8217;ve come to observe working in higher ed is that you can run into a lot of issues with what I want to term &#8220;generational impedance mismatch.&#8221; It&#8217;s what happens when your ostensible customers are about 40 years older than your target demographic.</p>
+
+<p>When I started on an internal administrative application about two years ago, I threw in some error pages with lolcats on them because&#8230; well, error pages are boring. Those got yanked because the customer thought they were &#8220;unprofessional.&#8221; Okay, sure. It&#8217;s an administrative app, so maybe this isn&#8217;t the best thing to throw up after a catastrophic failure:</p>
+
+<p><img class="center" src="/images/post-img/im-in-ur-serverz.jpeg"></p>
+
+<p>But the new crop of apps I&#8217;m writing don&#8217;t target middle-aged administrators; they target students. Specifically, in addition to doing mundane things like reporting your a lost ID card or checking balances, there&#8217;s a whole social gaming component. So far, I&#8217;ve been pretty successful at keeping things amusing (between the student focus group we assembled and the <a href="http://reddit.com/r/jhu">JHU subreddit</a>, my sense of humor is quickly vindicated), but the text is&#8230; kinda stodgy.</p>
+
+<p>I was discussing this with a co-worker, and we hit on what I think is a brilliant way of balancing conflicting stakeholder needs. The customer wants rather formal, business-like text that drily describes various functions of the application. On the other hand, students are going to be bored, and love easter eggs and humor. But we know how to deal with target demographics who speak different languages, don&#8217;t we? Localization to the rescue!</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/08/03/generational-impedance-mismatch/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/03/legacy-systems-on-rails-part-2/">Legacy Systems on Rails (Part 2)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-03T11:38:00-04:00" pubdate data-updated="true">2012-08-03</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This will be a quick one. I just wanted to give an example of how Ruby&#8217;s open classes can be a lifesaver when a vendor makes bizarre choices, which you then have to deal with.</p>
+
+<h3>Into the mouth of madness</h3>
+
+<p>So let&#8217;s imagine you&#8217;re a software engineer (actually, to make a decision this crazy, you&#8217;d probably have to have a title like Señor Software Architect, or possibly VP of Development). You need to store precise date values for an OLTP system in the database. Although you know that Oracle&#8217;s TIMESTAMP datatype will store a time right down to sub-millisecond precision, that&#8217;s just too easy. Or, at least, too sane.</p>
+
+<p>Then you remember the <a href="http://en.wikipedia.org/wiki/Julian_day">Julian day</a> system. Perfect! You can just use floats to reperesent the time, with the Julian day number as the integral part, and the time of day represented as the fractional part! Even better, you decide to make up your own offset instead of using a standard Day of Calendar Reform, <em>and</em> to store the local time instead of UTC.</p>
+
+<p>If you have ever considered something like this, step away from the computer. I&#8217;m revoking your programmer license. Leaving aside the general inaccuracy of floats (you wouldn&#8217;t use a float to represent money, why the hell would it be a good idea for time?), there are <em>existing datatypes</em> for this! Moving on&#8230;</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/08/03/legacy-systems-on-rails-part-2/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/08/02/legacy-systems-on-rails-part-1/">Legacy Systems on Rails (Part 1)</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-08-02T14:48:00-04:00" pubdate data-updated="true">2012-08-02</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Much of my job consists of providing customized or novel interfaces for a complex legacy system which, although still maintained by the vendor (who shall remain nameless), does not currently (nor do I ever expect it to) meet many of our institutional needs.</p>
+
+<p>Since I spend a lot of time on this, I figured it would be a good topic for a series of posts, hence the &#8220;Part 1&#8221; in the title. Hopefully I&#8217;ll actually follow through on it.</p>
+
+<p>The first thing I did was to replace a few aging Perl CGI scripts with a Rails app, which was interesting. The notion that Rails is far easier to use for greenfield projects than for legacy systems is probably accurate, but it&#8217;s not universally true.</p>
+
+<p>This back-end is an Oracle database with over 450 tables and a hodgepodge of different strategies for how relationships should be modeled. I&#8217;m pretty sure it was my second or third day on the job that I was asked to implement a feature (in the old Perl codebase) that should have been straightforward given the relationships between two particular entities, but ended up requiring six inner joins and two left outer joins, IIRC. Just to give you an idea of what I&#8217;m dealing with.</p>
+
+<p>Anyhow, the first time around, I wrote an ActiveRecord model for each table, did my <code>has_many</code>&#8217;s and <code>belongs_to</code>&#8217;s, et cetera. Some were easier than others. There were a <em>lot</em> of conditions hashes in some of those associations.</p>
+
+<p>When the project scope started to grow beyond a single web app, and I started designing a REST API for the system, I had the opportunity to scratch some of the itches that had been bugging me about the original implementation from the very beginning.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/08/02/legacy-systems-on-rails-part-1/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/18/higher-education-needs-a-revolution/">Higher Education Needs a Revolution</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-18T19:59:00-04:00" pubdate data-updated="true">2012-07-18</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Yesterday, <a href="http://coursera.com">Coursera</a> announced that 12 more universities had joined their program of creating massive open online courses, or MOOCs (one of them was <a href="http://www.jhu.edu">Johns Hopkins University</a>, where I work, so I was especially excited&#8230; we&#8217;re not always &#8220;early adopters&#8221;).</p>
+
+<p>Coursera is extremely cool. I&#8217;m currently taking UC Berkely&#8217;s <a href="https://www.coursera.org/course/saas">Software Engineering for SaaS</a> class (nothing new for me so far, but it&#8217;s enjoyable), and I took the <a href="https://www.coursera.org/course/ml">Machine Learning</a> class earlier this year. Well, most of it&#8230; I got a little too busy with work and family and didn&#8217;t quite finish. But I still learned a lot, and used math I thought I&#8217;d forgotten. So all in all, a win.</p>
+
+<p>Not quite finishing is a common thread in my life. I&#8217;m just a few credits away from a Bachelor&#8217;s in philosophy. Also, graphic design. Probably computer science as well. My Achilles&#8217; heel was always General Education courses. I want to learn almost everything I possibly can, but generally I either want to learn something so I can do something with it, or learn something because I have a compelling fascination with the topic. Most Gen Ed courses did neither for me, and when I&#8217;m not interested, I&#8217;m not motivated. This might be a character flaw. Two universities so far seemed to think so.</p>
+
+<p>It seems like the whole obsession with &#8220;general education&#8221; is dying. Johns Hopkins, for instance, has no general requirements, only departmental requirements for majors (and minors, natch). That&#8217;s extremely cool. It also costs over US$50k a year to attend. That&#8217;s not so cool.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/18/higher-education-needs-a-revolution/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/04/static-is-beautiful/">Static Is Beautiful</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-04T23:21:00-04:00" pubdate data-updated="true">2012-07-04</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I want to return to the core sfocus of this blog, elegance and simplicity in technology, but in kind of a meta way.</p>
+
+<p>One trend that seems to be popping up again and again is the move away from over-featured and unmanageable content management systems (I&#8217;m looking at you, <a href="http://wordpress.org/">Wordpress</a>), and toward static site generators.</p>
+
+<p>This blog, for instance, is generated from <a href="http://daringfireball.net/projects/markdown/">Markdown</a> files by <a href="http://octopress.org/">Octopress</a>. More on Octopress later, but I want to survey the trend a bit.</p>
+
+<p>This post was prompted by one of the auto-tweets by <a href="https://twitter.com/rubygems">@rubygems</a>, about yet another static site generation tool called <a href="https://rubygems.org/gems/gumdrop">gumdrop</a>. I&#8217;ve been playing with a few different static site generation tools, so first I&#8217;d like to survey a few examples, and then I&#8217;ll talk about why I think they matter.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/07/04/static-is-beautiful/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/06/06/hackers-need-our-own-everything/">Hackers Need Our Own Everything</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-06-06T11:29:00-04:00" pubdate data-updated="true">2012-06-06</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>When I conceived of this post, it was going to be about how damn awesome <a href="http://octopress.org">Octopress</a> is. And it certainly is awesome; it powers this blog, and makes writing it a joy, whereas trying to use <a href="http://wordpress.com">Wordpress</a>, <a href="http://blogger.com">Blogger</a>, or even newer alternatives like <a href="http://tumblr.com">Tumblr</a> or <a href="http://postero.us">Posterous</a> was downright painful. But what I&#8217;m more interested in is the growing trend among apps, services, and even operating systems that has made projects like Octopress necessary.</p>
+
+<h3>The Tragedy of Google</h3>
+
+<p>For such a long time, Google did search better than many of us ever dreamt <em>possible</em> in the pre-Google days. But it wasn&#8217;t just the intelligence of the search algorithms, or the massive cache and index behind Google search. Google made it possible to craft a finely-honed query from the front page, with excellent support for literal strings, boolean operators, required inclusion/exclusion, etc. And then came Google+.</p>
+
+<p>Google&#8217;s commitment to search had been on the decline for a while, it seems&#8230; the only new features search had acquired in years were fairly useless things like page previews and, briefly, Twitter integration. Because that&#8217;s integral to search.</p>
+
+<p>But when Google launched its abortion of a social network, usable search had to go. Not only did they kill one of the <a href="http://productforums.google.com/forum/#!topic/websearch/3oIWbew9xdE">most useful search operators</a> (Boolean +), but they also started filtering search results based on social connections in Google+. While this doesn&#8217;t <em>always</em> end in having to re-search without &#8220;personal&#8221; results, I have a feeling that&#8217;s only because I&#8217;m connected to so many developers on Google+. But if Google+ hadn&#8217;t been such an abject failure, my mom might be on there, and we typically search about very different kinds of &#8220;cookies.&#8221;  The situation with Google is so bad at this point, that I often get better results from <a href="http://duckduckgo.com/">Duck Duck Go</a>, which wraps a ton of different search engines and websites, and attempts to break the &#8220;filter bubble&#8221; by presenting hte same results to everyone. I like this in principle, but I miss Google&#8217;s synchronized search history and habit of learning what results are relevant to me to (usually) provide better results.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2012/06/06/hackers-need-our-own-everything/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <a href="http://internetdefenseleague.org">
+    <img src="http://internetdefenseleague.org/images/badges/final/super_badge.png" alt="Member of The Internet Defense League" />
+  </a>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/01/03/dci-the-right-idea-for-the-wrong-paradigm/">DCI: The Right Idea for The Wrong Paradigm</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/11/02/legacy-systems-on-rails-part-3/">Legacy Systems on Rails (Part 3)</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/10/31/feedback-loops/">Feedback Loops</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and you</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/03/generational-impedance-mismatch/">Generational Impedance Mismatch</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/canweriotnow">@canweriotnow</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'canweriotnow',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("canweriotnow", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/canweriotnow" class="twitter-follow-button" data-show-count="false">Follow @canweriotnow</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/canweriotnow?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/canweriotnow">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+<section>
+  <h1>Coderwall Badges</h1>
+  <p>
+    <script type="text/javascript">
+      function display_coderwall(args) {
+        var badges = args["data"]["badges"];
+        var wall = '';
+        for ( var i = 0; i < badges.length; i++ ) {
+          var alt_txt = badges[i]["name"];
+          var title_txt = badges[i]["name"] + ' - ' + badges[i]["description"];
+          wall += '<a href="http://coderwall.com/canweriotnow/"><img src="'
+            + badges[i]["badge"]
+            + '" width="48" height="48" alt="' + alt_txt
+            + '" title="' + title_txt
+            + '"/></a>';
+        }
+        document.write(wall);
+      }
+    </script>
+    <script src="http://coderwall.com/canweriotnow.json?callback=display_coderwall"></script>
+  </p>
+  
+  <p><a href="http://coderwall.com/canweriotnow"><img src="http://api.coderwall.com/canweriotnow/endorsecount.png" /></a></p>
+  
+</section>
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/110736810583208350607?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Jason Lewis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
+- Hosted by <a href="http://pages.github.com">Github Pages</a>
+</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'canweriotnow';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
