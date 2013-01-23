@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://canweriotnow.github.com
+url: http://decomplecting.org
 title: Practical Elegance
 subtitle: '"Elegance is not a dispensable luxury." - Edsgar Dijkstra'
 author: Jason Lewis
@@ -59,7 +59,7 @@ default_asides: [custom/asides/idl.html, asides/recent_posts.html, asides/github
 
 # Github repositories
 github_user: canweriotnow
-github_repo_count: 0
+github_repo_count: 5
 github_show_profile_link: true
 github_skip_forks: true
 
