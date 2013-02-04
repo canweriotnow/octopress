@@ -3,7 +3,7 @@ layout: post
 title: "DateTime Conversions in Clojure"
 date: 2013-02-03 14:18
 comments: true
-categories: [datetime clojure]
+categories: [datetime, clojure]
 ---
 
 In dealing with integrating data from disparate incomaptible systems (which I do to a degree that would drive some men mad), one of the most frequent irritations is dealing with datetime conversions.

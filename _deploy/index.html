@@ -9,7 +9,7 @@
   <meta name="author" content="Jason Lewis">
 
   
-  <meta name="description" content="So I don&#8217;t blog much about my gaming habit, but I recently got my invite to Ingress, Google&#8217;s new location-based MMORPG. Much has been &hellip;">
+  <meta name="description" content="In dealing with integrating data from disparate incomaptible systems (which I do to a degree that would drive some men mad), one of the most frequent &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +105,74 @@ document.body.innerHTML='';
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/03/datetime-conversions-in-clojure/">DateTime Conversions in Clojure</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-03T14:18:00-05:00" pubdate data-updated="true">2013-02-03</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In dealing with integrating data from disparate incomaptible systems (which I do to a degree that would drive some men mad), one of the most frequent irritations is dealing with datetime conversions.</p>
+
+<p>A while ago, I <a href="http://decomplecting.org/blog/2012/08/03/legacy-systems-on-rails-part-2/">wrote a post about Bubba</a> (not its real name), a legacy/vendor-supplied system in which the original developers (may they suffer eternal torment) decided to store all datetimes as floating-point values using a bastardized form of the Julian Day system with fractional day part. In that post, I showed a solution used in a Ruby on Rails web app, but now I&#8217;m writing data integration services for multiple systems, and needed something a bit more robust, so I&#8217;m writing it in Clojure.</p>
+
+<p>I&#8217;ll start off with the dependencies:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="kd">ns </span><span class="nv">project.util.date</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:require</span> <span class="p">[</span><span class="nv">clj-time.core</span> <span class="ss">:as</span> <span class="nv">tm</span><span class="p">]</span>
+</span><span class='line'>            <span class="p">[</span><span class="nv">clj-time.local</span> <span class="ss">:as</span> <span class="nv">loc</span><span class="p">]</span>
+</span><span class='line'>            <span class="p">[</span><span class="nv">clj-time.format</span> <span class="ss">:as</span> <span class="nv">fmt</span><span class="p">]</span>
+</span><span class='line'>            <span class="p">[</span><span class="nv">clojure.math.numeric-tower</span> <span class="ss">:as</span> <span class="nv">math</span><span class="p">])</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:use</span> <span class="nv">clj-time.coerce</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:import</span> <span class="p">[</span><span class="nv">oracle.sql</span> <span class="nv">TIMESTAMP</span><span class="p">]</span>
+</span><span class='line'>           <span class="p">[</span><span class="nv">java.sql</span> <span class="nv">Timestamp</span><span class="p">]))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I&#8217;m using the fantastic <a href="https://github.com/seancorfield/clj-time">clj-time</a> library by Sean Corfield. It&#8217;s basically a wrapper around the <a href="http://joda-time.sourceforge.net/">Joda Time</a> Java library, allowing us to use its powerful datetime handling in idiomatic Clojure.</p>
+
+<p>So, for the actual code. First, the Bubba dates need to be converted to and from a floating point value to a normal Date object.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/03/datetime-conversions-in-clojure/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -611,53 +679,6 @@ I definitely get the sentiment. But I think of this as the inner loop in the red
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/04/static-is-beautiful/">Static Is Beautiful</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-04T23:21:00-04:00" pubdate data-updated="true">2012-07-04</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I want to return to the core sfocus of this blog, elegance and simplicity in technology, but in kind of a meta way.</p>
-
-<p>One trend that seems to be popping up again and again is the move away from over-featured and unmanageable content management systems (I&#8217;m looking at you, <a href="http://wordpress.org/">Wordpress</a>), and toward static site generators.</p>
-
-<p>This blog, for instance, is generated from <a href="http://daringfireball.net/projects/markdown/">Markdown</a> files by <a href="http://octopress.org/">Octopress</a>. More on Octopress later, but I want to survey the trend a bit.</p>
-
-<p>This post was prompted by one of the auto-tweets by <a href="https://twitter.com/rubygems">@rubygems</a>, about yet another static site generation tool called <a href="https://rubygems.org/gems/gumdrop">gumdrop</a>. I&#8217;ve been playing with a few different static site generation tools, so first I&#8217;d like to survey a few examples, and then I&#8217;ll talk about why I think they matter.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/07/04/static-is-beautiful/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -677,6 +698,10 @@ I definitely get the sentiment. But I think of this as the inner loop in the red
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/03/datetime-conversions-in-clojure/">DateTime Conversions in Clojure</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/01/22/ingress-crowdsourcing-solutions-to-np-hard-problems/">Ingress - Crowdsourcing Solutions to NP-Hard Problems?</a>
       </li>
     
@@ -690,10 +715,6 @@ I definitely get the sentiment. But I think of this as the inner loop in the red
     
       <li class="post">
         <a href="/blog/2012/10/31/feedback-loops/">Feedback Loops</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and you</a>
       </li>
     
   </ul>
