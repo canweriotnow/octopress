@@ -9,7 +9,7 @@
   <meta name="author" content="Jason Lewis">
 
   
-  <meta name="description" content="In dealing with integrating data from disparate incomaptible systems (which I do to a degree that would drive some men mad), one of the most frequent &hellip;">
+  <meta name="description" content="The Linux PAM (Pluggable Authentication Modules) architecture is one of the most wonderful (and most overlooked) features of the OS. Typically we &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -105,6 +105,105 @@ document.body.innerHTML='';
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/08/pam-authentication-beyond-the-desktop/">PAM Authentication Beyond The Desktop</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-08T20:11:00-05:00" pubdate data-updated="true">2013-03-08</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The Linux <a href="http://www.linux-pam.org/">PAM</a> (Pluggable Authentication Modules) architecture is one of the most wonderful (and most overlooked) features of the OS. Typically we only consider PAM as handling our console (or xdm/gdm etc. logins) on Linux, but it&#8217;s useful for so much more.</p>
+
+<h3>Web Authentication</h3>
+
+<p>At work, we needed an authentication solution that allowed users to sign in with their ActiveDirectory credentials. Although the &#8220;official&#8221; solution was to use <a href="http://www.ca.com/us/secure-single-sign-on.aspx">SiteMinder</a> for web authentication against AD, we were working on a mobile application, and at the time the SiteMinder auth page was ugly, and had no mobile-optimized login page. The latter problem has since been rectified; now it has both an ugly desktop login and an ugly mobile login. In addition, we were using nginx, and SiteMinder was really only supported under IIS and Apache (and at the time, the latter was via Shibboleth. Ugh.), so without official SiteMinder support, or an nginx Shib plug-in, we were in a bit of a bind.</p>
+
+<p>Around the same time, I was playing with Likewise Open (now known as <a href="http://www.powerbrokeropen.org/">PowerBroker Identity Services - Open Edition</a>) to bind my Linux workstation into AD. So it occurred to me: if a normal Linux PAM login can be authenticated against ActiveDirectory, why not a PAM login from a web application?</p>
+
+<p>I know, I know, my first though should have been LDAP, right? For some unknown reason, LDAP was verboten at the time. The policy has since (apparently) been reversed, but such is the ebb and flow of corporate politics. And so, in the grand tradition of one of the mothers of modern computer science (and one of my daughter&#8217;s namesakes):</p>
+
+<blockquote><p>If it&#8217;s a good idea, go ahead and do it. It is much easier to apologize than it is to get permission.</p><footer><strong>Rear Admiral Dr. Grace Murray Hopper</strong></footer></blockquote>
+
+
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/08/pam-authentication-beyond-the-desktop/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/01/code-typos-got-you-down-stop-worrying-with-close-enough/">Code Typos Got You Down? Stop Worrying with close_enough</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-01T18:32:00-05:00" pubdate data-updated="true">2013-03-01</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>From the crack team (<a href="https://twitter.com/micahjgates">Micah Gates</a> and <a href="https://twitter.com/canweriotnow">myself</a>) that brought you <a href="https://github.com/ruby-jokes/job_interview">job_interview</a>, I&#8217;m proud to announce the availability of <a href="https://github.com/ruby-jokes/close_enough">close_enough</a>, a gem that will save you from all of those niggling <code>NoMethodError</code>s that occur when you mis-type a method name.</p>
+
+<p>The concept is very simple, and based on an algorithm used in most spell checkers and autocorrect systems currently in use. Calculating the <a href="http://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance">Damerau-Levenshtein distance</a> between two words can reliably (within a certain margin of error) indicate whether a known word was inteded when an unknown term was encountered in user input.</p>
+
+<p>In Ruby, we have a wonderful metaprogramming facility in <code>method_missing</code>. What we&#8217;ve done in close_enough is to monkey-patch <code>method_missing</code> on <code>Object</code> to calculate the Demerau-Levenshtein distance between existing methods and the non-existent called method, and invoke the nearest one if it&#8217;s &#8220;close enough&#8221; (close enough currently being an edit distance of &lt; 3).</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/01/code-typos-got-you-down-stop-worrying-with-close-enough/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
   
   
     <article>
@@ -234,7 +333,7 @@ document.body.innerHTML='';
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/01/03/dci-the-right-idea-for-the-wrong-paradigm/">DCI: The Right Idea for the Wrong Paradigm</a></h1>
+      <h1 class="entry-title"><a href="/blog/2013/01/03/dci-the-right-idea-for-the-wrong-paradigm/">DCI: The Right Idea for The Wrong Paradigm</a></h1>
     
     
       <p class="meta">
@@ -269,7 +368,7 @@ document.body.innerHTML='';
 
 <p>Enter the macro. In Clojure, providing context to a function is straightforward using a macro, for instance, a database query (n.b., most of this is straight example code from <a href="http://en.wikibooks.org">wikibooks.org</a>).</p>
 
-<figure class='code'><figcaption><span>Set up JDBC connection </span><a href='http://en.wikibooks.org/wiki/Clojure_Programming/Examples/JDBC_Examples#PostgreSQL'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>Set up JDBC connection</span><a href='http://en.wikibooks.org/wiki/Clojure_Programming/Examples/JDBC_Examples#PostgreSQL'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -300,7 +399,7 @@ document.body.innerHTML='';
 
 <p>This provides the context for the <code>with-connection</code> macro:</p>
 
-<figure class='code'><figcaption><span>SELECT Statement </span><a href='http://en.wikibooks.org/wiki/Clojure_Programming/Examples/JDBC_Examples#SELECT'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>SELECT Statement</span><a href='http://en.wikibooks.org/wiki/Clojure_Programming/Examples/JDBC_Examples#SELECT'>link</a></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
@@ -408,7 +507,7 @@ document.body.innerHTML='';
 
 <p>The tl;dr is a dialogue between a programmer and a guy who wishes he had the chops because he thinks coding is the neatest job in the world. The programmer tells him he thinks coding is making him miserable because the the development/debug process is the ultimate negative feedback loop.</p>
 
-<blockquote><p>My workflow is something like this.</p><p>write some code<br/>run the code<br/>get an error message<br/>find the error and back to step 1<br/>Hour by hour, day after day, I do this. Always searching for what&#8217;s wrong with what I&#8217;m creating, rarely thinking about what&#8217;s good about it. It&#8217;s a negative reinforcement feedback loop.</p></blockquote>
+<blockquote><p>My workflow is something like this.</p><p>write some code<br/>run the code<br/>get an error message<br/>find the error and back to step 1<br/>Hour by hour, day after day, I do this. Always searching for what&#8217;s wrong with what I&#8217;m creating, rarely thinking about what&#8217;s good about it. It&#8217;s a negative reinforcement feedback loop.</p><footer><strong>[http://edu.mkrecny.com/thoughts/be-nice-to-programmers]</strong></footer></blockquote>
 
 
 <p><span class='pullquote-right' data-pullquote='The main reason to become a programmer is that the position of &#8216;God&#8217; is unavailable. Your _job_ is to create universes where the fundamental laws of nature, so to speak, are completely under your creative control.'>
@@ -433,7 +532,7 @@ I definitely get the sentiment. But I think of this as the inner loop in the red
       
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and You</a></h1>
+      <h1 class="entry-title"><a href="/blog/2012/08/13/ladycoders/">LadyCoders, Twitroversy, and you</a></h1>
     
     
       <p class="meta">
@@ -581,104 +680,6 @@ I definitely get the sentiment. But I think of this as the inner loop in the red
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/02/legacy-systems-on-rails-part-1/">Legacy Systems on Rails (Part 1)</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-08-02T14:48:00-04:00" pubdate data-updated="true">2012-08-02</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Much of my job consists of providing customized or novel interfaces for a complex legacy system which, although still maintained by the vendor (who shall remain nameless), does not currently (nor do I ever expect it to) meet many of our institutional needs.</p>
-
-<p>Since I spend a lot of time on this, I figured it would be a good topic for a series of posts, hence the &#8220;Part 1&#8221; in the title. Hopefully I&#8217;ll actually follow through on it.</p>
-
-<p>The first thing I did was to replace a few aging Perl CGI scripts with a Rails app, which was interesting. The notion that Rails is far easier to use for greenfield projects than for legacy systems is probably accurate, but it&#8217;s not universally true.</p>
-
-<p>This back-end is an Oracle database with over 450 tables and a hodgepodge of different strategies for how relationships should be modeled. I&#8217;m pretty sure it was my second or third day on the job that I was asked to implement a feature (in the old Perl codebase) that should have been straightforward given the relationships between two particular entities, but ended up requiring six inner joins and two left outer joins, IIRC. Just to give you an idea of what I&#8217;m dealing with.</p>
-
-<p>Anyhow, the first time around, I wrote an ActiveRecord model for each table, did my <code>has_many</code>&#8217;s and <code>belongs_to</code>&#8217;s, et cetera. Some were easier than others. There were a <em>lot</em> of conditions hashes in some of those associations.</p>
-
-<p>When the project scope started to grow beyond a single web app, and I started designing a REST API for the system, I had the opportunity to scratch some of the itches that had been bugging me about the original implementation from the very beginning.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/08/02/legacy-systems-on-rails-part-1/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/07/18/higher-education-needs-a-revolution/">Higher Education Needs a Revolution</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2012-07-18T19:59:00-04:00" pubdate data-updated="true">2012-07-18</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Yesterday, <a href="http://coursera.com">Coursera</a> announced that 12 more universities had joined their program of creating massive open online courses, or MOOCs (one of them was <a href="http://www.jhu.edu">Johns Hopkins University</a>, where I work, so I was especially excited&#8230; we&#8217;re not always &#8220;early adopters&#8221;).</p>
-
-<p>Coursera is extremely cool. I&#8217;m currently taking UC Berkely&#8217;s <a href="https://www.coursera.org/course/saas">Software Engineering for SaaS</a> class (nothing new for me so far, but it&#8217;s enjoyable), and I took the <a href="https://www.coursera.org/course/ml">Machine Learning</a> class earlier this year. Well, most of it&#8230; I got a little too busy with work and family and didn&#8217;t quite finish. But I still learned a lot, and used math I thought I&#8217;d forgotten. So all in all, a win.</p>
-
-<p>Not quite finishing is a common thread in my life. I&#8217;m just a few credits away from a Bachelor&#8217;s in philosophy. Also, graphic design. Probably computer science as well. My Achilles&#8217; heel was always General Education courses. I want to learn almost everything I possibly can, but generally I either want to learn something so I can do something with it, or learn something because I have a compelling fascination with the topic. Most Gen Ed courses did neither for me, and when I&#8217;m not interested, I&#8217;m not motivated. This might be a character flaw. Two universities so far seemed to think so.</p>
-
-<p>It seems like the whole obsession with &#8220;general education&#8221; is dying. Johns Hopkins, for instance, has no general requirements, only departmental requirements for majors (and minors, natch). That&#8217;s extremely cool. It also costs over US$50k a year to attend. That&#8217;s not so cool.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2012/07/18/higher-education-needs-a-revolution/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -698,6 +699,14 @@ I definitely get the sentiment. But I think of this as the inner loop in the red
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/03/08/pam-authentication-beyond-the-desktop/">PAM Authentication Beyond The Desktop</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/01/code-typos-got-you-down-stop-worrying-with-close-enough/">Code Typos Got You Down? Stop Worrying with close_enough</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/03/datetime-conversions-in-clojure/">DateTime Conversions in Clojure</a>
       </li>
     
@@ -707,14 +716,6 @@ I definitely get the sentiment. But I think of this as the inner loop in the red
     
       <li class="post">
         <a href="/blog/2013/01/03/dci-the-right-idea-for-the-wrong-paradigm/">DCI: The Right Idea for The Wrong Paradigm</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/11/02/legacy-systems-on-rails-part-3/">Legacy Systems on Rails (Part 3)</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/10/31/feedback-loops/">Feedback Loops</a>
       </li>
     
   </ul>

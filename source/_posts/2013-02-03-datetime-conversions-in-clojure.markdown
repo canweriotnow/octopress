@@ -3,7 +3,7 @@ layout: post
 title: "DateTime Conversions in Clojure"
 date: 2013-02-03 14:18
 comments: true
-categories: [datetime, clojure]
+categories: [datetime, clojure, coding]
 ---
 
 In dealing with integrating data from disparate incomaptible systems (which I do to a degree that would drive some men mad), one of the most frequent irritations is dealing with datetime conversions.
@@ -146,7 +146,7 @@ So we need a higher-order function, and a bit of help from `clojure.set`
   (let [update-fn f
         ent ent 
         fields (vec (st/intersection (set (keys ent)) (set fields)))]
-    (reduce #(update-in % [%2] update-fn) ent fields)))
+    (reduce #(update-in %1 [%2] update-fn) ent fields)))
 
 {% endcodeblock %}
 
@@ -162,7 +162,8 @@ Then it's as simple of using a lambda that applies this function inside our korm
   "Korma entity for the CUSTOMER table. Transforms Bubba datetimes to DateTime objects."
   (database envdb)
   (table :customer)
-  (transform #(generic-transform dt/bubba-date-coerce % [:active_start_date 
+  (transform 
+    #(generic-transform dt/bubba-date-coerce % [:active_start_date 
                                                        :active_end_date 
                                                        :lastmod_datetime 
                                                        :birthdate 
