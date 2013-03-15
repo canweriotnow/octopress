@@ -3,7 +3,7 @@ layout: post
 title: "Confessions of A Job Destroyer"
 date: 2013-03-11 15:57
 comments: true
-categories: [software, economics, labor]
+categories: [software, economics, labor, satire]
 ---
 
 One of the most unfunny ironies of the rhetoric surrounding "job creators" in contemporary American politics is that most of the jobs being created (or at least, those with the greatest demand) are in the tech sector. Jobs like mine. Jobs that automate processes that used to be performed by people.
@@ -31,5 +31,11 @@ But wait, you ask, if all these jobs have been automated away by software, why a
 This, gentle reader, is where I make the argument for a [basic income](http://en.wikipedia.org/wiki/Basic_income). It's just common sense as the amount of socially necessary labor decreases with each passing year. How could we fund such a sweeping change to economic policy? Well, first let's get back to basic principles: as programmers, we want to eliminate work. So let's penalize those damn pesky job creators with a progressive taxation scheme. Let's get back to America's halcyon days of progressive taxation, the 1950's that conservatives laud so dearly, and raise the top marginal tax rate back to 91%. Then we could afford a basic income, with single-payer health care for afters.
 
 I'm a job destroyer, and I love what I do. Now if only we had a [rational economy](http://michaelochurch.wordpress.com/2012/12/19/the-call-for-rational-economy/), I could stop having mixed feelings about the net effect of my work.
+
+## Update 2013-03-13
+
+There's some pretty lively discussion of this post beyond the comments here, both on [Hacker News](https://news.ycombinator.com/item?id=5359458) and on [Reddit](http://www.reddit.com/r/programming/comments/1a50zz/confessions_of_a_job_destroyer/). I recommend checking out those discussions as well.
+
+
 
 
