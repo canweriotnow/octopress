@@ -6,7 +6,7 @@ comments: true
 categories: [information technology, management, programming]
 ---
 
-So in the comments on my [last post](/blog/2013/03/11/confessions-of-a-job-destroyer/) I confessed my fandom for what is, in my opinion, the most brilliant and important blog currently published, that of [Michael O. Church](http://michaelochurch.wordpress.com/). His recent series of posts have been reviewing and analyzing the MacLeod theory of [organizational structure](http://michaelochurch.wordpress.com/2013/03/14/gervais-macleod-9-convexity/) (link is to the latest post in the series, but if you haven't been following it, there are links to the previous eight).
+So in the comments on my [last post](/blog/2013/03/11/confessions-of-a-job-destroyer/) I mentioned my fandom for what is, in my opinion, the most insightful and important blog currently published, that of [Michael O. Church](http://michaelochurch.wordpress.com/). His recent series of posts have been reviewing and analyzing the MacLeod theory of [organizational structure](http://michaelochurch.wordpress.com/2013/03/14/gervais-macleod-9-convexity/) (link is to the latest post in the series, but if you haven't been following it, therein are links to the previous eight).
 
 I want to focus on the differential between concave (in which the difference between failure and middling is greatest) and convex (in which the difference between middling and superior is greatest) work.
 
