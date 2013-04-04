@@ -1,16 +1,16 @@
 ---
 layout: post
 title: "The Difficulty of Chaotic Good"
-date: 2013-03-23 22:29
+date: 2013-04-02 22:29
 comments: true
 categories: [alignment, work, ethics]
 ---
 
 So in a delightful twist, Michael O. Church has brought in the concept of D&D [ethical alignments](http://michaelochurch.wordpress.com/2013/03/18/gervais-macleod-11-alignment-and-careers/) to the corporate hierarchy/career discussion.
 
-He quite correctly place the "Technocrat", i.e., the "postive sociopath", or the person who wants to accomplish something beneficial without regard to corporate politics or any other tengential concerns, in the "charotic good" category.
+He quite correctly places the "Technocrat", i.e., the "postive sociopath", or the person who wants to accomplish something beneficial without regard to corporate politics or any other tangential concerns, in the "chaotic good" (or at least, "neutral good") category.
 
-I've seen myself as "chaotic good" long before this series of posts, or beforße I ever thought of applying the D&D alignment categories to roles at work. It fits with my politics (anarchist-communist), with my gneral M.O. of getting things done (open source is always bettter, and it's always easier to ask for forgiveness than to get permission). It also fits with my general attitude toward work: if you want something brilliant, tell me what you want and get the fuck out of my way. If you want a mess, keep letting middle managers stick their fingers in the pie of my creative process. 
+I've seen myself as "chaotic good" long before this series of posts, or before I ever thought of applying the D&D alignment categories to roles at work. It fits with my politics (anarchist-communist), with my gneral M.O. of getting things done (open source is always bettter, and it's always easier to ask for forgiveness than to get permission). It also fits with my general attitude toward work: if you want something brilliant, tell me what you want and get the fuck out of my way. If you want a mess, keep letting middle managers stick their fingers in the pie of my creative process. 
 
 Church makes an excellent point, though, that the "technocrat" disposition, and the alignments it tends to entail (chaotic good to chaotic neutral) tend to be notoriously difficlut to manage. The only thing I think is missing from the series he's been doing on this issue is that if you're a programmer, [you weren't meant to have a boss](http://www.paulgraham.com/boss.html). 
 
@@ -26,20 +26,18 @@ The situation on the ground is that lawful evil is generally more evolutionarily
 
 The true neutral is as willing to leverage the talents of the full span of the alignment spectrum; if a lawful evil individual serves its executive interests, and a chaotic good individual serves its creative interests, it will attempt to leverage both in the interest of organizational goals. The tragic flaw comes in not accepting that the two are incompatible. The lawful evil (who see the hierarchical organization as a pragmatic tool for personal gain) and the chaotic good (who see the hierarchical organization as an invariably corrupt obstacle to human progress) cannot, in the long term, successfully collaborate. In the short term, our goals may align, and we may achieve great things together. The lawful evil executive may be able to achieve accolades while the chaotic good programmer is allowed latitude to innovate; but the risk-aversion of the massive, neutral insitution prefers the disposition of the lawful evil position because it's predictable.
 
-Chaotic good is harder to predict. It's also harder to fit into an organization of "normals." By "normals" I mean the average sheep who have to fill out the non-technical positions within a company, that do the shit jobs like tech support and software licensing and service requests and all the other bullshit that wouldn't matter if we were building companies not beholden to vendors and investors and all the other parasites that make innovation a pain in the fucking ass instead of the status quo.
-
-We end up with these waste-of-space old biddies who are afraid of anything different or unusual... I can't or won't go into detail but I recently had an experience that proved to me that programmers and "normal" people should **not** work in the same office space. Something I'd suspected for some time but was recently confirmed in explicit detail. 
+Chaotic good is harder to predict. It's also harder to fit into an organization of "normals." By "normals" I mean the average sheep who have to fill out the non-technical positions within a company, that do the shit jobs like tech support and software licensing and service requests and all the other "fourth-quadrant work" that wouldn't matter if we were building companies not beholden to vendors and investors and all the other parasites that make innovation a pain in the fucking ass instead of the status quo.
 
 So how can the chaotic-good aligned of us survive in a corporate environment? Maybe we shouldn't.
 
 Perhaps doing so is a pathetic concession to necessity until a better opportunity presents itself.
 
-For my part, I have some phone calls to return. 
+This is perhaps a set intersection of the MacLeod "Loser" and the Church/MacLeod "Technocrat" (Church's "good" version of the MacLeod "sociopath"); Being strategic typically refusing Pyrrhic victories; sometimes it means staying a "Loser" until you can assess whether up or out is a more likely/possible/effective strategic move.
 
-The worst part is finding oneself in such an environment with a number of kindred spirits, with whom one works exceedingly well. It's terrible to be forced to decide to leave something you love just because the chaotic good can't tolerate the lawful evil. But it happens, time and time again. I've seen D&D parties split over the incompatibility of alignment in the player characters. Why should the modern corporation be any different? 
+The worst part is finding oneself in such an environment with a number of kindred spirits, with whom one works exceedingly well. It's terrible to be forced to decide to leave something you love just because the chaotic good (us) can't tolerate the lawful evil (them). But neither can they tolerate us, for long, once it becomes apparent that our alignments will neither allow us to become allies, nor even to use one another to achieve our divergent ends. But it happens, time and time again. I've seen D&D parties split over the incompatibility of alignment in the player characters. Why should the modern corporation be any different? 
 
-So what's the solution? I really can't say. When it comes down to it, I believe that good will win, chaotic or otherwise. And I really only have faith in the chaotic or neutral good; lawful good is too much of a compromise, and hardly even good anymore.
+So what's the solution? I really can't say. When it comes down to it, I believe that good will win, chaotic or otherwise. And I really only have faith in the chaotic or neutral good; lawful good is too much of a compromise, and tends to degrade into neutrality due to its civil alignment.
 
-Who knows. I truly wish that every organization could be productive and effective. But there's an old saying that a small organization is ruled by the developers, a medium-sized one is ruled by the bankers, and a large one is ruled by the lawyers. When it reaches that point, we're discussing an organization so averse to risk that innovation or any sort of worthwhile effort is out of the question. It's a shame, but that's the reality. 
+Who knows. I truly wish that every organization could be productive and effective. But there's an old saying that a small organization is ruled by the creatives, a medium-sized one is ruled by the bankers, and a large one is ruled by the lawyers. When it reaches that point, we're discussing an organization so averse to risk that innovation or any sort of worthwhile effort is out of the question. It's a shame, but that's the reality. 
 
-So what to do? I don't know. Any suggestions would be appreciated. 
+So what to do? I don't know. I don't have answers. Yet. But I'm still thinking this through as well as working it through IRL. My hope is that there's an answer for every organization, but there's also that whole "building a new world from the ashes of the old" element that occasionally precludes evolutionary progress and demands revolutionary progress. Which are we facing here?
