@@ -9,7 +9,7 @@
   <meta name="author" content="Jason Lewis">
 
   
-  <meta name="description" content="Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to always see it as a soap bubble? &hellip;">
+  <meta name="description" content="It&#8217;s been a while since my last post, because the last few weeks have been just a little crazy. I&#8217;ve left JHU, and accepted the role of &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -50,6 +50,8 @@ document.body.innerHTML='';
 }
 
 </script>
+
+
 
   
   <script type="text/javascript">
@@ -106,6 +108,50 @@ document.body.innerHTML='';
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/14/im-an-estuarian/">I&#8217;m An Estuarian!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-14T23:40:00-04:00" pubdate data-updated="true">2013-05-14</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&#8217;s been a while since my last post, because the last few weeks have been just a little crazy.</p>
+
+<p>I&#8217;ve left <a href="http://www.jhu.edu">JHU</a>, and accepted the role of Chief Technology Officer at <a href="http://anestuary.com">An Estuary</a>, an amazing EdTech startup spun out from Baltimore&#8217;s <a href="http://www.digitalharborfoundation.org/">Digital Harbor Foundation</a>.</p>
+
+<p>It&#8217;s kinda crazy going from a massive institution with about 40k employees, to a startup. But we&#8217;re building amazing things, iterating like crazy, and having an unbelievable amountof fun doing it.</p>
+
+<p>So stay on the lookout for An Estuary&#8230; the sky&#8217;s the limit, folks. I&#8217;d forgotten what it was like to wake up in the morning and being excited to get to work. Now I remember. It&#8217;s an amazing feel, and this is an amazing time. And I work with the <a href="http://anestuary.weebly.com/1/post/2013/05/a-great-team.html">best people I could hope to work with.</a></p>
+
+<p>Life is good.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -579,74 +625,6 @@ document.body.innerHTML='';
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/02/03/datetime-conversions-in-clojure/">DateTime Conversions in Clojure</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2013-02-03T14:18:00-05:00" pubdate data-updated="true">2013-02-03</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In dealing with integrating data from disparate incomaptible systems (which I do to a degree that would drive some men mad), one of the most frequent irritations is dealing with datetime conversions.</p>
-
-<p>A while ago, I <a href="http://decomplecting.org/blog/2012/08/03/legacy-systems-on-rails-part-2/">wrote a post about Bubba</a> (not its real name), a legacy/vendor-supplied system in which the original developers (may they suffer eternal torment) decided to store all datetimes as floating-point values using a bastardized form of the Julian Day system with fractional day part. In that post, I showed a solution used in a Ruby on Rails web app, but now I&#8217;m writing data integration services for multiple systems, and needed something a bit more robust, so I&#8217;m writing it in Clojure.</p>
-
-<p>I&#8217;ll start off with the dependencies:</p>
-
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="kd">ns </span><span class="nv">project.util.date</span>
-</span><span class='line'>  <span class="p">(</span><span class="ss">:require</span> <span class="p">[</span><span class="nv">clj-time.core</span> <span class="ss">:as</span> <span class="nv">tm</span><span class="p">]</span>
-</span><span class='line'>            <span class="p">[</span><span class="nv">clj-time.local</span> <span class="ss">:as</span> <span class="nv">loc</span><span class="p">]</span>
-</span><span class='line'>            <span class="p">[</span><span class="nv">clj-time.format</span> <span class="ss">:as</span> <span class="nv">fmt</span><span class="p">]</span>
-</span><span class='line'>            <span class="p">[</span><span class="nv">clojure.math.numeric-tower</span> <span class="ss">:as</span> <span class="nv">math</span><span class="p">])</span>
-</span><span class='line'>  <span class="p">(</span><span class="ss">:use</span> <span class="nv">clj-time.coerce</span><span class="p">)</span>
-</span><span class='line'>  <span class="p">(</span><span class="ss">:import</span> <span class="p">[</span><span class="nv">oracle.sql</span> <span class="nv">TIMESTAMP</span><span class="p">]</span>
-</span><span class='line'>           <span class="p">[</span><span class="nv">java.sql</span> <span class="nv">Timestamp</span><span class="p">]))</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I&#8217;m using the fantastic <a href="https://github.com/seancorfield/clj-time">clj-time</a> library by Sean Corfield. It&#8217;s basically a wrapper around the <a href="http://joda-time.sourceforge.net/">Joda Time</a> Java library, allowing us to use its powerful datetime handling in idiomatic Clojure.</p>
-
-<p>So, for the actual code. First, the Bubba dates need to be converted to and from a floating point value to a normal Date object.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2013/02/03/datetime-conversions-in-clojure/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -661,9 +639,15 @@ document.body.innerHTML='';
   <a href="http://internetdefenseleague.org">
     <img src="http://internetdefenseleague.org/images/badges/final/super_badge.png" alt="Member of The Internet Defense League" />
   </a>
-</section><section>
+</section>
+
+<script src="//dihq71mhvy8o7.cloudfront.net/js/modal-embed.js" type="text/javascript" charset="utf-8"></script><section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/05/14/im-an-estuarian/">I&#8217;m An Estuarian!</a>
+      </li>
     
       <li class="post">
         <a href="/blog/2013/04/05/be-willing-to-let-go/">Be Willing To Let Go; or, &#8220;The Big Rewrite&#8221;</a>
@@ -679,10 +663,6 @@ document.body.innerHTML='';
     
       <li class="post">
         <a href="/blog/2013/03/16/farewell/">Farewell, Reader; Or, The Problem with &#8220;Free as in Beer&#8221;</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2013/03/15/the-myth-of-the-it-department/">The Myth of The &#8220;IT Department&#8221;</a>
       </li>
     
   </ul>
