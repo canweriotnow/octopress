@@ -1,1 +1,848 @@
-My Octopress Page is coming soon &hellip;
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Practical Elegance</title>
+  <meta name="author" content="Jason Lewis">
+
+  
+  <meta name="description" content="Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to always see it as a soap bubble? &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://decomplecting.org">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://feeds.feedburner.com/PracticalElegance" rel="alternate" title="Practical Elegance" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=Dosis|Ubuntu+Mono:400,700' rel='stylesheet' type='text/css'>
+<script type="text/javascript" >
+
+if (window.top !== window.self) {
+
+document.write = "";
+
+window.top.location = window.self.location; setTimeout(function(){
+
+document.body.innerHTML='';
+
+},1);
+
+window.self.onload=function(evt){
+
+document.body.innerHTML='';
+
+};
+
+}
+
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22978638-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Practical Elegance</a></h1>
+  
+    <h2>"Elegance is not a dispensable luxury." - Edsgar Dijkstra</h2>
+  
+</hgroup>
+
+
+  <a href="https://github.com/canweriotnow">
+    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+  </a>
+
+
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="http://feeds.feedburner.com/PracticalElegance" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:decomplecting.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/05/be-willing-to-let-go/">Be Willing To Let Go; or, &#8220;The Big Rewrite&#8221;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-05T02:10:00-04:00" pubdate data-updated="true">2013-04-05</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><blockquote><p>Is it possible that software is not like anything else, that it is meant to be discarded: that the whole point is to always see it as a soap bubble?</p><footer><strong>Alan J. Perlis</strong></footer></blockquote>
+
+
+<p>One of the most nerve-wracking things you can tell a manager is that it&#8217;s time to rewrite a major software component, system, or application. In fact, it&#8217;s considered (in some circles) such a mortal sin that Joel Spolsky addresses &#8220;The Big Rewrite&#8221; in a post entitled <a href="http://www.joelonsoftware.com/articles/fog0000000069.html">Things You Should Never Do, Part I</a>.</p>
+
+<p>In many cases, he&#8217;s absolutely right. If you have a working-ish production codebase, throwing it out the window can seem a bit like throwing out the baby with the bathwater. But from an engineering standpoint, software is weird. On the one hand, you have the engineering side: If a bridge is just working-ish, the assessment of a structural engineer might be that it must be torn down and a new bridge built in its place. Software is much more ethereal and abstract; of course, we can continue to patch the old application, and extend it, and patch it, and sacrifice virgins to Great Cthulhu, and keep it chugging along. For a while.</p>
+
+<p>Eventually, however, with a typical enormous, legacy codebase, you just end up mortgaging massive technical debt.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/04/05/be-willing-to-let-go/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/04/02/the-difficulty-of-chaotic-good/">The Difficulty of Chaotic Good</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-02T22:29:00-04:00" pubdate data-updated="true">2013-04-02</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>So in a delightful twist, Michael O. Church has brought in the concept of D&amp;D <a href="http://michaelochurch.wordpress.com/2013/03/18/gervais-macleod-11-alignment-and-careers/">ethical alignments</a> to the corporate hierarchy/career discussion.</p>
+
+<p>He quite correctly places the &#8220;Technocrat&#8221;, i.e., the &#8220;postive sociopath&#8221;, or the person who wants to accomplish something beneficial without regard to corporate politics or any other tangential concerns, in the &#8220;chaotic good&#8221; (or at least, &#8220;neutral good&#8221;) category.</p>
+
+<p>I&#8217;ve seen myself as &#8220;chaotic good&#8221; long before this series of posts, or before I ever thought of applying the D&amp;D alignment categories to roles at work. It fits with my politics (anarchist-communist), with my gneral M.O. of getting things done (open source is always bettter, and it&#8217;s always easier to ask for forgiveness than to get permission). It also fits with my general attitude toward work: if you want something brilliant, tell me what you want and get the fuck out of my way. If you want a mess, keep letting middle managers stick their fingers in the pie of my creative process.</p>
+
+<p>Church makes an excellent point, though, that the &#8220;technocrat&#8221; disposition, and the alignments it tends to entail (chaotic good to chaotic neutral) tend to be notoriously difficlut to manage. The only thing I think is missing from the series he&#8217;s been doing on this issue is that if you&#8217;re a programmer, <a href="http://www.paulgraham.com/boss.html">you weren&#8217;t meant to have a boss</a>.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/04/02/the-difficulty-of-chaotic-good/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/23/donglegate/">Donglegate, Inclusionary Culture, Nerd Culture</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-23T21:33:00-04:00" pubdate data-updated="true">2013-03-23</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve taken my time in writing about this. I had some debates (for better or worse) on Twitter, and some rather thoughtful meatspace conversations with friends and coworkers. I have strong feelings about what happened at PyCon (re: the donglegate scenario), and many of them are conflicting. So I&#8217;ve waited to write about it until now.</p>
+
+<h3>Donglegate</h3>
+
+<p>Okay, for one thing, I really think the <a href="https://twitter.com/search?q=%23donglegate&amp;src=typd">#donglegate</a> hashtag/label is stupid, but that&#8217;s not up to me, so whatever. I would like to address the way in which things were handled at PyCon, so here goes.</p>
+
+<p>First off, I have no personal investment in what happens at PyCon. I don&#8217;t really code in Python, I don&#8217;t particularly like Python, whatever. But when people are publicly humiliated, fired, whatever, over things that are basically stupid, it chafes.</p>
+
+<p>So, if you&#8217;re unfamiliar (fat chance), you can get the original interpretation of events from the horse&#8217;s mouth, at <a href="http://butyoureagirl.com/14015/forking-and-dongle-jokes-dont-belong-at-tech-conferences/">Adria Richards&#8217; blog</a> Hopefully that link works for you, I got yet another error trying to load it&#8230; maybe someone should tell her about <a href="http://decomplecting.org/blog/2012/07/04/static-is-beautiful/">static pages for blogs</a>. Anyhow, here&#8217;s the short version: a &#8216;developer relations rep&#8217; from <a href="http://sendgrid.com/">SendGrid</a> was offended by some off-color comments made by some guys sitting behind her that apparently referenced &#8220;big dongles.&#8221; She also alleged some sexual references to &#8220;forking,&#8221; which has since been <a href="http://pastebin.com/JaNh0w5F">called into question</a>. Instead of saying to the individuals in question, &#8220;Stop being jerks and shutup so I can listen to the speech,&#8221; she tweeted pics of the guys who were making dongle jokes, and got the PyCon organizers involved.</p>
+
+<p>I&#8217;m not judging at this point.</p>
+
+<p>Anyhow, once the PyCon organizers got involved, the folks she accused were removed from the session. Apparently, at least one lost his job.</p>
+
+<p>Of course, it blew up on the Intertweets, with 4chan getting involved at some point and anons starting a <a href="https://www.change.org/petitions/sendgrid-please-fire-adria-richards">Change.org petition</a> to have her fired.</p>
+
+<p>Adria Richards tweeted that SendGrid supported her:</p>
+
+<blockquote class="twitter-tweet"><p>Hey @<a href="https://twitter.com/mundanematt">mundanematt</a>, it&#8217;s clear from the last 24 hours you&#8217;re a bully.@<a href="https://twitter.com/sendgrid">sendgrid</a> supports me.Stop trolling.</p>&mdash; Adria Richards (@adriarichards) <a href="https://twitter.com/adriarichards/status/314452708549603328">March 20, 2013</a></blockquote>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<p>Apparently, she was mistaken, because she was fired shortly thereafter.</p>
+
+<h3>Constructive Intervention</h3>
+
+<p>I&#8217;m still replaying this in my head. Some dudes were making immature, inappropriate comments at a conference. Ms. Richards responded in a way that was also immature and inappropriate.</p>
+
+<p>I&#8217;m not going to go into the distasteful, violent, or threatening responses that occurred on Twitter or 4chan (although, regarding hte latter, it&#8217;s <em>4chan.</em> What do you expact?).</p>
+
+<p>I would like to point out that the women from <a href="http://ladycoders.com">LadyCoders</a> proposed a system for dealing with this sort of occurence that <em>is</em> constructive. Expanding upon the <a href="http://singlevoice.net/redyellow-card-project/">Red/Yellow Card Project from Defcon</a>, they&#8217;ve developed <a href="http://thecowgirlcoder.com/2013/03/21/pycon-code-of-conduct-warning-cards/">PyCon CoC warning cards</a> for next year&#8217;s PyCon. I think it&#8217;s a great constructive way to give people a way to address behaviour which they find offensive without resorting to the Twitter equivalent of tar-and-feathering, as Richards took as a first resort.</p>
+
+<h3>And So&#8230;</h3>
+
+<p>If anything, there was more logical reason for Richards to lose her job than the developer from PlayHaven. He was a developer; developers have never been known for tact or maturity. Richards&#8217; title was &#8220;developer evangelist&#8221;; I&#8217;d like to know how she expected to carry out that role after alienating so many developers with her actions.</p>
+
+<p>But whatever. PyCon has amended its CoC to condemn &#8220;public shaming&#8221; as a mode of dealing with inappropriate conduct. For my part, I see the whole PyCon / #donglegate debacle as an example of public stupidity on multiple parts, not a call to action. Let&#8217;s just all try to be smarter in future, mmkay?</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/16/farewell/">Farewell, Reader; Or, The Problem with &#8220;Free as in Beer&#8221;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-16T00:45:00-04:00" pubdate data-updated="true">2013-03-16</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;m <a href="http://support.google.com/reader/answer/3028851">going to miss Google Reader</a>. I know a lot of people are going to. Hell, in a crazy inversion of Godwin&#8217;s Law, even <a href="http://www.youtube.com/watch?v=A25VgNZDQ08">Hitler is upset</a>. There&#8217;s a <a href="https://www.change.org/en-GB/petitions/google-do-not-remove-google-reader-on-july-1-2013">petition on Change.org</a>, and Bender is pissed:</p>
+
+<p><img class="center" src="/images/post-img/bender-reader.png"></p>
+
+<p>I&#8217;ve been complaining, both online and in person, ever since I learned of this a couple of days ago. And it&#8217;s not the first time I&#8217;ve <a href="/blog/2012/06/06/hackers-need-our-own-everything/">complained about changes at Google</a>.</p>
+
+<p>This isn&#8217;t even <a href="http://en.wikipedia.org/wiki/Tragedy_of_the_commons">the tragedy fo the commons</a>; this is the tragedy of <a href="http://en.wikipedia.org/wiki/Gratis_versus_libre">gratis versus libre</a>, or &#8220;free as in beer&#8221; versus &#8220;free as in speech.&#8221;</p>
+
+<p>Sure, Reader is one of Google&#8217;s most popular products, at least among my (admittedly strange) peer group. But I&#8217;m going to assert something odd for a wacky leftist like me: Google is a for-profit corporation, beholden to its shareholders. It has a responsibility to monetize its products, and Google is (in simple terms) in the advertising business. Reader wasn&#8217;t selling ads, as far as I can tell.</p>
+
+<p>We can drill a little deeper, and say that Google is really in the <em>data</em> business. But even at this level, I can guess the prediction of the highly complex and optimized machine learning algorithms Google has developed for all the data it harvests, when applied to Reader:</p>
+
+<h4>Nerds like reading one anothers&#8217; blogs.</h4>
+
+<p>Yeah, um&#8230; I don&#8217;t know how they failed to monetize that highly proprietary and unexpected insight.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/16/farewell/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/15/the-myth-of-the-it-department/">The Myth of The &#8220;IT Department&#8221;</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-15T01:53:00-04:00" pubdate data-updated="true">2013-03-15</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>So in the comments on my <a href="/blog/2013/03/11/confessions-of-a-job-destroyer/">last post</a> I mentioned my fandom for what is, in my opinion, the most insightful and important blog currently published, that of <a href="http://michaelochurch.wordpress.com/">Michael O. Church</a>. His recent series of posts have been reviewing and analyzing the MacLeod theory of <a href="http://michaelochurch.wordpress.com/2013/03/14/gervais-macleod-9-convexity/">organizational structure</a> (link is to the latest post in the series, but if you haven&#8217;t been following it, therein are links to the previous eight).</p>
+
+<p>I want to focus on the differential between concave (in which the difference between failure and middling is greatest) and convex (in which the difference between middling and superior is greatest) work.</p>
+
+<h3>The &#8220;IT Department&#8221;</h3>
+
+<p>I have to start by saying &#8220;Information Technology&#8221; is a leaky abstraction. It covers everything from internal software development to the help desk call center. I&#8217;m not suggesting that either line of business is superior. Both are absolutely necessary, at least until developers start to become psychic or users stop being stupid, or (preferably) both.</p>
+
+<p>The real problem comes when the same management structure is imposed in the guise of an &#8220;IT Department&#8221; on such divergent areas as the help desk, desktop support, network engineers, developers, and hardware techs. Going beyond theories <a href="http://michaelochurch.wordpress.com/2013/03/12/gervais-macleod-8-human-nature-theories-x-y-z-and-a/">X, Y, Z, or A</a> of management, having a &#8220;Central IT&#8221; department is (without a revolutionary management strategy that will probably raise HR issues for most entrenched organizations) an attempt to shoehorn concave and convex work into the same tiny box, and is going to fail at appropriately managing one or the other (or perhaps more likely, both).</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/15/the-myth-of-the-it-department/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/11/confessions-of-a-job-destroyer/">Confessions of A Job Destroyer</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-11T15:57:00-04:00" pubdate data-updated="true">2013-03-11</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>One of the most unfunny ironies of the rhetoric surrounding &#8220;job creators&#8221; in contemporary American politics is that most of the jobs being created (or at least, those with the greatest demand) are in the tech sector. Jobs like mine. Jobs that automate processes that used to be performed by people.</p>
+
+<p>So I&#8217;ll come out and say it: I&#8217;m not a job creator (which is, I suppose, why the Republicans aren&#8217;t too interested in cutting <em>my</em> taxes). I&#8217;m a job destroyer.</p>
+
+<p>We (programmers) all are, on some level or another; we&#8217;re taking mundane repetitive tasks and automating them with code. In a perfect world, we would be hailed as heroes, freeing the toiling masses from their humdrum routines to engage in more ennobling pursuits&#8230; but there&#8217;s that pesky issue of needing an income. I&#8217;ll return to this momentarily, but I first want to confess to a darker truth.</p>
+
+<p>Marc Andreessen famously explained <a href="http://online.wsj.com/article/SB10001424053111903480904576512250915629460.html">&#8216;Why Software Is Eating The World&#8217;</a> in the WSJ a couple of years ago. What he failed to mention is that the snake of software is also quietly eating its own tail.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/11/confessions-of-a-job-destroyer/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/10/the-social-university-that-could-have-been/">The Social University That Could Have Been</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-10T22:21:00-04:00" pubdate data-updated="true">2013-03-10</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is a post I&#8217;ve wanted to write for a while, but I&#8217;ve needed time and distance to do it justice. This is a post about (from my perspective) the greatest failure of my professional career.</p>
+
+<h2>The Social University</h2>
+
+<p>Sometime in 2011, I was joking with my team lead about connecting <a href="http://www.blackboard.com/platforms/transact/overview.aspx">Blackboard Transact</a>, the OLTP product used for access control, stored value account transactions, and meal plans at my work, to Twitter, just for fun. The short answer was &#8220;that&#8217;s silly.&#8221; The longer answer was &#8220;that&#8217;s silly, but it would be pretty neat.&#8221;</p>
+
+<p>So on lunch breaks and when I was waiting on other things to move forward with my &#8220;official&#8221; projects, I played around with creating a system to connect our system to Twitter.</p>
+
+<p>Since I had already worked on a service layer for (really, a generalized SOA for systems connecting to) Transact, it was pretty easy to leverage APIs from not only Twitter, but also Foursquare and Facebook to tie into transactions from our internal system; door access could tweet your location, and check you in on Foursquare; buying a coffee could do the same.</p>
+
+<p>Eventually, the idea gained some traction, and we started building in a system of social gamification, that would award badges and achievements for usage of the system, ranging from customer loyalty rewards for particpating vendors, to seemingly &#8220;silly&#8221; things like a &#8220;Speed Demon&#8221; achivement for swiping two doors on opposite sides of campus within ten minutes.</p>
+
+<p>The system also allowed students (well, also faculty and staff) to connect to Facebook to share badges/achivements and compete in a university-wide leaderboard. This is just an overview of the social media integration and gamification elements, but you might very well ask, what&#8217;s the point?</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/10/the-social-university-that-could-have-been/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/08/pam-authentication-beyond-the-desktop/">PAM Authentication Beyond The Desktop</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-08T20:11:00-05:00" pubdate data-updated="true">2013-03-08</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>The Linux <a href="http://www.linux-pam.org/">PAM</a> (Pluggable Authentication Modules) architecture is one of the most wonderful (and most overlooked) features of the OS. Typically we only consider PAM as handling our console (or xdm/gdm etc. logins) on Linux, but it&#8217;s useful for so much more.</p>
+
+<h3>Web Authentication</h3>
+
+<p>At work, we needed an authentication solution that allowed users to sign in with their ActiveDirectory credentials. Although the &#8220;official&#8221; solution was to use <a href="http://www.ca.com/us/secure-single-sign-on.aspx">SiteMinder</a> for web authentication against AD, we were working on a mobile application, and at the time the SiteMinder auth page was ugly, and had no mobile-optimized login page. The latter problem has since been rectified; now it has both an ugly desktop login and an ugly mobile login. In addition, we were using nginx, and SiteMinder was really only supported under IIS and Apache (and at the time, the latter was via Shibboleth. Ugh.), so without official SiteMinder support, or an nginx Shib plug-in, we were in a bit of a bind.</p>
+
+<p>Around the same time, I was playing with Likewise Open (now known as <a href="http://www.powerbrokeropen.org/">PowerBroker Identity Services - Open Edition</a>) to bind my Linux workstation into AD. So it occurred to me: if a normal Linux PAM login can be authenticated against ActiveDirectory, why not a PAM login from a web application?</p>
+
+<p>I know, I know, my first though should have been LDAP, right? For some unknown reason, LDAP was verboten at the time. The policy has since (apparently) been reversed, but such is the ebb and flow of corporate politics. And so, in the grand tradition of one of the mothers of modern computer science (and one of my daughter&#8217;s namesakes):</p>
+
+<blockquote><p>If it&#8217;s a good idea, go ahead and do it. It is much easier to apologize than it is to get permission.</p><footer><strong>Rear Admiral Dr. Grace Murray Hopper</strong></footer></blockquote>
+
+
+
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/08/pam-authentication-beyond-the-desktop/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/03/01/code-typos-got-you-down-stop-worrying-with-close-enough/">Code Typos Got You Down? Stop Worrying with close_enough</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-03-01T18:32:00-05:00" pubdate data-updated="true">2013-03-01</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>From the crack team (<a href="https://twitter.com/micahjgates">Micah Gates</a> and <a href="https://twitter.com/canweriotnow">myself</a>) that brought you <a href="https://github.com/ruby-jokes/job_interview">job_interview</a>, I&#8217;m proud to announce the availability of <a href="https://github.com/ruby-jokes/close_enough">close_enough</a>, a gem that will save you from all of those niggling <code>NoMethodError</code>s that occur when you mis-type a method name.</p>
+
+<p>The concept is very simple, and based on an algorithm used in most spell checkers and autocorrect systems currently in use. Calculating the <a href="http://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance">Damerau-Levenshtein distance</a> between two words can reliably (within a certain margin of error) indicate whether a known word was inteded when an unknown term was encountered in user input.</p>
+
+<p>In Ruby, we have a wonderful metaprogramming facility in <code>method_missing</code>. What we&#8217;ve done in close_enough is to monkey-patch <code>method_missing</code> on <code>Object</code> to calculate the Demerau-Levenshtein distance between existing methods and the non-existent called method, and invoke the nearest one if it&#8217;s &#8220;close enough&#8221; (close enough currently being an edit distance of &lt; 3).</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/03/01/code-typos-got-you-down-stop-worrying-with-close-enough/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/03/datetime-conversions-in-clojure/">DateTime Conversions in Clojure</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-03T14:18:00-05:00" pubdate data-updated="true">2013-02-03</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In dealing with integrating data from disparate incomaptible systems (which I do to a degree that would drive some men mad), one of the most frequent irritations is dealing with datetime conversions.</p>
+
+<p>A while ago, I <a href="http://decomplecting.org/blog/2012/08/03/legacy-systems-on-rails-part-2/">wrote a post about Bubba</a> (not its real name), a legacy/vendor-supplied system in which the original developers (may they suffer eternal torment) decided to store all datetimes as floating-point values using a bastardized form of the Julian Day system with fractional day part. In that post, I showed a solution used in a Ruby on Rails web app, but now I&#8217;m writing data integration services for multiple systems, and needed something a bit more robust, so I&#8217;m writing it in Clojure.</p>
+
+<p>I&#8217;ll start off with the dependencies:</p>
+
+<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+</pre></td><td class='code'><pre><code class='clojure'><span class='line'><span class="p">(</span><span class="kd">ns </span><span class="nv">project.util.date</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:require</span> <span class="p">[</span><span class="nv">clj-time.core</span> <span class="ss">:as</span> <span class="nv">tm</span><span class="p">]</span>
+</span><span class='line'>            <span class="p">[</span><span class="nv">clj-time.local</span> <span class="ss">:as</span> <span class="nv">loc</span><span class="p">]</span>
+</span><span class='line'>            <span class="p">[</span><span class="nv">clj-time.format</span> <span class="ss">:as</span> <span class="nv">fmt</span><span class="p">]</span>
+</span><span class='line'>            <span class="p">[</span><span class="nv">clojure.math.numeric-tower</span> <span class="ss">:as</span> <span class="nv">math</span><span class="p">])</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:use</span> <span class="nv">clj-time.coerce</span><span class="p">)</span>
+</span><span class='line'>  <span class="p">(</span><span class="ss">:import</span> <span class="p">[</span><span class="nv">oracle.sql</span> <span class="nv">TIMESTAMP</span><span class="p">]</span>
+</span><span class='line'>           <span class="p">[</span><span class="nv">java.sql</span> <span class="nv">Timestamp</span><span class="p">]))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I&#8217;m using the fantastic <a href="https://github.com/seancorfield/clj-time">clj-time</a> library by Sean Corfield. It&#8217;s basically a wrapper around the <a href="http://joda-time.sourceforge.net/">Joda Time</a> Java library, allowing us to use its powerful datetime handling in idiomatic Clojure.</p>
+
+<p>So, for the actual code. First, the Bubba dates need to be converted to and from a floating point value to a normal Date object.</p>
+
+</div>
+  
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/03/datetime-conversions-in-clojure/">Read on &rarr;</a>
+    </footer>
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/blog/page/2/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <a href="http://internetdefenseleague.org">
+    <img src="http://internetdefenseleague.org/images/badges/final/super_badge.png" alt="Member of The Internet Defense League" />
+  </a>
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/04/05/be-willing-to-let-go/">Be Willing To Let Go; or, &#8220;The Big Rewrite&#8221;</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/04/02/the-difficulty-of-chaotic-good/">The Difficulty of Chaotic Good</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/23/donglegate/">Donglegate, Inclusionary Culture, Nerd Culture</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/16/farewell/">Farewell, Reader; Or, The Problem with &#8220;Free as in Beer&#8221;</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/03/15/the-myth-of-the-it-department/">The Myth of The &#8220;IT Department&#8221;</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/canweriotnow">@canweriotnow</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'canweriotnow',
+            count: 5,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("canweriotnow", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/canweriotnow" class="twitter-follow-button" data-show-count="false">Follow @canweriotnow</a>
+  
+</section>
+
+
+<section>
+  <h1>On Delicious</h1>
+  <div id="delicious"></div>
+  <script type="text/javascript" src="http://feeds.delicious.com/v2/json/canweriotnow?count=3&amp;sort=date&amp;callback=renderDeliciousLinks"></script>
+  <p><a href="http://delicious.com/canweriotnow">My Delicious Bookmarks &raquo;</a></p>
+</section>
+
+<section>
+  <h1>Coderwall Badges</h1>
+  <p>
+    <script type="text/javascript">
+      function display_coderwall(args) {
+        var badges = args["data"]["badges"];
+        var wall = '';
+        for ( var i = 0; i < badges.length; i++ ) {
+          var alt_txt = badges[i]["name"];
+          var title_txt = badges[i]["name"] + ' - ' + badges[i]["description"];
+          wall += '<a href="http://coderwall.com/canweriotnow/"><img src="'
+            + badges[i]["badge"]
+            + '" width="48" height="48" alt="' + alt_txt
+            + '" title="' + title_txt
+            + '"/></a>';
+        }
+        document.write(wall);
+      }
+    </script>
+    <script src="http://coderwall.com/canweriotnow.json?callback=display_coderwall"></script>
+  </p>
+  
+  <p><a href="http://coderwall.com/canweriotnow"><img src="http://api.coderwall.com/canweriotnow/endorsecount.png" /></a></p>
+  
+</section>
+
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/110736810583208350607?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Jason Lewis -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>
+- Hosted by <a href="http://pages.github.com">Github Pages</a>
+</span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'canweriotnow';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

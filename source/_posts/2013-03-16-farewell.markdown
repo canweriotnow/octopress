@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Farewell, Reader; Or, The Problem with \"Free as in Beer\""
+date: 2013-03-16 00:45
+comments: true
+categories: [Google, software, RSS, blogs]
+---
+
+I'm [going to miss Google Reader](http://support.google.com/reader/answer/3028851). I know a lot of people are going to. Hell, in a crazy inversion of Godwin's Law, even [Hitler is upset](http://www.youtube.com/watch?v=A25VgNZDQ08). There's a [petition on Change.org](https://www.change.org/en-GB/petitions/google-do-not-remove-google-reader-on-july-1-2013), and Bender is pissed:
+
+{% img center /images/post-img/bender-reader.png %}
+
+I've been complaining, both online and in person, ever since I learned of this a couple of days ago. And it's not the first time I've [complained about changes at Google](/blog/2012/06/06/hackers-need-our-own-everything/). 
+
+This isn't even [the tragedy fo the commons](http://en.wikipedia.org/wiki/Tragedy_of_the_commons); this is the tragedy of [gratis versus libre](http://en.wikipedia.org/wiki/Gratis_versus_libre), or "free as in beer" versus "free as in speech."
+
+Sure, Reader is one of Google's most popular products, at least among my (admittedly strange) peer group. But I'm going to assert something odd for a wacky leftist like me: Google is a for-profit corporation, beholden to its shareholders. It has a responsibility to monetize its products, and Google is (in simple terms) in the advertising business. Reader wasn't selling ads, as far as I can tell. 
+
+We can drill a little deeper, and say that Google is really in the _data_ business. But even at this level, I can guess the prediction of the highly complex and optimized machine learning algorithms Google has developed for all the data it harvests, when applied to Reader:
+
+#### Nerds like reading one anothers' blogs.
+
+Yeah, um... I don't know how they failed to monetize that highly proprietary and unexpected insight.
+
+<!--more-->
+
+I'm going to miss Google Reader. It was an extremely well-built, easy to use RSS/Atom feed aggregator that made my toilet reading much more manageable.
+
+But the lesson here is the one I missed (or ignored) last year when Google introduced the changes to Search that made it more difficult for me to find pertinent results to highly complex, technical queries, and I kvetched on this blog. 
+
+I still stand by my position that [hackers need our own everything](/blog/2012/06/06/hackers-need-our-own-everything/), but my new conclusion is that it was a mistake to rely on a corporation like Google in the first place, if the tool in question really mattered. 
+
+It would be like a carpenter relying on a hammer (and saw, plane, screwdriver, etc.) provided by some external entity who could swoop in and remove or alter any of those tools at any time. Such a carpenter would be a fool, at least if he didn't leverage those tools while he had them to build a set of replacements.
+
+I'm not saying building a replacement for Google Search is something within the reach of any one (or one hundred) of us disgruntled hackers. But the upside of the Reader debacle is that it showed me what I really do (and don't) want from a feed aggregator, and now [I'm building my own](https://github.com/canweriotnow/reajer). I've spent about 30 minutes on it so far, so how much is there when you click that link will likely be quite time dependent, but I'm learning more Clojure while scratching an itch (an itchy Google bite, to be exact), so I don't see a major downside to spending time on it.
+
+Fundamentally, it would be nice if we could rely on Google's stated policy of "Don't be evil" to keep us supplied with the tools to which we have become accustomed. But by the general standard of socially acceptable evil, Google isn't really being evil, just kinda douchey. 
+
+Until there's a company that can remain profitable while adhering to a "don't be a douche" standard, hackers still need our own everything. Normal people will too, I guess.
+
+But Reader was always "free as in beer," not "free as in speech," so it was always the prerogative of the douche with the keg to call "last call," to kick everyone out, or at least to take his tap and go home. 
+
+So go ahead and sign the petition on [Change.org](http://change.org), watch the "Hitler Finds Out" video (actually, please watch that one... it's both accurate and hilarious), but don't be surprised the next time Google takes your favorite toy away. 
+
+P.S. I haven't added blackjack _or_ hookers to [reajer](https://github.com/canweriotnow/reajer), but it does play Tetris. So there's that.
